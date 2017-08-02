@@ -169,18 +169,34 @@
 }
 
 
-
-
     .clock-container {
         .clock {
             h2 {
                 letter-spacing: .24em;
                 font-size: 80px;
-                width: calc(80px * 1.25);
+                width: ~'calc(80px * 1.25)';
             }
         }
         a {
             font-size: 32px;
             margin-top: 85px;
+        }
+        p {
+            font-size: 32px;
+            color: #aaa;
+            font-size: 40px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-family: @font-primary;
+            text-align: center;
+
+            &:first-of-type {
+              margin-bottom: 85px;
+            }
+
+            &:last-of-type {
+              margin-top: 85px;
+            }
         }
     }
