@@ -1,0 +1,91 @@
+.flex-display(@display: flex) {
+	display: ~"-webkit-@{display}";
+	display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+	display: ~"-ms-@{display}"; // IE11
+	display: @display;
+}
+
+.justify-content(@justify: flex-start) {
+  -webkit-justify-content: @justify;
+  -ms-justify-content: @justify;
+  justify-content: @justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch 
+.align-content(@align: stretch) {
+  -webkit-align-content: @align;
+  -ms-align-content: @align;
+  align-content: @align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch 
+.align-items(@align: stretch) {
+  -webkit-align-items: @align;
+  -ms-align-items: @align;
+  align-items: @align;
+}
+
+.flex-direction(@direction: row) {
+  -webkit-flex-direction: @direction;
+  -ms-flex-direction: @direction;
+  flex-direction: @direction;
+}
+
+.align-self(@align: auto) {
+  -webkit-align-self: @align;
+  -ms-align-self: @align;
+  align-self: @align;
+}
+
+.transition(@val) {
+  -webkit-transition: @val;
+  -moz-transition: @val;
+  -o-transition: @val;
+  -ms-transition: @val;
+  transition: @val;
+}
+
+.transform(@val) {
+  -webkit-transform: @val;
+  -moz-transform: @val;
+  -ms-transform: @val;
+  transform: @val;
+}
+
+.transform-origin (@x:center, @y:center) {
+  -webkit-transform-origin: @x @y;
+  -moz-transform-origin: @x @y;
+  -ms-transform-origin: @x @y;
+  -o-transform-origin: @x @y;
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+  // background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+  // background-color: @startColor;
+  background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+  background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+  background-image: -moz-linear-gradient(left, @startColor, @endColor);
+  background-image: -ms-linear-gradient(left, @startColor, @endColor);
+  background-image: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+.radial-gradient(@innerColor: #555, @outerColor: #333, @pos: center, @colorStop: 100%)  {
+  background-image: -moz-radial-gradient(@pos, circle, @innerColor, @outerColor @colorStop); // FF 3.6+
+  background-image: -ms-radial-gradient(@pos, circle, @innerColor, @outerColor @colorStop); // IE10
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(@innerColor), to(@outerColor)); // Android 2.3, Safari 4+, Chrome 2+
+  background-image: -webkit-radial-gradient(@pos, circle, @innerColor, @outerColor @colorStop); // Safari 5.1+, Chrome 10+
+  background-image: -o-radial-gradient(@pos, circle, @innerColor, @outerColor @colorStop); // Opera 11.10
+  background-image: radial-gradient(circle, @pos, @innerColor, @outerColor @colorStop);
+}

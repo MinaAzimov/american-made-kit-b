@@ -1,0 +1,147 @@
+@font-primary: 'Compacta-BT', Helvetica, Arial, sans-serif;
+@font-secondary: 'Proxima-Nova', Helvetica, Arial, sans-serif;
+
+@compactaBtPath: 'fonts/compacta-bt/Compacta-BT-';
+
+@font-face {
+	font-family: 'Compacta-BT';
+	src: url('@{compactaBtPath}Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Compacta-BT';
+	src: url('@{compactaBtPath}Roman.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Compacta-BT';
+	src: url('@{compactaBtPath}Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Compacta-BT';
+	src: url('@{compactaBtPath}Black.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@centuryGothicPath: 'fonts/century-gothic/Century-Gothic-';
+
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('@{centuryGothicPath}Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('@{centuryGothicPath}Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@proximaNovaPath: 'fonts/proxima-nova/Proxima-Nova-';
+
+@font-face {
+	font-family: 'Proxima-Nova';
+	src: url('@{proximaNovaPath}Reg.eot');
+	src: url('@{proximaNovaPath}Reg.eot?#iefix') format('embedded-opentype'), url('@{proximaNovaPath}Reg.woff') format('woff'), url('@{proximaNovaPath}Reg.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima-Nova';
+	src: url('@{proximaNovaPath}Bold.eot');
+	src: url('@{proximaNovaPath}Bold.eot?#iefix') format('embedded-opentype'), url('@{proximaNovaPath}Bold.woff') format('woff'), url('@{proximaNovaPath}Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+// American Made Icons
+
+@amIconsPath: 'fonts/american-made-icons/American-Made-Icons';
+
+@font-face {
+	font-family: 'American-Made-Icons';
+	src: url('@{amIconsPath}.eot');
+	src: url('@{amIconsPath}.eot?#iefix') format('embedded-opentype'), url('@{amIconsPath}.woff2') format('woff2'), url('@{amIconsPath}.woff') format('woff'), url('@{amIconsPath}.ttf') format('truetype');
+}
+
+.am-icon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'American-Made-Icons';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	.make-icon(@codepoint, @unicode) {
+		&-@{codepoint}:before {
+			content: @unicode;
+		}
+	}
+	.make-icon(a1, '\e001');
+	.make-icon(m1, '\e002');
+	.make-icon(e1, '\e003');
+	.make-icon(r1, '\e004');
+	.make-icon(i1, '\e005');
+	.make-icon(c1, '\e006');
+	.make-icon(a2, '\e007');
+	.make-icon(n1, '\e008');
+
+	.make-icon(m2, '\e009');
+	.make-icon(a3, '\e010');
+	.make-icon(d1, '\e011');
+	.make-icon(e2, '\e012');
+
+	.make-icon(a1-thin, '\e013');
+	.make-icon(m1-thin, '\e014');
+	.make-icon(e1-thin, '\e015');
+	.make-icon(r1-thin, '\e016');
+	.make-icon(i1-thin, '\e017');
+	.make-icon(c1-thin, '\e018');
+	.make-icon(a2-thin, '\e019');
+	.make-icon(n1-thin, '\e020');
+
+	.make-icon(m2-thin, '\e021');
+	.make-icon(a3-thin, '\e022');
+	.make-icon(d1-thin, '\e023');
+	.make-icon(e2-thin, '\e024');
+
+	.make-icon(plane, '\e025');
+	.make-icon(close, '\e026');
+	.make-icon(plane2, '\e027');
+
+	// .make-icon(logo-full, '\e028');
+	.make-icon(logo-full2, '\e029');
+	// .make-icon(logo-full3, '\e030');
+	.make-icon(logo-full4, '\e031');
+
+	// .make-icon(gallery, '\e032');
+	.make-icon(eye, '\e033');
+	.make-icon(universal-logo, '\e034');
+	.make-icon(rating, '\e035');
+
+	.make-icon(play, '\e036');
+	.make-icon(world, '\e037');
+	.make-icon(world-text, '\e038');
+	.make-icon(pause, '\e039');
+	.make-icon(camera, '\e040');
+	.make-icon(magnifying-glass, '\e041');
+	.make-icon(camera-thin, '\e042');
+	.make-icon(plane-badge, '\e043');
+}
+
+

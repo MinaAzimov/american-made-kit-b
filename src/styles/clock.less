@@ -1,0 +1,186 @@
+.clock-container {
+  .flex-display();
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  .justify-content(center);
+  .flex-direction(column);
+
+  .clock {
+    .flex-display();
+    .align-items(center);
+    margin: 0px auto;
+
+    > div {
+      .flex-display();
+      .flex-direction(row);
+      .align-items(baseline);
+    }
+
+    .divider {
+      margin: 0 2vw;
+      min-width: 5vw;
+      height: 1px;
+      background-color: @color-red;
+    }
+
+    h2, p {
+      // color: lighten(@color-white, 2%);
+      color: #aaaaaa;
+      margin: 0;
+    }
+    h2 {
+      font-family: @font-primary;
+      text-align: right;
+      font-weight: 300;
+      font-size: 10vh;
+      // line-height: 10vh;
+      font-size: 128px;
+      width: ~'calc(128px * 1.25)';
+      letter-spacing: .30em;
+    }
+    p {
+      font-family: @font-secondary;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-transform: lowercase;
+    }
+  }
+  a {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    color: rgba(0,0,0,0.25);
+    font-family: @font-primary;
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+    margin: 128px auto 0;
+    min-width: ~'calc(15vh * 1.5)';
+    border: solid 1px @color-red;
+
+    &:hover {
+      color: darken(@color-blue-light, 10%);
+    }
+  }
+
+}
+
+.cloud-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 29vh;
+  transition: top 1.2s;
+  background-image: url(img/_clouds/cloud-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.cloud-wrapper {
+  // position: absolute;
+  // left: 50vw;
+  // top: 50vw;
+
+  .cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    user-select: none;
+    pointer-events: none;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    transition: transform 1s, opacity 0.2s 0.5s, top 2s 0s ease-in-out, left 2s 0s ease-in-out;
+
+    @keyframes cloud-expand {
+      0% {
+        transform: scale(1)
+      }
+
+      50% {
+        transform: scale(0.9)
+      }
+
+      100% {
+        transform: scale(1)
+      }
+    }
+
+    &.cloud-1 {
+      width: 1830px;
+      height: auto;
+      // top: -44vh;
+      // left: -12vw;
+      top: 5vh;
+      left: 88vw;
+    }
+
+    &.cloud-2 {
+      width: 1662px;
+      height: auto;
+      // top: -62vh;
+      // left: -49vw;
+      top: 0vw;
+      left: 52vw;
+    }
+
+    &.cloud-3 {
+      width: 2880px;
+      height: auto;
+      // top: -38vh;
+      // left: -131vw;
+      top: 10vh;
+      left: -35vw;
+    }
+
+    &.cloud-4 {
+      width: 2880px;
+      height: auto;
+      z-index: 105;
+      animation: cloud-expand 10.2s ease-in-out infinite;
+      // top: -34vh;
+      // left: -25vw;
+      top: 25vh;
+      left: 90vw;
+    }
+
+    &.cloud-5 {
+      width: 2880px;
+      height: auto;
+      z-index: 105;
+      // top: -27vh;
+      // left: -47vw;
+      top: 25vh;
+      left: 55vw;
+
+    }
+
+    &.cloud-6 {
+      width: 1671px;
+      height: auto;
+      top: 10vh;
+      left: 10vh;
+    }
+  }
+}
+
+
+
+
+    .clock-container {
+        .clock {
+            h2 {
+                letter-spacing: .24em;
+                font-size: 80px;
+                width: calc(80px * 1.25);
+            }
+        }
+        a {
+            font-size: 32px;
+            margin-top: 85px;
+        }
+    }

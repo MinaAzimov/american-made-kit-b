@@ -1,0 +1,27 @@
+{
+  "name": "American-Made-Full",
+  "version": "1.0.0",
+  "description": "Film site for the American Made movie with Universal Pictures",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.9.11",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-less": "^3.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "devDependencies": {
+    "gulp-cache": "^0.4.6",
+    "gulp-clean-css": "^3.4.1",
+    "gulp-clip-empty-files": "^0.1.2",
+    "gulp-imagemin": "^3.3.0"
+  }
+}
