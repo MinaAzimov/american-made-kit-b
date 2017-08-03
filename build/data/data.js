@@ -245,9 +245,9 @@ var data = {
 			{
 				label: 'benfoster',
 				type: 'full',
-				name: 'Domhall Gleeson',
+				name: 'Domhnall Gleeson',
 				role: 'Monty Schafer',
-				text: "<p>Domhall (pronounced \"doh-nall\" with the \"m\" being silent) appeared in four films in 2015 and all four titles received nominations at the 88th Academy Awards. The films were: The Revenant (2015), Ex Machina (2014), Star Wars: The Force Awakens (2015) and Brooklyn (2015). The only other actor to achieve a similar record was Benedict Cumberbatch, who also appeared in four films that were Oscar nominated in 2013 - though he made a fifth movie that wasn't nominated.</p> <p>As of 2016, has appeared in three films that were nominated for the Best Picture Oscar: True Grit (2010), The Revenant (2015) and Brooklyn (2015).</p>",
+				text: "<p>Domhnall (pronounced \"doh-nall\" with the \"m\" being silent) appeared in four films in 2015 and all four titles received nominations at the 88th Academy Awards. The films were: The Revenant (2015), Ex Machina (2014), Star Wars: The Force Awakens (2015) and Brooklyn (2015). The only other actor to achieve a similar record was Benedict Cumberbatch, who also appeared in four films that were Oscar nominated in 2013 - though he made a fifth movie that wasn't nominated.</p> <p>As of 2016, has appeared in three films that were nominated for the Best Picture Oscar: True Grit (2010), The Revenant (2015) and Brooklyn (2015).</p>",
 				desktopImage: 'benfoster',
 				mobileImage: 'benfoster_mob',
 				overlayImage: 'benfoster_overlay',

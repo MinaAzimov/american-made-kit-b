@@ -9109,10 +9109,10 @@ footer {
     max-height: 56vh;
     height: 695px;
     left: 50%;
-    margin-left: -384.5px;
+    margin-left: -377.5px;
     width: 769px;
     background-size: contain;
-    bottom: 5vh;
+    bottom: 8vh;
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
@@ -9144,23 +9144,26 @@ footer {
     margin-right: 10px
 }
 
-.footer-social i {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: @color-white;
-    transition: color .35s ease
+.footer-social {
+    i {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: @color-white;
+        transition: color .35s @easing;
+    }
+    &:hover i {
+        color: @color-red;
+    }
 }
 
-.footer-social i:hover {
-    color: #a12219
-}
 
-.nav-darken .footer-social i {
-    color: @color-white;
-}
-
-.nav-darken .footer-social i:hover {
-    color: #fffeed
+.nav-darken .footer-social {
+     i {
+        color: @color-white;
+     }
+    &:hover i {
+        color: @color-red;
+    }
 }
 
 #footer-right {
@@ -9648,7 +9651,7 @@ footer {
     list-style: none;
     text-transform: uppercase;
     font-family: @font-secondary;
-    margin-bottom: 24px;
+    // margin-bottom: 20px;
 }
 
 .award {
@@ -9686,8 +9689,15 @@ footer {
         line-height: 1;
     }
 
+    .tom_cruise_full {
+        font-size: 48px;
+        font-weight: 300;
+        letter-spacing: .05em;
+        margin-top: 8px;
+    }
+
     h1 {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
         font-size: 70px;
     }
 }
@@ -9893,7 +9903,7 @@ footer {
 
 #btn_scroll {
     position: absolute;
-    bottom: 5vh;
+    bottom: 4vh;
     right: ~'calc(50vw - 51px)';
     cursor: pointer;
     width: 102px;
@@ -10487,36 +10497,81 @@ section #story7 {
     }
 }
 
-
-
 #s7_text {
     bottom: 10%;
     max-height: 80%;
     left: 50%;
     margin-left: -25%;
-    max-width: 41%;
+    max-width: 50%;
     text-align: center;
     color: #fffeed;
     // background-image: url(img/nav_texture5.png);
     background-size: cover;
     background-position: center;
-}
+    .flex-display();
+    .flex-direction(column);
 
-#s7_text h1 {
-    letter-spacing: .24em;
-    font-family: @font-primary;
-    font-size: 60px
-}
+    .text-row {
+        .flex-display();
+        .flex-direction(row);
+        width: 100%;
+    }
 
-#s7_text div {
-    margin: 0 auto;
-}
+    .text-col {
+        max-width: 40%;
+        .flex-display();
+        .flex-direction(column);
 
-#s7_text p {
-    letter-spacing: 0;
-    font-family: @font-secondary;
-    text-transform: none;
-    font-size: 16px
+        &:first-of-type {
+            margin-right: 5%;
+        }
+
+        .text-row {
+            .align-items(baseline);
+
+            div {
+                width: 80px;
+            }
+
+            &:not(:first-of-type) {
+                margin-top: 18px;
+            }
+        }
+    }
+
+    h1 {
+        letter-spacing: .24em;
+        text-align: left;
+        font-family: @font-primary;
+        font-size: 60px
+    }
+
+    div {
+        position: relative;
+        min-height: 1px;
+        margin: 0;
+    }
+
+    p {
+        letter-spacing: 0;
+        font-family: @font-secondary;
+        font-weight: normal;
+        text-transform: none;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    h4 {
+        font-family: @font-primary;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0.15em;
+        font-weight: 600;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-right: 1%;
+    }
 }
 
 #s1_bg,#s5_bg,#s6_bg,#s7_bg {
@@ -11612,7 +11667,7 @@ section #story7 {
     }
 
     #title_block h1 {
-        font-size: 160px;
+        font-size: 140px;
     }
 
     section #story7 {
@@ -11640,8 +11695,8 @@ section #story7 {
     }
 
     #s7_text {
-        max-width: 33%;
-        margin-left: -16.5%;
+        max-width: 60%;
+        margin-left: -25%;
         bottom: 15%;
     }
 
@@ -11737,13 +11792,17 @@ section #story7 {
     #s7_text {
         bottom: 15%;
         max-height: 60%;
-        left: 60% !important;
-        max-width: 33%;
+        left: 50% !important;
+        max-width: 50%;
         text-align: center;
+
+        .text-col {
+            max-width: 50%;
+        }
     }
 
     #s7_text p {
-        font-size: 20px!important
+        font-size: 24px!important
     }
 
     #castncrew-header-text {
@@ -12059,7 +12118,7 @@ section #story7 {
     }
 
     #s7_text {
-        max-width: 50%
+        max-width: 50%;
     }
 
     #s7_text p {

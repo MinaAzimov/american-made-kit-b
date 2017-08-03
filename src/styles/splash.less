@@ -330,19 +330,35 @@
 
     #splash_tt {
         font-size: 60px;
-        color: lighten(@color-white, 2%);
+        color: @color-white;
         text-shadow: @shadow;
+        text-shadow:  rgba(0, 0, 0, 0.2) 1px 1px 0px, 
+                      1px 1px 20px rgba(0, 0, 0, .2);
+
+        // &:after {
+        //     content: '';
+        //     z-index: -1;
+        //     position: fixed;
+        //     // top: 0;
+        //     // left: 0;
+        //     margin-left: -60px;
+        //     width: 60px;
+        //     height: 60px;
+        //     background: radial-gradient(circle at 50% 75%, rgba(0, 0, 0, .6) 1%, rgba(0, 0, 0, 0));
+        // }
     }
 
     #splash_release_date {
-        color: lighten(@color-white, 2%);
+        color: @color-white;
         text-align: center;
         font-size: 27px;
         letter-spacing: 0;
         font-weight: 300;
         font-family: @font-primary;
         text-transform: uppercase;
-        text-shadow: @shadow;
+        // text-shadow: @shadow;
+        text-shadow:  rgba(0, 0, 0, 0.2) 1px 1px 0px, 
+                      1px 1px 20px rgba(0, 0, 0, .2);
     }
 }
 

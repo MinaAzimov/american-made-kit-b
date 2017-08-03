@@ -145,49 +145,132 @@
 
 @media only screen  and (min-width : 1824px) {
 
+    .navbar-brand {
+        left: 30px !important;
+    }
+
+
+    .navbar-default .navbar-nav>#nav-home.active {
+ transform: translateX(57px) !important;
+
+
+    .circle {
+         transform:  translateX(0px) translateX(-57px) !important;
+       
+  }
+
+  span:last-of-type {
+
+   margin-left: 39px !important;
+    margin-top: 10px;
+ 
+ 
+}
+
+}
+
+.navbar-default .navbar-nav>#nav-story.active {
+     
+   transform: translateX(66px) !important;
+
+    .circle {
+        transform:  translateX(0px) translateX(-66px)!important;
+       
+  }
+
+  span:last-of-type {
+
+   margin-left: 48px !important;
+   margin-top: 10px;
+   transition: all 1s ease-in-out;
+ 
+}
+
+}
+
+.navbar-default .navbar-nav>#nav-castncrew.active {
+   transform: translateX(105px) !important;
+    .circle {
+          transform:  translateX(0px) translateX(-105px) !important; 
+  }
+
+ span:last-of-type {
+  
+   margin-left: 82px !important;
+   margin-top: 10px;
+}
+
+}
+
+
+.navbar-default .navbar-nav>#nav-gallery.active {
+     transform: translateX(75px) !important;
+    .circle {
+   transform:  translateX(0px) translateX(-75px) !important;
+        
+  }
+
+   span:last-of-type {
+   margin-left: 55px !important;
+   margin-top: 10px;
+}
+
+}
+
+.navbar-default .navbar-nav>#nav-videos.active {
+   transform: translateX(71px) !important;
+    .circle {
+     transform:  translateX(0px) translateX(-71px) !important;
+      
+  }
+
+  span:last-of-type {
+   margin-left: 52px !important;
+    margin-top: 10px;
+}
+
+}
+
+.navbar-default .navbar-main>#nav-tickets.active {
+    transform: translateX(77px) !important;
+    .circle {
+    transform:  translateX(0px) translateX(-77px) !important;
+     
+      
+  }
+  span:last-of-type {
+   margin-left: 58px !important;
+     margin-top: 10px;
+ 
+}
+
+}
 
 .circle { 
-margin-top: 6px !important;
+margin-top: 8px !important;
 }
 
 
 #navbar-wrapper {
-     top: 27vh !important;
-    max-width: 140px !important;
-    width: 140px !important;
+     top: 30vh !important;
+    max-width: 135px !important;
+    width: 132px !important;
    
 }
 
-#main-navigation-bar {
-    width: 100%;
-    height: 100%;  /*allows both columns to span the full height of the browser window*/
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between; 
-    margin-left: 0px;
-  position: relative;
-    
 
-
-
-}
 
 #cd-timeline {
-    
-
-    max-width: 140px!important;
-    width: 138px!important;
-  top: 33.5vh !important;
- 
-
+  max-width: 140px!important;
+  width: 130px!important;
+  top: 36.5vh !important;
 
 }
 
 .navbar-nav.navbar-right li .btn_nav_inner {
     padding: 0px !important;
-}
 
+}
 
 #image-wrapper {
   
@@ -195,14 +278,14 @@ margin-top: 6px !important;
     text-align:center; 
        max-width:280px !important;
         height:5px !important;
-       width: 280px !important;
-    top: 7vh !important;
+       width: 260px !important;
+    top: 7.5vh !important;
 
 }
 
 #plane-image {
-   height: 53px !important;
-   width: 53px !important;
+   height: 70px !important;
+   width: 70px !important;
 
 
 }
@@ -212,13 +295,14 @@ margin-top: 6px !important;
 .navbar-right {
 
   
-    top: 20vh !important;
+    top: 22vh !important;
   
 }
 
 
     .navbar-main > li {
-        font-size: 13px !important;
+        font-size: 17px !important;
+        font-weight: 400 !important;
 
 
     }
@@ -242,7 +326,7 @@ margin-top: 6px !important;
 
             h1 {
 
-                font-size: 28px !important;
+                font-size: 36px !important;
 
                 line-height: 28px !important;
                 &:before {
@@ -274,10 +358,8 @@ margin-top: 6px !important;
 }
 
 .navbar-right {
-
     font-weight: 300 !important;
-    font-family: 'Compacta-BT' !important;
-        
+    font-family: 'Compacta-BT' !important; 
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -290,7 +372,7 @@ margin-top: 6px !important;
 .navbar-nav.navbar-right li {
     height: 56px;
     background-color: transparent;
-
+ 
     width: auto;
     vertical-align: middle;
     // max-height: 56px;
@@ -326,8 +408,8 @@ margin-top: 6px !important;
         height: 1px;
         width: 20%;
         position: absolute;
-        margin-left: 6px;
-        left: 26px;
+        margin-left: 12px !important;
+        left: 22px !important;
         top: -6px;
         transform-origin: left center;
         .transition(transform @duration @easing 0s);
@@ -337,10 +419,9 @@ margin-top: 6px !important;
     &#nav_trailer {
        &:after {
             transform-origin: right center;
-            margin-right: -6px;
-            right:  42px !important;
-            top: -6px;
-            left: auto;
+            margin-right: 60px !important;
+            right:  60px !important;
+            
         }
     }
 
@@ -1184,7 +1265,7 @@ margin-top: 6px !important;
 .navbar-brand {
     position: fixed;
     margin-top: 0px;
-    margin-left: 0!important;
+    margin-left: -10!important;
     padding: 20px 45px;
     display: -ms-flexbox;
     display: flex;
@@ -1213,11 +1294,11 @@ margin-top: 6px !important;
 
 
 .navbar-main > li {
-    font-size: 11px;
+    font-size: 13px;
  
     font-family: 'Compacta-BT';
-    font-weight: bold !important;
-    letter-spacing: .1em;
+    font-weight: 400 !important;
+    letter-spacing: .22em;
     margin: 0;
   
 }
@@ -1248,19 +1329,15 @@ margin-top: 6px !important;
     justify-content: space-between; 
     margin-left: 0px;
   position: relative;
-    
-
-
 
 }
-
 
 #nav-overlay {
     opacity: 0;
     top: -50px;
     transition: 2s ease-in-out;
     bottom: auto;
-    height: 50vh;
+    height: 100vh;
     width: 90px;
     max-width: none;
     max-height: none;
@@ -1320,8 +1397,8 @@ margin-top: 6px !important;
   position: fixed;
   border-right: 1px solid @color-white;
     max-width: 100px;
-    width: 88px;
-  top: 38.5vh;
+   width: 88px;
+   top: 38.2vh;
    height: 37vh;
     display: flex;
     align-items: flex-end;
@@ -1351,6 +1428,11 @@ margin-top: 6px !important;
   
 }
 
+#trailer {
+
+    margin-left: -5px;
+}
+
 
 
 #image-wrapper {
@@ -1363,8 +1445,8 @@ margin-top: 6px !important;
 }
 
 #plane-image {
-   height: 43px;
-   width: 43px;
+   height: 50px;
+   width: 50px;
  position: absolute;
     margin: auto;
     top: 0;
@@ -1628,18 +1710,13 @@ margin-top: 6px !important;
     top: 25vh;
      /*allows both columns to span the full height of the browser window*/
    
-   
-   position: fixed;
-
+    position: fixed;
     font-weight: 300 !important;
     font-family: 'Compacta-BT' !important;
-
- 
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
-
     text-shadow: 2px 0 rgba(0, 0, 0, .1) !important;
 }
 
@@ -1698,7 +1775,7 @@ margin-top: 6px !important;
         width: 20%;
         position: absolute;
         margin-left: 6px;
-        left: 26px;
+        left: 15px;
         top: -6px;
         transform-origin: left center;
         .transition(transform @duration @easing 0s);
@@ -1763,7 +1840,7 @@ margin-top: 6px !important;
         h1 {
             width: 100%;
             color: @color-white;
-            font-size: 17px;
+            font-size: 26px;
             font-family: 'Compacta-BT';
             font-weight: 300;
             letter-spacing: 3px;
