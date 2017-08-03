@@ -63,7 +63,8 @@
               <div id="mobile-nav">
                 <ul>
                   <li id="splash_trailer2">Trailer</li>
-                  <li><a href="#tickets-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Countdown</a></li>
+                  <li><a href="#tickets-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Tickets</a></li>
+                  <li><a href="" onclick="document.getElementById('mobile-hamburger').checked = false;">Fly With Barry</a></li>
                 </ul>
                 <div class="divider-container">
                   <div class="divider"></div>
@@ -75,17 +76,31 @@
                   <li><a href="#story-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Story</a></li>
                   <li><a href="#cnc-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">CastNCrew</a></li>
                   <li><a href="#photos-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Photos</a></li>
+                  <li><a href="#videos-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Video</a></li>
                 </ul>
               </div>
               <header class="header-mobile">
                 <i id="splash_tt" class="am-icon am-icon-logo-full2"></i>
                 <p id="splash_release_date" class="datechange">September 29</p>
               </header>
+              <div id="social-mobile">
+                <input class="control" id="toggleShare" type="checkbox"/>
+                <label class="share-toggle" for="toggleShare">
+                  <i class="am-icon am-icon-share"></i>
+                </label>
+                <div class="options">
+                  <a target="_blank" onclick="document.getElementById('toggleShare').checked = false;" href="https://www.facebook.com/AmericanMade2017"><div class="bubble"><i class="fa fa-facebook-official fa-lg"></i></div></a>
+                  <a target="_blank" onclick="document.getElementById('toggleShare').checked = false;" href="https://twitter.com/AmMadeMovie"><div class="bubble"><i class="fa fa-twitter fa-lg"></i></div></a>
+                  <a target="_blank" onclick="document.getElementById('toggleShare').checked = false;" href="https://www.instagram.com/americanmade"><div class="bubble"><i class="fa fa-instagram fa-lg"></i></div></a>
+                  <a target="_blank" onclick="document.getElementById('toggleShare').checked = false;" href="https://www.youtube.com/watch?v=AEBIJRAkujM"><div class="bubble"><i class="fa fa-youtube-play fa-lg"></i></div></a>
+                </div>
+              </div>
+              <article class="mobile-scrolling">
               <section class="section-m" id="home-mobile">
                 <div id="splash_bg" class="cover">
                   <img src="img/6_mobile_bg.jpg" class="cover" />
-                  <h1>American Made</h1>
-                  <img src="img/6_fg.png" class="cover splash_fg" style=" max-width: 50vw; min-height: 40vw; bottom: 60vh; margin: 0; margin-left: 50vw; top: auto;"/>
+                  <h1>The Sky<br>Is Never<br>The<br>Limit</h1>
+                  <img src="img/6_fg.png" class="cover splash_fg" style=" max-width: 50vw; min-height: 40vw; bottom: 60vh; margin: 0; margin-left: 52vw; top: auto;"/>
                 </div>
                 <div class="splash_text splash_text--bottom splash_text--centered">
                  <div class="splash_bottom">
@@ -103,11 +118,11 @@
                         <img src="img/splash_bg.jpg" class="cover" />
                         <img src="img/splash_fg.png" class="cover splash_fg" style="bottom: 15vh;"/>
                       </div>
-                      <div class="splash_text">
-                        <h2 style="margin: 0 0 10vh 0; opacity: 0.9;">The Sky Is Never The Limit</h2>
-                        <h3>Guns, Drugs & Money Laundering</h3>
+                      <div class="splash_text splash_text--top">
+                        <!-- <h2 style="margin: 0 0 10vh 0; opacity: 0.9;">The Sky Is Never The Limit</h2> -->
+                        <h3 style="padding-top: 15vh;">Guns, Drugs & Money Laundering</h3>
                         <div class="divider"></div>
-                        <h3>Barry, well you gone done and hit the trifecta didn't you?</h3>
+                        <h2>Barry, well you gone done and hit the trifecta didn't you?</h2>
                       </div>
                     </section>
                     <section class="section-m">
@@ -117,7 +132,8 @@
                       <div class="splash_text">
                        <h3>Mena '78</h3>
                        <div class="divider"></div>
-                       <h2>Revolution is in the air, Barry... We are building nations downin Central America. America could use someone like you.</h2>
+                        <h3>We are building nations down in Central America. Barry, Revolution is in the air.</h3> 
+                        <h2 style="font-size: 32px;">America could use someone like you.<h2>
                      </div>
                    </section>
                    <section class="section-m">
@@ -127,7 +143,9 @@
                     <div class="splash_text splash_text--top" style="padding-top: 10vh;">
                      <h3>Columbia '80</h3>
                      <div class="divider"></div>
-                     <h2>We want you to take off from here and fly directly to Miami. We’ll pay you $2,000 per kilo. So how much is a kilo? That's 2.2 lbs, Mr. Seal.</h2>
+                     <h3>We want you to take off from here and fly directly to Miami.<br>We’ll pay you $2,000 per kilo.</h3>
+                     <h2 style="font-size: 32px;">So how much is a kilo?</h2>
+                     <h2 style="font-size: 32px;">That's 2.2 lbs, Mr. Seal.</h2>
                    </div>
                  </section>
                  <section class="section-m section-m--long">
@@ -305,6 +323,7 @@
  </div>
 </div>
 </section>
+</article>
 <div id="cnc_overlay_tomcruise" class="cnc_overlay">
   <div class="cnc_container">
     <div class="cnc_fixed">
