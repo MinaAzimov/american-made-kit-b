@@ -87,3 +87,82 @@ var settings = {
 
 	hashList : []
 };
+
+var settingsmobile = {
+	  
+ 
+	debug : true,
+	initialManifest : {
+		path : "",
+		manifest : [
+			// UI
+			{ id : "footerBillingLeft", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "footerBillingRight", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "footerLogo", src : "img/_img_mobile", crossOrigin : true },
+			// Reviews Section
+			
+			// Story Section
+			{ id : "story1bg", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story1fg", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story1cloud1", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story1cloud2", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story1cloud3", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story2vid", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story2bg", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story2bg_mob", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story3vid", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story3bg", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story3bg_mob", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story4vid", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story4bg", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story4bg_mob", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story5bg", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story5fg", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story6bg", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story6fg", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "story7bg", src : "img/_img_mobile", crossOrigin : true },
+			// Cast & Crew Section
+			{ id : "chrispine", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "benfoster", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "jeffbridges", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "gilbirmingham", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "davidmackenzie", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "taylorsheridan", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "chrispine_mob", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "benfoster_mob", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "jeffbridges_mob", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "gilbirmingham_mob", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "davidmackenzie_mob", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "taylorsheridan_mob", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "chrispine_overlay", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "benfoster_overlay", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "jeffbridges_overlay", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "gilbirmingham_overlay", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "davidmackenzie_overlay", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "taylorsheridan_overlay", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "barry_video", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "lucy_video", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "sh_video", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "fake_video", src : "img/_img_mobile", crossOrigin : true },
+			// Gallery Section
+			// { id : "gallery1", src : "img/_gallery/gallery_1.jpg", crossOrigin : true },
+			// { id : "gallery2", src : "img/_gallery/gallery_2.jpg", crossOrigin : true },
+			// { id : "gallery3", src : "img/_gallery/gallery_3.jpg", crossOrigin : true },
+			// { id : "gallery4", src : "img/_gallery/gallery_4.jpg", crossOrigin : true },
+			// { id : "gallery5", src : "img/_gallery/gallery_5.jpg", crossOrigin : true },
+			// { id : "gallery6", src : "img/_gallery/gallery_6.jpg", crossOrigin : true },
+			// Videos Section
+			{ id : "videosBg", src : "img/_img_mobile", crossOrigin : true },
+			{ id : "videosFg", src : "img/_img_mobile", crossOrigin : true }
+		]
+	},
+	mouseWheel : {
+		scrollTime : 1.2,
+    	scrollDistance : 270,
+	},
+	sounds : [
+		{ loop : true, type : "mp3", volume : 1 , id : "dummyMp3", src : "img/_img_mobile" }
+	],
+
+	hashList : []
+};
