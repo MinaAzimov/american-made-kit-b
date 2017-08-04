@@ -234,10 +234,12 @@ $('#map-expand').click(function(event){
 	$("#map-wrapper").addClass('map-page-wrapper--open');
 	$("body").css("overflow", "hidden");
 	$("#map-image").attr('src', 'img/map-code.svg');
+});
 
-
-
-
+$('#map-expand-mobile').click(function(event){ 
+	$("#map-wrapper").addClass('map-page-wrapper--open');
+	$("body").css("overflow", "hidden");
+	$("#map-image").attr('src', 'img/map-code.svg');
 });
 
 $('.map-button--close').click(function(){ 
@@ -245,8 +247,6 @@ $('.map-button--close').click(function(){
 	$("body").css("overflow", "visible");
 	$("#map-image").attr('src', '');
 	preventDefault();
-
-	
 });
 
 

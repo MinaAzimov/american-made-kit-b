@@ -180,7 +180,10 @@
     display: none;
     z-index: 15;
     overflow: hidden;
-    // position: fixed;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
 
 
     .mobile-scrolling {
@@ -212,7 +215,7 @@
     }
 
     .cnc_overlay {
-        z-index: 13;
+        z-index: 18;
         position: fixed;
         left: -100vw;
         top: 0;
@@ -239,14 +242,16 @@
             width: 100%;
             height: 100%;
             z-index: 3;
-            overflow-y: scroll
+            overflow-y: scroll;
         }
         .cnc_header, .cnc_text {
             margin-left: 10%;
             max-width: 70%; 
         }
         .cnc_text {
+            min-height: 100%;
             margin-top: 48px;
+            overflow-y: scroll;
             margin-left: -5%;
             font-size: 8px;
             color: @color-white;
@@ -402,7 +407,7 @@
     bottom: 10px;
     left: 10%;
     margin-left: -17.5px;
-    z-index: 17;
+    z-index: 16;
 
     @easing: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
@@ -658,7 +663,7 @@
         height: 85px;
 
         h1 {
-            font-size: 16px;
+            font-size: 14px;
             font-family: @font-secondary;
             font-weight: normal;
             letter-spacing: 0.015em;
@@ -670,9 +675,10 @@
             margin: 0 10px;
             h1 {
                 font-size: 14px;
+                font-weight: 400;
                 font-family: @font-primary;
                 letter-spacing: 0.15em;
-                top: ~'calc(40% - 6.5px)';
+                top: ~'calc(35% - 6.5px)';
             }
             @keyframes wobble-vertical {
                 16.65% {
