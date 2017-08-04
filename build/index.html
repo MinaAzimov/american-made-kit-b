@@ -300,24 +300,24 @@
   <div class="splash_text">
    <h2>Videos</h2>
    <ul id="videos-list-mobile">
-     <li class="video_active" id="splash_trailer3">
+     <li class="video_active">
       <div class="video_border"></div>
       <div class="video_label">
         <h1>Trailer 1</h1>
       </div>
       <!-- <img class="video_btn_out" src="img/arrow_trailer_out.svg"> -->
-      <div class="video_btn_over">
+      <div class="video_btn_over" id="splash_trailer3">
         <img class="video_arrow" src="img/arrow_trailer_over.svg" style="transform: matrix(1, 0, 0, 1, 34, 0);">
       </div>
       <img class="mobile-video-poster" src="img/_videos/videos_bg2.jpg">
     </li>
-    <li class="video_active" id="splash_trailer4">
+    <li class="video_active">
       <div class="video_border"></div>
       <div class="video_label">
         <h1>Trailer 2</h1>
       </div>
       <!-- <img class="video_btn_out" src="img/arrow_trailer_out.svg"> -->
-      <div class="video_btn_over">
+      <div class="video_btn_over" id="splash_trailer4">
         <img class="video_arrow" src="img/arrow_trailer_over.svg" style="transform: matrix(1, 0, 0, 1, 34, 0);">
       </div>
       <img class="mobile-video-poster" src="img/_videos/videos_bg4.jpg">
@@ -380,7 +380,7 @@
       </div>
     </div>
     <div class="cnc_text">
-      <p></p><p>Young Tom spent his boyhood always on the move, and by the time he was 14 he had attended 15 different schools in the U.S. and Canada. He finally settled in Glen Ridge, New Jersey, with his mother. While in high school, he developed an interest in acting and abandoned his plans of becoming a priest, dropped out of school, and at age 18 headed for New York and a possible acting career.</p><p>The next 15 years of his life are the stuff of legends. He made his film debut with a small part in Endless Love (1981) and from the outset exhibited an undeniable box office appeal.</p><p>Within 5 years Tom Cruise was starring in some of the top grossing films of the 1980s including Top Gun (1986); The Color of Money (1986), Rain Man (1988) and Born on the Fourth of July (1989). By the 1990s he was one of the highest paid actors in the world earning an average 15 million dollars a picture in such blockbuster hits as Interview with the Vampire: The Vampire Chronicles (1994), Mission: Impossible (1996) and Jerry Maguire (1996) for which he received an Academy Award Nomination for best actor. A kind and thoughtful man well known for his compassion and generosity, Tom Cruise is one of the best liked members of the movie community.</p><p></p>
+      <p></p><p>Tom Cruise starred in some of the top grossing films of the 1980s including Top Gun (1986); The Color of Money (1986), Rain Man (1988) and Born on the Fourth of July (1989). By the 1990s he was one of the highest paid actors in the world earning an average 15 million dollars a picture in such blockbuster hits as Interview with the Vampire: The Vampire Chronicles (1994), Mission: Impossible (1996) and Jerry Maguire (1996) for which he received an Academy Award Nomination for best actor. A kind and thoughtful man well known for his compassion and generosity, Tom Cruise is one of the best liked members of the movie community.</p><p></p>
     </div>
   </div>
 </div>
@@ -789,8 +789,10 @@
               <div class="story_text2" id="s6_text">
                 <h1>Mena '78</h1>
                 <div></div>
-                <!-- <p>This is a war, Barry… <br>Freedom fighters<br>can't put up a fight<br>unarmed.</p> -->
-                <p>Revolution is in the air, Barry... <br> We are building nations down<br>in Central America.<br> America could use someone like you.</p>
+                <p>
+                  <p>Revolution is in the air, Barry.<br>We are building nations down in Central America.</p>
+                  <h2>America could use someone like you.</h2>
+                </p>
               </div>                   
             </section>
 
@@ -1074,6 +1076,7 @@
         <!-- Map overlay -->
         <article id="map-wrapper" class="map-page-wrapper"> 
           <embed  id="map-image" src=""  class="cover" type="image/svg+xml"/>
+          <img  id="map-image-mobile" src="img/map-code.svg"  class="cover" />
 
 
 
