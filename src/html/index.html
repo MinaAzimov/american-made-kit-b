@@ -55,11 +55,6 @@
               <label class="m-hamburger" for="mobile-hamburger">
                 <div class="bars"></div>
               </label>
-              <div class="btn_text_container" id="splash_trailer">
-                <div class="btn_text_inner">
-                  <h1>Trailer</h1>    
-                </div>
-              </div>
               <div id="mobile-nav">
                 <ul>
                   <li id="splash_trailer2">Trailer</li>
@@ -79,20 +74,16 @@
                   <li><a href="#videos-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Videos</a></li>
                 </ul>
               </div>
-              <header class="header-mobile">
+              <div id="header-bar-mobile"></div>
+              <header id="header-mobile">
                 <i id="splash_tt" class="am-icon am-icon-logo-full2"></i>
                 <p id="splash_release_date" class="datechange">September 29</p>
               </header>
-              <div class="header-bar-mobile"></div>
-              <!-- <script>
-                $(window).scroll(function() {    
-                    var scroll = $(window).scrollTop();
-                    if (scroll >= 500) {
-                        //clearHeader, not clearheader - caps H
-                        $("#header-bar-mobile").addClass("dark");
-                    }
-                }); 
-              </script> -->
+              <div class="btn_text_container" id="splash_trailer">
+                <div class="btn_text_inner">
+                  <h1>Trailer</h1>    
+                </div>
+              </div>
               <div id="social-mobile">
                 <input class="control" id="toggleShare" type="checkbox"/>
                 <label class="share-toggle" for="toggleShare">
@@ -105,7 +96,7 @@
                   <a target="_blank" class="bubble" href="https://www.youtube.com/watch?v=AEBIJRAkujM"><i class="fa fa-youtube-play fa-lg"></i></a>
                 </div>
               </div>
-              <article class="mobile-scrolling">
+              <article id="mobile-scrolling">
                 <section class="section-m" id="home-mobile">
                   <div id="splash_bg" class="cover">
                     <img src="img/6_mobile_bg.jpg" class="cover" />

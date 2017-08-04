@@ -190,7 +190,7 @@ var data = {
 		},
 		section2: {
 			type: 'parallax',
-			desktopVideo: 'img/_story/columbia3.mp4',
+			desktopVideo: 'img/_story/columbia.mp4',
 			desktopImage: 'img/_story/columbia.jpg',
 			mobileImage: 'img/_story/s02-bg_mobile.jpg'
 		},

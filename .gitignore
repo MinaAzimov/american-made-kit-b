@@ -29,3 +29,4 @@ app.yaml
 *-*-*.prd
 
 build
+build/**/*

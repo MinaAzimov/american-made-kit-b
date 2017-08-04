@@ -249,11 +249,25 @@ $('.map-button--close').click(function(){
 	preventDefault();
 });
 
+<<<<<<< Updated upstream
 $('#upgradeclose').on('click', function () {
   $('#upgrade-safari').css('display', 'none');
 });
 	
  
+=======
+$('#mobile-scrolling').scroll(function() {    
+    var scroll = $('#mobile-scrolling').scrollTop();
+    if (scroll >= 500) {
+        $("#header-bar-mobile").addClass("dark");
+        $("#header-mobile").addClass("dark");
+    }
+    if (scroll <= 500) {
+        $("#header-bar-mobile").removeClass("dark");
+        $("#header-mobile").removeClass("dark");
+    }
+}); 
+>>>>>>> Stashed changes
 
 // document.body.addEventListener("touchmove", function(event) {
 // 	event.preventDefault();
