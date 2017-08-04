@@ -278,9 +278,9 @@ var data = {
 			{
 				label: 'taylorsheridan',
 				type: 'half',
-				name: 'Gary Spinelli',
-				role: 'Writer',
-				text: "<p>Gary Spinelli is a writer based in Los Angeles. The script for American Made, originally titled \"Mena\" by Spinelli was taken by Universal Pictures at a $1 million bid at auction.</p><p> The original script was inspired by the true story of Barry Seal told in the book \"American made : who killed Barry Seal ? Pablo Escobar or George H.W. Bush.\" by Shaun Attwood.</p><p>In 2012, Spinelli wrote the crime/thriller Stash House. He is currently working as a screenwriter on the action, sci-fi tv-series, Impulse set to air in 2018.</p>",
+				name: 'All Cast & Crew',
+				role: '',
+				text: "<span>Cast</span><h4>Tom Cruise, Domhnall Gleeson, Sarah Wright, E. Roger Mitchell, Jesse Plemons, Lola Kirke, Alejandro Edda, Benito Martinez, Caleb Landry Jones, Jayma Mays</h4><span>Directed By</span><h4>Doug Liman</h4><span>Writer</span><h4>Gary Spinelli</h4><span>Produced By</span><h4>Brian Grazer, Brian Oliver, Tyler Thompson, Doug Davison, Kim Roth</h4><span>Executive Producer</span><h4>Ray Angelic</h4>",
 				desktopImage: 'taylorsheridan',
 				mobileImage: 'taylorsheridan_mob',
 				overlayImage: 'taylorsheridan_overlay',

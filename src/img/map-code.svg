@@ -359,9 +359,9 @@
     if (isFirefox) {
         alert('Use Google Chrome for better user experience');
         $('#Layer_1').css('opacity', '0');
-        var answer = confirm ("Please click on OK to continue or CANCEL to download Google Chrome")
-      if (!answer)
-      window.location="https://www.google.com/chrome/browser/desktop/index.html"
+      
+        
+
     }
     ]]></script>
    <defs>
