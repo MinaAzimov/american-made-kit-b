@@ -9119,14 +9119,26 @@ footer {
 }
 
 #footer-left {
+    position: fixed;
+    bottom: 10px;
+    right: 0;
     padding: 0;
-    margin-top: 12px;
-    margin-left: 30px;
+    .flex-display();
+    .flex-display(row);
+    // margin-top: 6px;
+    margin-right: 10px;
     list-style: none
 }
 
 #footer-left li {
-    display: inline
+    .flex-display();
+    .align-items(center);
+    .justify-content(center);
+    background: fade(black, 50%);
+    min-width: 40px;
+    min-height: 40px;
+    border: solid 2px @color-white;
+    border-radius: 50%;
 }
 
 .nav-darken #footer-left a {
@@ -9172,7 +9184,7 @@ footer {
     margin-right: 5px;
     padding: 0;
     position: fixed;
-    right: 0;
+    left: 0;
     bottom: 0;
     list-style: none;
     display: -ms-flexbox;
@@ -9651,7 +9663,7 @@ footer {
     list-style: none;
     text-transform: uppercase;
     font-family: @font-secondary;
-    // margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .award {
@@ -9678,7 +9690,7 @@ footer {
     text-align: right;
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 60px;
     margin-right: 20px;
     z-index: 2;
 
@@ -9689,16 +9701,33 @@ footer {
         line-height: 1;
     }
 
-    .tom_cruise_full {
-        font-size: 48px;
-        font-weight: 300;
-        letter-spacing: .05em;
-        margin-top: 8px;
-    }
-
     h1 {
         margin-bottom: 20px;
         font-size: 70px;
+    }
+}
+
+.tom_cruise_full {
+    font-size: 62px;
+    font-weight: 300;
+    letter-spacing: .05em;
+    margin-top: 8px;
+    font-weight: 300;
+    color: #2D456C;
+    margin-top: -18vh;
+
+    span {
+        padding: 0 0.75vw;
+    }
+}
+
+#tickets-icon {
+    position: fixed;
+    top: 15%;
+    left: 65%;
+    i {
+        font-size: 180px;
+        color: @color-red;
     }
 }
 
@@ -9706,8 +9735,8 @@ footer {
     text-align: left;
     position: absolute;
     left: 0;
-    top: 50px;
-    margin-left: 20px;
+    top: 30px;
+    margin-left: 38px;
     z-index: 2;
 
     h1, h2, h3, h4 {
@@ -9718,6 +9747,7 @@ footer {
     }
 
     h1 {
+        text-shadow: @shadow;
         margin-bottom: 20px;
         font-size: 70px;
     }
@@ -9730,8 +9760,9 @@ footer {
 #release_date {
     text-transform: uppercase;
     font-family: @font-primary;
-    font-size: 40px;
+    font-size: 32px;
     letter-spacing: 0.05em;
+    text-shadow: @shadow;
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 12px;
@@ -11691,6 +11722,44 @@ section #story7 {
         font-size: 140px;
     }
 
+    #title_block_top {
+        margin-left: 20px;
+        top: 30px;
+        h1 {
+            font-size: 110px;
+            margin-bottom: 6px;
+        }
+        #release_date {
+            font-size: 26px;
+        }
+    }
+
+    .trigger-headline {
+        font-size: 62px;
+        margin-top: -12vh;
+
+        span {
+            padding: 0 1.25vw;
+        }
+    }
+
+    .tom_cruise_full {
+        font-size: 45px;
+        margin-top: -25vh;
+
+        span {
+            padding: 0 .5vw;
+        }
+    }
+
+    #tickets-icon {
+        top: 13.5%;
+        left: 64.5%;
+        i {
+            font-size: 110px;
+        }
+    }
+
     section #story7 {
         background-position: 0 0
     }
@@ -11748,6 +11817,23 @@ section #story7 {
             }
         }
     }
+
+    #map-expand {  
+        right: 50px; 
+        top: 30px;
+         @size: 120px; 
+        .map-outer {
+            font-size: @size;
+            .transition(transform @duration cubic-bezier(0.205, 0.64, 0.37, 1.325));
+            .transform(rotate(-75deg));
+        }
+        .map-inner {
+            font-size: (@size / 1.8);
+            margin-top: (@size / 4.3);
+            margin-left: ((@size / 4.3) + 1);
+        }
+    }
+
     #videos-list {
         bottom: 18vh;
     }
@@ -11765,7 +11851,7 @@ section #story7 {
     }
 
     #title_block_top h1 {
-        font-size: 120px;
+        font-size: 180px;
     }
 
     #tt {
