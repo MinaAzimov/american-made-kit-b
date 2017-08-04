@@ -7,11 +7,7 @@
 
     <script type="text/ecmascript"><![CDATA[
 
-        $(function() {
-        $('#circle-gun').click(function(){
-        $('#hint').css('opacity', '1');
-      });
-  });
+
 
    $(function() {
         $('#circle-gun').mouseenter(function(){
@@ -263,6 +259,12 @@
   });
 
           $(function() {
+        $('#circle-gun').hover(function(){
+        $('#hint').css('opacity', '1');
+      });
+  });
+
+          $(function() {
         $('#circle-gun').mouseleave(function(){
         $('#hint').css('opacity', '0');
       });
@@ -270,7 +272,7 @@
 
 
         $(function() {
-        $('#circle-camera-1').click(function(){
+        $('#circle-camera-1').hover(function(){
         $('#hint1').css('opacity', '1');
       });
   });
@@ -282,7 +284,7 @@
   });
 
      $(function() {
-        $('#circle-camera-2').click(function(){
+        $('#circle-camera-2').hover(function(){
         $('#hint1').css('opacity', '1');
       });
   });
@@ -294,7 +296,7 @@
   });
 
      $(function() {
-        $('#circle-camera-3').click(function(){
+        $('#circle-camera-3').hover(function(){
         $('#hint1').css('opacity', '1');
       });
   });
@@ -306,7 +308,7 @@
   });
 
    $(function() {
-        $('#circle-powder-1').click(function(){
+        $('#circle-powder-1').hover(function(){
         $('#hint2').css('opacity', '1');
       });
   });
@@ -318,7 +320,7 @@
   });
 
   $(function() {
-        $('#circle-soldier').click(function(){
+        $('#circle-soldier').hover(function(){
         $('#hint3').css('opacity', '1');
       });
   });
@@ -330,7 +332,7 @@
   });
 
   $(function() {
-        $('#circle-info').click(function(){
+        $('#circle-info').hover(function(){
         $('#hint4').css('opacity', '1');
       });
   });
@@ -342,7 +344,7 @@
   });
 
   $(function() {
-        $('#circle-powder-2').click(function(){
+        $('#circle-powder-2').hover(function(){
         $('#hint5').css('opacity', '1');
       });
   });
@@ -7515,7 +7517,7 @@ transition: 2s;
 	<circle id="camera-circle3" class="st27" cx="425.2" cy="222.4" r="0">
 	<animate id="third3" attributeType="CSS" attributeName="font-size" from="0" to="0.01" dur="13s"  begin="2.6s;fourth3.end"/>
 	<animate id="fourth3" attributeType="CSS" attributeName="font-size" from="0" to="0.001" dur="0s"  begin="2.6s;third3.end"/>
-	<animate id="first3" attributeType="CSS" attributeName="opacity" from="0" to="0.51" dur="1.8s"  fill="freeze" begin="2.6s;third3.end"/>
+	<animate id="first3" attributeType="CSS" attributeName="opacity" from="0" to="0" dur="1.8s"  fill="freeze" begin="2.6s;third3.end"/>
 	<animate id="second3" attributeType="XML" attributeName="r" from="0" to="13.9" dur="1.8s" fill="freeze" begin="2.6s;third3.end" /> 		
 	
 	</circle>
@@ -7524,7 +7526,7 @@ transition: 2s;
 			C426.3,221.9,425.8,221.5,425.2,221.5z">
 	<animate id="third3" attributeType="CSS" attributeName="font-size" from="0" to="0.01" dur="13s"  begin="2.6s;fourth3.end"/>
 	<animate id="fourth3" attributeType="CSS" attributeName="font-size" from="0" to="0.001" dur="0s"  begin="2.6s;third3.end"/>
-	<animate id="first3" attributeType="CSS" attributeName="opacity" from="0" to="1" dur="1.8s"  fill="freeze" begin="2.6s;third3.end"/>
+	<animate id="first3" attributeType="CSS" attributeName="opacity" from="0" to="0" dur="1.8s"  fill="freeze" begin="2.6s;third3.end"/>
 	 
 	</path>
 		<path class="st24" d="M428.1,220.1h-0.9l-0.4-0.5c-0.1-0.1-0.1-0.2-0.3-0.2h-2.5c-0.2,0-0.3,0.1-0.3,0.2l-0.4,0.5h-0.9
@@ -7533,7 +7535,7 @@ transition: 2s;
 			c-0.2,0-0.4-0.2-0.4-0.4c0-0.2,0.2-0.4,0.4-0.4c0.2,0,0.4,0.2,0.4,0.4C428.3,221.2,428.1,221.4,427.9,221.4z">
 	<animate id="third3" attributeType="CSS" attributeName="font-size" from="0" to="0.01" dur="13s"  begin="2.6s;fourth3.end"/>
 	<animate id="fourth3" attributeType="CSS" attributeName="font-size" from="0" to="0.001" dur="0s"  begin="2.6s;third3.end"/>
-	<animate id="first3" attributeType="CSS" attributeName="opacity" from="0" to="1" dur="1.8s"  fill="freeze" begin="2.6s;third3.end"/>
+	<animate id="first3" attributeType="CSS" attributeName="opacity" from="0" to="0" dur="1.8s"  fill="freeze" begin="2.6s;third3.end"/>
 	
 	</path>
 	</g>
@@ -7543,7 +7545,7 @@ transition: 2s;
 	<animate id="third2" attributeType="CSS" attributeName="font-size" from="0" to="0.01" dur="13s"  begin="2.3s;fourth2.end"/>
 	<animate id="fourth2" attributeType="CSS" attributeName="font-size" from="0" to="0.001" dur="0s"  begin="2.3s;third2.end"/>
 	<animate id="first2" attributeType="CSS" attributeName="opacity" from="0" to="0.51" dur="1.8s"  fill="freeze" begin="2.3s;third2.end"/>
-	<animate id="second2" attributeType="XML" attributeName="r" from="0" to="13.9" dur="1.8s" fill="freeze" begin="2.3s;third2.end" /> 		
+	<animate id="second2" attributeType="XML" attributeName="r" from="0" to="25.2" dur="1.8s" fill="freeze" begin="2.3s;third2.end" /> 		
 	
 	</circle>
 	<g>
@@ -7567,7 +7569,7 @@ transition: 2s;
 	<circle id="camera-circle1" class="st27" cx="388" cy="216" r="0">
 	<animate id="third1" attributeType="CSS" attributeName="font-size" from="0" to="0.01" dur="13s"  begin="2s;fourth1.end"/>
 	<animate id="fourth1" attributeType="CSS" attributeName="font-size" from="0" to="0.001" dur="0s"  begin="2s;third1.end"/>
-	<animate id="first1" attributeType="CSS" attributeName="opacity" from="0" to="0.51" dur="1.8s"  fill="freeze" begin="2s;third1.end"/>
+	<animate id="first1" attributeType="CSS" attributeName="opacity" from="0" to="0" dur="1.8s"  fill="freeze" begin="2s;third1.end"/>
 	<animate id="second1" attributeType="XML" attributeName="r" from="0" to="13.9" dur="1.8s" fill="freeze" begin="2s;third1.end" /> 		
 	</circle>
 	<g>
@@ -7575,7 +7577,7 @@ transition: 2s;
 			>
 	<animate id="third1" attributeType="CSS" attributeName="font-size" from="0" to="0.01" dur="13s"  begin="2s;fourth1.end"/>
 	<animate id="fourth1" attributeType="CSS" attributeName="font-size" from="0" to="0.001" dur="0s"  begin="2s;third1.end"/>
-	<animate id="first1" attributeType="CSS" attributeName="opacity" from="0" to="1" dur="1.8s"  fill="freeze" begin="2s;third1.end"/>
+	<animate id="first1" attributeType="CSS" attributeName="opacity" from="0" to="0" dur="1.8s"  fill="freeze" begin="2s;third1.end"/>
 	
 	</path>
 		<path class="st24" d="M390.8,213.6h-0.9l-0.4-0.5c-0.1-0.1-0.1-0.2-0.3-0.2h-2.5c-0.2,0-0.3,0.1-0.3,0.2l-0.4,0.5h-0.9
@@ -7584,7 +7586,7 @@ transition: 2s;
 			c-0.2,0-0.4-0.2-0.4-0.4c0-0.2,0.2-0.4,0.4-0.4s0.4,0.2,0.4,0.4C391.1,214.8,390.9,215,390.6,215z">
 	<animate id="third1" attributeType="CSS" attributeName="font-size" from="0" to="0.01" dur="13s"  begin="2s;fourth1.end"/>
 	<animate id="fourth1" attributeType="CSS" attributeName="font-size" from="0" to="0.001" dur="0s"  begin="2s;third1.end"/>
-	<animate id="first1" attributeType="CSS" attributeName="opacity" from="0" to="1" dur="1.8s"  fill="freeze" begin="2s;third1.end"/>
+	<animate id="first1" attributeType="CSS" attributeName="opacity" from="0" to="0" dur="1.8s"  fill="freeze" begin="2s;third1.end"/>
 	
 	</path>
 	</g>

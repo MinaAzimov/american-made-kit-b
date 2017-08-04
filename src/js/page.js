@@ -249,6 +249,11 @@ $('.map-button--close').click(function(){
 	preventDefault();
 });
 
+$('#upgradeclose').on('click', function () {
+  $('#upgrade-safari').css('display', 'none');
+});
+	
+ 
 
 // document.body.addEventListener("touchmove", function(event) {
 // 	event.preventDefault();
