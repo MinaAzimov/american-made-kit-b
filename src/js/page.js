@@ -233,13 +233,13 @@ $('#trailer').mouseleave(function(){
 $('#map-expand').click(function(event){ 
 	$("#map-wrapper").addClass('map-page-wrapper--open');
 	$("body").css("overflow", "hidden");
-	$("#map-image").attr('src', 'img/map-code.svg');
+	$("#map-image").attr('src', 'img/map-code-folder/map-code.svg');
 });
 
 $('#map-expand-mobile').click(function(event){ 
 	$("#map-wrapper").addClass('map-page-wrapper--open');
 	$("body").css("overflow", "hidden");
-	$("#map-image").attr('src', 'img/map-code.svg');
+	$("#map-image").attr('src', 'img/map-code-folder/map-code.svg');
 });
 
 $('.map-button--close').click(function(){ 
