@@ -9440,7 +9440,7 @@ footer {
 
 #footer_close {
     top: 15px;
-    right: 15px;
+    left: 15px;
     cursor: pointer;
     text-align: center;
 
@@ -11237,7 +11237,7 @@ section #story7 {
 #cnc_divider {
     width: 64px;
     height: 1px;
-    background-color: rgba(255,254,237,.5);
+    background-color: @color-red;
     margin-top: 17px;
     margin-bottom: 0
 }
@@ -11330,7 +11330,7 @@ section #story7 {
 }
 
 #yt-close {
-    right: 20px;
+    left: 20px;
     top: 20px;
     width: 72px;
     height: 72px;
@@ -11550,20 +11550,21 @@ section #story7 {
 
         &.am-icon-play {
             margin-left: 1px;
+            display: none;
         }
 
         &.am-icon-pause {
-            display: none;
+            display: block;
         }
     }
 
 
     &.paused {
         .am-icon-play {
-            display: none;
+            display: block;
         }
         .am-icon-pause {
-            display: block;
+            display: none;
         }
     }
 }
