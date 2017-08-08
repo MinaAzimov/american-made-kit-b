@@ -15,10 +15,11 @@
                         pulsate (@duration * 3) (@duration * 6.5) linear infinite;
         }
         .preloader-loading-circle {
-            // animation: rotate-loading 1.5s linear infinite normal;
+            animation: rotate-loading (@duration * 2) linear infinite normal;
+            opacity: 1;
         }
         .preloader-loading-text {
-            // animation: loading-text-opacity (@duration * 3) linear infinite;
+            animation: loading-text-opacity (@duration * 3) linear infinite;
         }
     }
 }
@@ -44,8 +45,12 @@
 }
 
 #preloader-tt {
-    overflow-x: hidden;
-    overflow-y: hidden
+    overflow-y: hidden;
+    margin-right: 24px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 #preloader-tt-1,#preloader-tt-2,#preloader-tt-3,#preloader-tt-4, #preloader-tt-5, #preloader-tt-6, #preloader-tt-7, #preloader-tt-8,
@@ -53,14 +58,10 @@
     opacity: 0;
     font-size: 60px;
     color: darken(@color-blue-light, 10%);
-    margin: 0 7px 0 7px;
+    margin: 0 6px 0 6px;
     z-index: 10000000;
 }
 
-#preloader-tt-9 {
-    // padding-left: 25% !important;
-    // margin: 0 7px 0 7px !important;
-}
 
 #preloader-indicator-bg {
     position: absolute;
@@ -77,15 +78,14 @@
 
 #preloader-content, #preloader-content-2 {
     position: fixed;
-    top: 50vh;
+    .flex-display();
+    .flex-direction(row);
+    .justify-content(center);
+    top: ~'calc(50vh - 100px)';
     left: 50vw;
-    width: 50vw;
-    margin-top: -80px;
-    margin-left: -25vw;
+    width: 100vw;
+    margin-left: -50vw;
     text-align: center;
-}
-
-#preloader-content {
 }
 
 #preloader-content-2 {
@@ -161,7 +161,7 @@
         opacity: 1;
     }
     50% {
-        background-color: darken(@color-blue-light, 10%);
+        background-color: @red;
         .transform(scaleX(1));
         opacity: 1;
     }
@@ -197,29 +197,31 @@
 #preloader-loading {
     position: fixed;
     .flex-display();
-    .align-items(baseline);
-    bottom: 10px;
-    right: 15px;
+    .align-items(center);
+    .flex-direction(column);
+    top: ~'calc(50vh + 40px)';
+    width: 50%;
+    left: ~'calc(50% - 25%)';
 
     .preloader-loading-text {
         font-family: @font-primary;
-        margin-left: 24px;
+        margin-bottom: 12px;
         text-transform: uppercase;
         color: darken(@color-blue-light, 10%);
         font-size: 24px;
+        min-height: 24px;
         font-weight: 300;
         letter-spacing: 0.15em;
-        animation: loading-text-opacity (@duration * 3) linear infinite;
     }
+
     .preloader-loading-circle {
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        margin-left: 18px;
         border: 1px solid transparent;
-        animation: rotate-loading 1.5s linear infinite normal;
         border-color: transparent darken(@color-blue-light, 10%) transparent darken(@color-blue-light, 10%);
         transform-origin: center;
+        opacity: 0;
     }
 
     @keyframes rotate-loading {
