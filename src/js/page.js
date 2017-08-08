@@ -246,7 +246,7 @@ $('.map-button--close').click(function(){
 	$("#map-wrapper").removeClass('map-page-wrapper--open');
 	$("body").css("overflow", "visible");
 	$("#map-image").attr('src', '');
-	preventDefault();
+
 });
 
 $('#upgradeclose').on('click', function () {
