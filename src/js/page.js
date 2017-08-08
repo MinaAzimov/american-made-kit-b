@@ -255,11 +255,11 @@ $('#upgradeclose').on('click', function () {
 	
  $('#mobile-scrolling').scroll(function() {    
     var scroll = $('#mobile-scrolling').scrollTop();
-    if (scroll >= 500) {
+    if (scroll >= 600) {
         $("#header-bar-mobile").addClass("dark");
         $("#header-mobile").addClass("dark");
     }
-    if (scroll <= 500) {
+    if (scroll <= 600) {
         $("#header-bar-mobile").removeClass("dark");
         $("#header-mobile").removeClass("dark");
     }

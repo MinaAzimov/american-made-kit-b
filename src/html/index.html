@@ -85,7 +85,7 @@
                 </div>
               </div>
               <div id="social-mobile">
-                <input class="control" id="toggleShare" type="checkbox"/>
+                <input id="toggleShare" type="checkbox"/>
                 <label class="share-toggle" for="toggleShare">
                   <i class="am-icon am-icon-share"></i>
                 </label>
@@ -96,21 +96,50 @@
                   <a target="_blank" class="bubble" href="https://www.youtube.com/watch?v=AEBIJRAkujM"><i class="fa fa-youtube-play fa-lg"></i></a>
                 </div>
               </div>
+              <div id="legal-mobile">
+                <input id="toggleLegal" type="checkbox"/>
+                <label class="legal-toggle" for="toggleLegal">
+                  Legal
+                </label>
+                <div class="legal-overlay-mobile">
+                  <button class="legal-button legal-button--close" onclick="document.getElementById('toggleLegal').checked = false;">
+                    <i class="am-icon am-icon-close"></i>
+                  </button>
+                  <p>Watch the American Made trailer on the official movie site. Starring Tom Cruise. In theaters September 29, 2017.</p>
+                  <ul>
+                    <li><a href="http://www.nbcuniversal.com/terms" target="_blank">Terms of Use</a></li>
+                    <li>|</li>
+                    <li><a href="http://www.nbcuniversal.com/privacy" target="_blank">Privacy Policy</a></li>
+                    <li>|</li>
+                    <li>©2017 Universal Pictures Inc. All Rights Reserved.</li>
+                    <li>|</li>
+                    <li><a href="http://filmratings.com/" target="_blank">FilmRatings.com</a></li>
+                    <li>|</li>
+                    <li><a href="http://www.mpaa.org/" target="_blank">MPAA.org</a></li>
+                    <li>|</li>
+                    <li><a href="http://www.parentalguide.org/" target="_blank">Parentalguide.org</a></li>
+                  </ul>
+                  <ul>
+                    <li><i class="am-icon am-icon-universal-logo"></i></li>
+                    <li><i class="am-icon am-icon-rating"></i></li>
+                  </ul>
+                </div>
+              </div>
               <article id="mobile-scrolling">
                 <section class="section-m" id="home-mobile">
                   <div id="splash_bg" class="cover">
                     <img src="img/6_mobile_bg.jpg" class="cover" />
-                    <h1>The Sky<br>Is Never<br>The<br>Limit</h1>
-                    <img src="img/6_fg.png" class="cover splash_fg" style=" max-width: 50vw; min-height: 40vw; bottom: 60vh; margin: 0; margin-left: 52vw; top: auto;"/>
+                    <!-- <img src="img/6_fg.png" class="cover splash_fg" style=" max-width: 50vw; min-height: 40vw; bottom: 60vh; margin: 0; margin-left: 52vw; top: auto;"/> -->
                   </div>
-                  <div class="splash_text splash_text--bottom splash_text--centered">
-                   <div class="splash_bottom">
+                  <div class="splash_text splash_text--centered">
+                    <h1>The Sky<br>Is Never<br>The<br>Limit</h1>
+                    <a href="#story-mobile"><div class="btn_scroll btn_scroll--small" ><div class="btn_scroll_outer"><div class="btn_scroll_middle"><div class="btn_scroll_inner"></div></div></div><h1 class="btn_scroll_text">Scroll</h1><i class="am-icon am-icon-plane2"></i></div></a>
+                    <div class="splash_bottom">
                         <!-- <a class="btn_text_container" id="splash_tickets" href="#tickets-mobile" data-text>
                             <div class="btn_text_inner">
                                 <h1>Countdown</h1>
                             </div>
                           </a> -->
-                          <a href="#story-mobile"><div class="btn_scroll btn_scroll--small" ><div class="btn_scroll_outer"><div class="btn_scroll_middle"><div class="btn_scroll_inner"></div></div></div><h1 class="btn_scroll_text">Scroll</h1><i class="am-icon am-icon-plane2"></i></div></a>
                         </div>
                       </div>
                     </section>
@@ -121,7 +150,7 @@
                       </div>
                       <div class="splash_text splash_text--top">
                         <!-- <h2 style="margin: 0 0 10vh 0; opacity: 0.9;">The Sky Is Never The Limit</h2> -->
-                        <h3 style="padding-top: 15vh;">Guns, Drugs & Money Laundering</h3>
+                        <h2 style="">Guns, Drugs & Money Laundering</h2>
                         <div class="divider"></div>
                         <h2>Barry, well you gone done and hit the trifecta didn't you?</h2>
                       </div>
@@ -569,7 +598,7 @@
                   </li> -->
                   
                   <li id="nav-story">
-                    
+
                     <div class="nav-margin-top"></div>
                     <div class="nav-inner">
                       <span class="left"></span>
