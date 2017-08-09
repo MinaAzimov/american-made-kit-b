@@ -9170,12 +9170,12 @@ footer {
 
 
 .nav-darken .footer-social {
-     i {
-        color: @color-white;
-     }
-    &:hover i {
-        color: @color-red;
-    }
+   i {
+    color: @color-white;
+}
+&:hover i {
+    color: @color-red;
+}
 }
 
 #footer-right {
@@ -9315,13 +9315,13 @@ footer {
 #footer_logos {
     margin-top: 30px;
     p {
-       font-family: @font-primary;
-       color: @color-white;
-       text-transform: uppercase;
-       font-size: 24px;
-       font-weight: 300;
-       letter-spacing: 0.15em;
-   }
+     font-family: @font-primary;
+     color: @color-white;
+     text-transform: uppercase;
+     font-size: 24px;
+     font-weight: 300;
+     letter-spacing: 0.15em;
+ }
 }
 
 #footer_links {
@@ -9433,9 +9433,9 @@ footer {
 
 #footer_ratings {
     i {
-     font-size: 55px;
-     color: @color-white; 
- }
+       font-size: 55px;
+       color: @color-white; 
+   }
 }
 
 #footer_close {
@@ -9694,16 +9694,19 @@ footer {
     bottom: 60px;
     margin-right: 20px;
     z-index: 2;
+    .flex-display();
+    .flex-direction(column);
+    .align-items(flex-end);
 
     h1, h2, h3, h4 {
         font-family: @font-primary;
-        color: @color-white;
+        color: lighten(@color-white, 2%);
         text-transform: uppercase;
         line-height: 1;
     }
 
     h1 {
-        margin-bottom: 20px;
+        margin-bottom: 12px;
         font-size: 70px;
     }
 
@@ -9711,18 +9714,27 @@ footer {
         .flex-display();
         .flex-direction(column);
         .justify-content(space-between);
-        width: 270px;
-    }
-}
+        width: 185px;
 
-.tom_cruise_full {
-    font-size: 62px;
-    font-weight: 300;
-    // letter-spacing: .05em;
-    margin-top: 8px;
-    font-weight: 300;
-    color: #2D456C;
-    margin-top: -18vh;
+        .tom_cruise_full {
+            font-size: 40px;
+            width: 100%;
+            .flex-display();
+            .justify-content(space-between);
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+        #release_date {
+            text-transform: uppercase;
+            font-family: @font-primary;
+            .flex-display();
+            .justify-content(space-between);
+            font-size: 40px;
+            font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+    }
 }
 
 #tickets-icon {
@@ -9759,17 +9771,6 @@ footer {
 
 #tt {
     max-height: 45vh
-}
-
-#release_date {
-    text-transform: uppercase;
-    font-family: @font-primary;
-    font-size: 32px;
-    letter-spacing: 0.05em;
-    text-shadow: @shadow;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 12px;
 }
 
 #home-block-right {
@@ -10352,14 +10353,14 @@ section #story1 {
     }
 
     #story1 .story_text2 {
-      
-       font-size: 60px !important;
- 
-   }
 
-   #story1 #barry-text {
-       font-size: 60px !important;
-   }
+     font-size: 60px !important;
+
+ }
+
+ #story1 #barry-text {
+     font-size: 60px !important;
+ }
 }
 
 #story1 img {
@@ -11726,7 +11727,8 @@ section #story7 {
     }
 
     #title_block h1 {
-        font-size: 140px;
+        font-size: 120px;
+        margin-bottom: 6px;
     }
 
     #title_block_top {
@@ -11752,7 +11754,7 @@ section #story7 {
 
     .tom_cruise_full {
         font-size: 45px;
-        margin-top: -25vh;
+        margin-bottom: 6px;
     }
 
     #tickets-icon {
@@ -11824,7 +11826,7 @@ section #story7 {
     #map-expand {  
         right: 50px; 
         top: 30px;
-         @size: 120px; 
+        @size: 120px; 
         .map-outer {
             font-size: @size;
             .transition(transform @duration cubic-bezier(0.205, 0.64, 0.37, 1.325));
@@ -11840,8 +11842,24 @@ section #story7 {
     #videos-list {
         bottom: 18vh;
     }
+
     .navbar-brand {
-        padding: 20px 52px;
+        left: 70px;
+        top: 12px;
+        width: 168px;
+
+        > span {
+            margin-bottom: 20px;
+            margin-top: 15px;
+
+            i {
+                font-size: 90px;
+            }
+        }
+
+        p {
+            font-size: 32px;
+        }
     }
 
     #home_parallax h1 {
@@ -11849,8 +11867,17 @@ section #story7 {
         z-index: 0;
     }
 
-    #title_block h1 {
-        font-size: 180px;
+    #title_block {
+        #key-art {
+            width: 215px;
+
+            h1 {
+                font-size: 140px;
+            }
+            .tom_cruise_full, #release_date {
+                font-size: 48px;
+            }
+        }
     }
 
     #title_block_top h1 {
@@ -12460,538 +12487,535 @@ section #story7 {
     }
 
 
-   #yt-controls {
-    left: 20px;
-    bottom: 20px;
-    width: ~'calc(100vw - 40px)';
-    height: 45px;
-    max-width: 100%
-}
-
-#yt-progress {
-    display: none
-}
-
-#yt-next div,#yt-previous div {
-    position: absolute;
-    width: 70px;
-    height: 34px
-}
-
-#yt-next,#yt-previous {
-    width: 70px;
-    height: 34px;
-    top: 6px;
-    text-align: center;
-    color: #fffeee;
-    font-size: 20px;
-    font-family: @font-secondary
-}
-
-#yt-previous {
-    right: 80px
-}
-
-#home_fg,#home_jeff,#home_text1,#home_text2,#home_text3,#home_text4,#quote_container {
-    display: none
-}
-
-#title_block {
-    bottom: 3%;
-    margin-left: 20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-
-#title_block_top {
-    top: 1%;
-    margin-left: 20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-
-#tt {
-    width: 60%
-}
-
-#release_date {
-    font-size: 20px
-}
-
-#tout_trailer {
-    display: none
-}
-
-#home-block-right {
-    position: absolute;
-    left: 0;
-    bottom: ~'calc(55vh + 44px)';
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: end;
-    justify-content: flex-end
-}
-
-.first-name {
-    font-size: 12px;
-    margin-bottom: -10px
-}
-
-.last-name {
-    font-size: 18px;
-    letter-spacing: -.002em
-}
-
-#touts {
-    display: none
-}
-
-#btn_scroll {
-    position: absolute;
-    max-width: 90px;
-    max-height: 90px;
-    bottom: 6%;
-    right: 10px
-}
-
-#btn_scroll_text {
-    top: 20px;
-    left: 28px
-}
-
-#btn_scroll_divider {
-    left: 40px;
-    top: 49px;
-    clip: rect(0,10px,1px,0)
-}
-
-#btn_scroll_arrows {
-    top: 56px;
-    left: 38px;
-    position: absolute
-}
-
-#btn_scroll_arrows img:last-of-type {
-    width: 10px;
-    left: 2px
-}
-
-#btn_scroll_arrows img:first-of-type {
-    width: 14px;
-    top: 3px
-}
-
-#reviews_sec {
-    height: 280vh;
-    max-height: 280%
-}
-
-#reviews_header {
-    top: 10%
-}
-
-#reviews_container {
-    top: 15%
-}
-
-#reviews_sec div.cover {
-    top: -7%
-}
-
-#reviews_header h1 {
-    font-size: 36px;
-    margin-right: -.32em
-}
-
-#reviews_list_left, #reviews_list_right {
-    display: none
-}
-
-#reviews_list_mob {
-    width: 100%;
-    list-style: none
-}
-
-#reviews_list_mob li {
-    margin-bottom: 10px
-}
-
-.reviews_list li:nth-child(odd) {
-    margin-right: 0
-}
-
-#reviews_list_mob li img {
-    width: 100%
-}
-
-#story_sec {
-    height: 880vh;
-    max-height: 880%
-}
-
-#s1_text1 {
-    font-size: 40px !important;
-    line-height: 1.675em !important
-}
-
-#s1_text1B {
-    font-size: 24px!important;
-    line-height: 33px!important
-}
-
-#story1 img {
-    position: absolute;
-
-}
-
-#s1_text2 h2 {
-    font-size: 18px!important
-}
-
-#s2_text.story_text2 p {
-    font-size: 20px
-}
-
-#s6_text.story_text2 p {
-    font-size: 20px
-}
-
-#s4_text.story_text2 p {
-    font-size: 18px
-}
-
-#s4_text.story_text2 h2 {
-    font-size: 24px
-}
-
-#story5 p {
-    font-size: 36px;
-    letter-spacing: .2em;
-    margin-bottom: 0
-}
-
-#s6_text p {
-    font-size: 27px!important
-}
-
-
-
-#s1_cloud2 {
-    top: 50%;
-    left: -25%;
-    width: 5%
-}
-
-#s1_cloud3 {
-    bottom: 35%;
-    right: 0;
-    width: 9%
-}
-
-#s7_text h1 {
-    letter-spacing: .12em;
-    font-family: @font-primary;
-    font-size: 36px
-}
-
-section #story7 {
-    height: 200vh;
-    max-height: 200%;
-    background-position: 15% 0
-}
-
-#s7_text {
-    top: 80px;
-    left: 30px;
-    max-width: 90%
-}
-
-#s7_text p {
-    font-size: 17px
-}
-
-#castncrew_sec {
-    height: 550vh;
-    list-style: none;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #282828
-}
-
-#castncrew-header {
-    height: 40vh
-}
-
-#cnc_header,#cnc_text {
-    margin-left: 15%;
-    max-width: 70%
-}
-
-#cnc_text {
-    margin-top: 28vh;
-    color: #fffeed
-}
-
-
-#cnc_text p {
-    font-family: @font-secondary;
-    font-size: 18px;
-    line-height: 23px;
-    margin-bottom: 30px
-}
-
-#castncrew-header-text {
-    font-size: 42px;
-    letter-spacing: .32em;
-    width: 50%;
-    top: 34vh;
-    left: 25%;
-    color: #fffeed;
-    word-spacing: 200px
-}
-
-#castncrew-list {
-    height: 510vh;
-    max-height: 510%
-}
-
-#castncrew-list li {
-    height: 85vh
-}
-
-.cnc_text {
-    width: 70%;
-    left: 15%
-}
-
-.cnc_text p {
-    font-size: 2em;
-    letter-spacing: .06em;
-    margin-top: 20px;
-    margin-bottom: 10px
-}
-
-.cnc_actor {
-    font-size: 2.7em;
-    word-spacing: 1000px;
-    letter-spacing: .24em;
-    font-family: @font-primary;
-}
-
-.cnc_character {
-    font-size: 3.6em;
-    letter-spacing: .06em
-}
-
-.cnc_btn {
-    margin-top: 15px
-}
-
-.cnc_btn img {
-    max-width: 85px
-}
-
-#cnc_container {
-    width: 100%
-}
-
-#cnc_char {
-    display: none
-}
-
-#cnc_close {
-    margin-top: 50px;
-    position: absolute;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    right: 20px
-}
-
-#cnc_close .close-outer {
-    width: 50px;
-    height: 50px;
-    border: 1px solid rgba(255,254,237,.2);
-    border-radius: 50px;
-    background-color: rgba(0,0,0,.25)
-}
-
-#cnc_close .close-inner {
-    left: 5px;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(255,254,237,.2);
-    border-radius: 35px;
-    background-color: rgba(0,0,0,.5)
-}
-
-#cnc_close img {
-    position: absolute;
-    left: 17px;
-    top: 17px
-}
-
-#cnc_fixed {
-    width: 100%
-}
-
-section#videos_sec {
-    overflow: hidden;
-    height: 240vh
-}
-
-section#tickets_sec {
-    overflow: hidden;
-    height: 240vh;
-    background-image: url(./img/tickets-bg.jpg);
-}
-
-#videos_sec {
-    width: 100%;
-    overflow-y: visible
-}
-
-#tickets_sec {
-    width: 100%;
-    overflow-y: visible
-}
-
-#videos_sec div.cover {
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%
-}
-
-#tickets_sec div.cover {
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%
-}
-
-#videos_sec img.cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    min-width: 50%;
-    min-height: 100%;
-    overflow-x: hidden
-}
-
-#tickets_sec img.cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    min-width: 50%;
-    min-height: 100%;
-    overflow-x: hidden
-}
-
-#videos_text {
-    font-size: 48px;
-    letter-spacing: .16em;
-    top: 21vh;
-    left: 50vw;
-    max-height: 100px
-}
-
-#videos_sec {
-    width: 100%;
-    overflow-y: visible
-}
-
-#videos_sec div.cover {
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%
-}
-
-#videos_sec img.cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    min-width: 50%;
-    min-height: 100%;
-    overflow-x: hidden
-}
-
-#videos_text {
-    font-size: 48px;
-    letter-spacing: .16em;
-    top: 21vh;
-    left: 50vw;
-    max-height: 100px
-}
-
-#videos_fg {
-    max-height: 15vh;
-    top: 22vh
-}
-
-#videos-list {
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    width: 96vw;
-    min-height: 210vh;
-    z-index: 9;
-    top: ~'calc(20vh + 150px)';
-    left: 2vw
-}
-
-#videos-list li {
-    list-style: none;
-    width: 96vw;
-    margin: 1px;
-    background-image: url(../img/videos_texture.png);
-    background-repeat: repeat;
-    font-size: 20px;
-    color: #748c84;
-    font-family: @font-secondary;
-    text-align: center
-}
-
-.video_poster {
-    height: 100%
-}
-
-#videos-list li div#videos-container {
-    margin-top: 10px;
-    margin-left: 10px;
-    width: ~'calc(100% - 20px)';
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border: 1px solid hsla(160,9%,50%,.25)
-}
+    #yt-controls {
+        left: 20px;
+        bottom: 20px;
+        width: ~'calc(100vw - 40px)';
+        height: 45px;
+        max-width: 100%
+    }
+
+    #yt-progress {
+        display: none
+    }
+
+    #yt-next div,#yt-previous div {
+        position: absolute;
+        width: 70px;
+        height: 34px
+    }
+
+    #yt-next,#yt-previous {
+        width: 70px;
+        height: 34px;
+        top: 6px;
+        text-align: center;
+        color: #fffeee;
+        font-size: 20px;
+        font-family: @font-secondary
+    }
+
+    #yt-previous {
+        right: 80px
+    }
+
+    #home_fg,#home_jeff,#home_text1,#home_text2,#home_text3,#home_text4,#quote_container {
+        display: none
+    }
+
+    #title_block {
+        bottom: 3%;
+        margin-left: 20px;
+        .flex-display();
+        .flex-direction(column);
+        .justify-content(flex-end);
+    }
+
+    #title_block_top {
+        top: 1%;
+        margin-left: 20px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    #tt {
+        width: 60%
+    }
+
+    #release_date {
+        font-size: 20px
+    }
+
+    #tout_trailer {
+        display: none
+    }
+
+    #home-block-right {
+        position: absolute;
+        left: 0;
+        bottom: ~'calc(55vh + 44px)';
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+
+    .first-name {
+        font-size: 12px;
+        margin-bottom: -10px
+    }
+
+    .last-name {
+        font-size: 18px;
+        letter-spacing: -.002em
+    }
+
+    #touts {
+        display: none
+    }
+
+    #btn_scroll {
+        position: absolute;
+        max-width: 90px;
+        max-height: 90px;
+        bottom: 6%;
+        right: 10px
+    }
+
+    #btn_scroll_text {
+        top: 20px;
+        left: 28px
+    }
+
+    #btn_scroll_divider {
+        left: 40px;
+        top: 49px;
+        clip: rect(0,10px,1px,0)
+    }
+
+    #btn_scroll_arrows {
+        top: 56px;
+        left: 38px;
+        position: absolute
+    }
+
+    #btn_scroll_arrows img:last-of-type {
+        width: 10px;
+        left: 2px
+    }
+
+    #btn_scroll_arrows img:first-of-type {
+        width: 14px;
+        top: 3px
+    }
+
+    #reviews_sec {
+        height: 280vh;
+        max-height: 280%
+    }
+
+    #reviews_header {
+        top: 10%
+    }
+
+    #reviews_container {
+        top: 15%
+    }
+
+    #reviews_sec div.cover {
+        top: -7%
+    }
+
+    #reviews_header h1 {
+        font-size: 36px;
+        margin-right: -.32em
+    }
+
+    #reviews_list_left, #reviews_list_right {
+        display: none
+    }
+
+    #reviews_list_mob {
+        width: 100%;
+        list-style: none
+    }
+
+    #reviews_list_mob li {
+        margin-bottom: 10px
+    }
+
+    .reviews_list li:nth-child(odd) {
+        margin-right: 0
+    }
+
+    #reviews_list_mob li img {
+        width: 100%
+    }
+
+    #story_sec {
+        height: 880vh;
+        max-height: 880%
+    }
+
+    #s1_text1 {
+        font-size: 40px !important;
+        line-height: 1.675em !important
+    }
+
+    #s1_text1B {
+        font-size: 24px!important;
+        line-height: 33px!important
+    }
+
+    #story1 img {
+        position: absolute;
+
+    }
+
+    #s1_text2 h2 {
+        font-size: 18px!important
+    }
+
+    #s2_text.story_text2 p {
+        font-size: 20px
+    }
+
+    #s6_text.story_text2 p {
+        font-size: 20px
+    }
+
+    #s4_text.story_text2 p {
+        font-size: 18px
+    }
+
+    #s4_text.story_text2 h2 {
+        font-size: 24px
+    }
+
+    #story5 p {
+        font-size: 36px;
+        letter-spacing: .2em;
+        margin-bottom: 0
+    }
+
+    #s6_text p {
+        font-size: 27px!important
+    }
+
+
+
+    #s1_cloud2 {
+        top: 50%;
+        left: -25%;
+        width: 5%
+    }
+
+    #s1_cloud3 {
+        bottom: 35%;
+        right: 0;
+        width: 9%
+    }
+
+    #s7_text h1 {
+        letter-spacing: .12em;
+        font-family: @font-primary;
+        font-size: 36px
+    }
+
+    section #story7 {
+        height: 200vh;
+        max-height: 200%;
+        background-position: 15% 0
+    }
+
+    #s7_text {
+        top: 80px;
+        left: 30px;
+        max-width: 90%
+    }
+
+    #s7_text p {
+        font-size: 17px
+    }
+
+    #castncrew_sec {
+        height: 550vh;
+        list-style: none;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: #282828
+    }
+
+    #castncrew-header {
+        height: 40vh
+    }
+
+    #cnc_header,#cnc_text {
+        margin-left: 15%;
+        max-width: 70%
+    }
+
+    #cnc_text {
+        margin-top: 28vh;
+        color: #fffeed
+    }
+
+
+    #cnc_text p {
+        font-family: @font-secondary;
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 30px
+    }
+
+    #castncrew-header-text {
+        font-size: 42px;
+        letter-spacing: .32em;
+        width: 50%;
+        top: 34vh;
+        left: 25%;
+        color: #fffeed;
+        word-spacing: 200px
+    }
+
+    #castncrew-list {
+        height: 510vh;
+        max-height: 510%
+    }
+
+    #castncrew-list li {
+        height: 85vh
+    }
+
+    .cnc_text {
+        width: 70%;
+        left: 15%
+    }
+
+    .cnc_text p {
+        font-size: 2em;
+        letter-spacing: .06em;
+        margin-top: 20px;
+        margin-bottom: 10px
+    }
+
+    .cnc_actor {
+        font-size: 2.7em;
+        word-spacing: 1000px;
+        letter-spacing: .24em;
+        font-family: @font-primary;
+    }
+
+    .cnc_character {
+        font-size: 3.6em;
+        letter-spacing: .06em
+    }
+
+    .cnc_btn {
+        margin-top: 15px
+    }
+
+    .cnc_btn img {
+        max-width: 85px
+    }
+
+    #cnc_container {
+        width: 100%
+    }
+
+    #cnc_char {
+        display: none
+    }
+
+    #cnc_close {
+        margin-top: 50px;
+        position: absolute;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        right: 20px
+    }
+
+    #cnc_close .close-outer {
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgba(255,254,237,.2);
+        border-radius: 50px;
+        background-color: rgba(0,0,0,.25)
+    }
+
+    #cnc_close .close-inner {
+        left: 5px;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(255,254,237,.2);
+        border-radius: 35px;
+        background-color: rgba(0,0,0,.5)
+    }
+
+    #cnc_close img {
+        position: absolute;
+        left: 17px;
+        top: 17px
+    }
+
+    #cnc_fixed {
+        width: 100%
+    }
+
+    section#videos_sec {
+        overflow: hidden;
+        height: 240vh
+    }
+
+    section#tickets_sec {
+        overflow: hidden;
+        height: 240vh;
+        background-image: url(./img/tickets-bg.jpg);
+    }
+
+    #videos_sec {
+        width: 100%;
+        overflow-y: visible
+    }
+
+    #tickets_sec {
+        width: 100%;
+        overflow-y: visible
+    }
+
+    #videos_sec div.cover {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 100%
+    }
+
+    #tickets_sec div.cover {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 100%
+    }
+
+    #videos_sec img.cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        min-width: 50%;
+        min-height: 100%;
+        overflow-x: hidden
+    }
+
+    #tickets_sec img.cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        min-width: 50%;
+        min-height: 100%;
+        overflow-x: hidden
+    }
+
+    #videos_text {
+        font-size: 48px;
+        letter-spacing: .16em;
+        top: 21vh;
+        left: 50vw;
+        max-height: 100px
+    }
+
+    #videos_sec {
+        width: 100%;
+        overflow-y: visible
+    }
+
+    #videos_sec div.cover {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 100%
+    }
+
+    #videos_sec img.cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        min-width: 50%;
+        min-height: 100%;
+        overflow-x: hidden
+    }
+
+    #videos_text {
+        font-size: 48px;
+        letter-spacing: .16em;
+        top: 21vh;
+        left: 50vw;
+        max-height: 100px
+    }
+
+    #videos_fg {
+        max-height: 15vh;
+        top: 22vh
+    }
+
+    #videos-list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        width: 96vw;
+        min-height: 210vh;
+        z-index: 9;
+        top: ~'calc(20vh + 150px)';
+        left: 2vw
+    }
+
+    #videos-list li {
+        list-style: none;
+        width: 96vw;
+        margin: 1px;
+        background-image: url(../img/videos_texture.png);
+        background-repeat: repeat;
+        font-size: 20px;
+        color: #748c84;
+        font-family: @font-secondary;
+        text-align: center
+    }
+
+    .video_poster {
+        height: 100%
+    }
+
+    #videos-list li div#videos-container {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: ~'calc(100% - 20px)';
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 1px solid hsla(160,9%,50%,.25)
+    }
 }
 
 @media only screen and (max-width: 374px) {
@@ -13137,7 +13161,7 @@ section#tickets_sec {
 
 #cnc_image1 {
     margin-left: 10%;
-     margin-top: 30px;
+    margin-top: 30px;
     margin-left: 100px;
     max-width: 65%;
 }

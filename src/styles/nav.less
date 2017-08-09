@@ -155,10 +155,6 @@
         width: 300px !important;
     }
 
-    .navbar-brand {
-        left: 42px !important;
-    }
-
 
     .navbar-default .navbar-nav>#nav-home.active {
      transform: translateX(57px) !important;
@@ -800,6 +796,7 @@ span:last-of-type {
     font-size: 18px;
     line-height: 20px;
 
+
     > img {
         display: block;
         height: 50px;
@@ -1275,26 +1272,28 @@ span:last-of-type {
 
 .navbar-brand {
     position: fixed;
-    margin-top: 0px;
-    margin-left: 5px!important;
-    padding: 20px 45px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    opacity: 0
-}
+    left: 45px;
+    top: 0;
+    width: 140px;
+    .flex-display();
+    .flex-direction(column);
+    opacity: 0;
 
-.navbar-brand p {
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: -.02em;
-    font-family: @font-secondary;
-    color: #ddd3ad;
-    margin-left: 5px;
-    margin-bottom: -4px
+    p {
+        font-size: 24px;
+        .flex-display();
+        .justify-content(space-between);
+        width: 100%;
+        text-transform: uppercase;
+        font-family: @font-primary;
+        color: @color-white;
+        text-shadow: @shadow;
+    }
+
+    > span {
+        margin-bottom: 7px;
+        margin-top: 2px;
+    }
 }
 
 .navbar-nav {
