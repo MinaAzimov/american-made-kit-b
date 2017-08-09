@@ -127,7 +127,7 @@ gulp.task('image-watch', ['image'], function (done) {
     done();
 });
 
-gulp.task('build', ['html', 'js', 'less', 'image', 'fonts', 'iconfont', 'data']);
+gulp.task('build', ['html', 'js', 'less', 'fonts', 'iconfont', 'data']);
 
 gulp.task('watch', function(){
     watch([path.watch.html], function(event, cb) {

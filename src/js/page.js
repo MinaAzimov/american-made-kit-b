@@ -233,19 +233,19 @@ $('#trailer').mouseleave(function(){
 $('#map-expand').click(function(event){ 
 	$("#map-wrapper").addClass('map-page-wrapper--open');
 	$("body").css("overflow", "hidden");
-	$("#map-image").attr('src', 'img/map-code-folder/map-code.svg');
+	$("#map-image").attr('data', 'img/map-code-folder/map-code.svg');
 });
 
 $('#map-expand-mobile').click(function(event){ 
 	$("#map-wrapper").addClass('map-page-wrapper--open');
 	$("body").css("overflow", "hidden");
-	$("#map-image").attr('src', 'img/map-code-folder/map-code.svg');
+	$("#map-image").attr('data', 'img/map-code-folder/map-code.svg');
 });
 
 $('.map-button--close').click(function(){ 
 	$("#map-wrapper").removeClass('map-page-wrapper--open');
 	$("body").css("overflow", "visible");
-	$("#map-image").attr('src', '');
+	$("#map-image").attr('data', '');
 
 });
 
@@ -271,6 +271,23 @@ $('#upgradeclose').on('click', function () {
     }, 300);
 });
 
+  var $details = $("#title_block");
+    detailsPos = $details.position().top;
+$(window).on("scroll", function() {
+	behavior: 'smooth' 
+    if ($(window).scrollTop() < detailsPos) {
+    	$details.removeClass('title-top');
+         $details.addClass('title-bottom');
+         
+     }
+    if ($(window).scrollTop() > detailsPos) {
+    	 $details.removeClass('title-bottom');
+        $details.addClass('title-top');
+      
+    }
+
+    
+});
 // document.body.addEventListener("touchmove", function(event) {
 // 	event.preventDefault();
 // 	event.stopPropagation();

@@ -9687,16 +9687,39 @@ footer {
     letter-spacing: -.002em
 }
 
+
+#map-expand {
+
+    left: 60px;
+    top: -60px;
+}
+
+.title-top {
+     position: fixed !important;
+     top: 210vh !important;
+
+}
+
+.title-bottom {
+     position: fixed !important;
+     top: 55vh !important;
+  
+}
+
 #title_block {
     text-align: right;
     position: absolute;
     right: 0;
-    bottom: 60px;
+    top: 55vh;
     margin-right: 20px;
     z-index: 2;
     .flex-display();
     .flex-direction(column);
     .align-items(flex-end);
+    -moz-transition: top 0.7s ease-in-out;
+     -o-transition: top 0.7s ease-in-out;
+     -webkit-transition: top 0.7s ease-in-out;
+     transition: top 0.7s ease-in-out;
 
     h1, h2, h3, h4 {
         font-family: @font-primary;
@@ -10333,6 +10356,19 @@ section #story1 {
 }
 
 @media (min-width : 1600px) { 
+
+      .title-top {
+     position: fixed !important;
+     top: 190vh !important;
+
+}
+
+.title-bottom {
+     position: fixed !important;
+     top: 43vh !important;
+  
+}
+
     #story1 .story_text1 {
         font-size: 96px;
         line-height: 1.85em;
@@ -11687,6 +11723,9 @@ section #story7 {
 }
 
 @media only screen and (min-width: 992px) {
+
+
+
     #tt {
         max-height:33vh
     }
@@ -11761,6 +11800,18 @@ section #story7 {
 }
 
 @media only screen and (max-width: 1440px) {
+
+          .title-top {
+     position: fixed !important;
+     top: 190vh !important;
+
+}
+
+.title-bottom {
+     position: fixed !important;
+     top: 43vh !important;
+  
+}
     #gallery-list {
         // width: 73vw;
         .gallery-image-grid-item {
@@ -11873,6 +11924,25 @@ section #story7 {
 }
 
 @media only screen and (min-width: 1920px) {
+
+    #title_block {
+    top: 63vh;
+
+    }
+
+.title-top {
+     position: fixed !important;
+     top: 210vh !important;
+
+}
+
+.title-bottom {
+     position: fixed !important;
+     top: 63vh !important;
+  
+}
+
+
     #gallery_text {
         z-index: 0;
     }
@@ -11896,9 +11966,10 @@ section #story7 {
     }
 
     #map-expand {  
-        right: 50px; 
-        top: 30px;
+        left: 78px;
+        top: -88px;
         @size: 120px; 
+        
         .map-outer {
             font-size: @size;
             .transition(transform @duration cubic-bezier(0.205, 0.64, 0.37, 1.325));
@@ -12365,7 +12436,8 @@ section #story7 {
     #map-wrapper {
         top: 0;
 
-        #map-image-mobile {
+        #map-image {
+            margin-top: 50%;
             display: block;
         }
     }
