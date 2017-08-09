@@ -1,11 +1,11 @@
 var data = {
 	info:{
 		name: 'American Made',
-		release_date: 'September 29',
+		release_date: 'In Theaters September 29',
 		default_date: 'In Select Cities Setember 29',
 		friday_date: 'In Select Cities Friday',
 		eve_date: 'In Select Cities Tonight',
-		live_date: 'September 29',
+		live_date: 'In Theaters September 29',
 	},
 	// Home Section
 	home : {
