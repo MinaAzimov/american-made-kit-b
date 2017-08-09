@@ -212,6 +212,10 @@
         &--long {
             height: 150vh;
         }
+
+        &--longest {
+            height: 200vh;
+        }
     }
 
     .cnc_overlay {
@@ -361,57 +365,61 @@
 
 #header-mobile {
     @easing: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    // @shadow: rgba(0, 0, 0, 0.2) 1px 1px 0px, 1px 1px 20px rgba(0, 0, 0, .2);
+
     top: 2.5%;
     left: 5%;
     position: fixed;
     z-index: 16;
     transform-origin: top left;
-    .transform(scale(1.2));
+    .transform(scale(1));
     .transition(transform (@duration / 2) @easing);
     .flex-display();
     .justify-content(space-between);
     .flex-direction(column);
 
     #splash_tt {
-        font-size: 40px;
+        font-size: 48px;
         color: @color-white;
         text-shadow: @shadow;
-        text-shadow:  rgba(0, 0, 0, 0.2) 1px 1px 0px, 
-        1px 1px 20px rgba(0, 0, 0, .2);
-
-        // &:after {
-        //     content: '';
-        //     z-index: -1;
-        //     position: fixed;
-        //     // top: 0;
-        //     // left: 0;
-        //     margin-left: -60px;
-        //     width: 60px;
-        //     height: 60px;
-        //     background: radial-gradient(circle at 50% 75%, rgba(0, 0, 0, .6) 1%, rgba(0, 0, 0, 0));
-        // }
     }
 
     #splash_release_date {
+        .flex-display();
+        .justify-content(space-between);
         color: @color-white;
         text-align: center;
         font-size: 18px;
-        letter-spacing: 0;
         font-weight: 300;
         // z-index: 16
         font-family: @font-primary;
         text-transform: uppercase;
-        // text-shadow: @shadow;
-        text-shadow:  rgba(0, 0, 0, 0.2) 1px 1px 0px, 
-        1px 1px 20px rgba(0, 0, 0, .2);
+        text-shadow: @shadow;
+    }
+
+    #splash_tom_cruise {
+        .flex-display();
+        .justify-content(space-between);
+        color: @color-white;
+        text-align: center;
+        font-size: 16px;
+        // letter-spacing: 3px;
+        line-height: 13px;
+        font-weight: 300;
+        font-family: @font-primary;
+        text-transform: uppercase;
+        text-shadow: @shadow;
     }
 
     &.dark {
         top: 1.5%;
         left: 2.5%;
-        .transform(scale(0.9));
+        .transform(scale(0.75));
 
         #splash_release_date {
+            display: none;
+        }
+        #splash_tom_cruise {
             display: none;
         }
     }
@@ -465,6 +473,8 @@
             font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 0.15em;
+            .transition(transform (@duration / 2) ((@duration / 2) + 0.09s) @easing);
+            .transform(translateY(0));
 
             &:after {
                 position: absolute;
@@ -492,7 +502,7 @@
                 .justify-content(center);
                 .flex-direction(column);
                 transform-origin: bottom;
-                .transition(transform (@duration / 3) @easing);
+                .transition(transform (@duration / 2) @easing);
                 .transform(translateY(@height));
                 box-shadow: @shadow;
 
@@ -602,7 +612,8 @@
 
         &:checked {
             ~ .legal-toggle {
-                opacity: 0;
+                .transition(transform (@duration / 2) 0s @easing);
+                .transform(translateY(6vh));
 
                 ~ .legal-overlay-mobile {
                     .transform(translateY(0));

@@ -255,15 +255,21 @@ $('#upgradeclose').on('click', function () {
 	
  $('#mobile-scrolling').scroll(function() {    
     var scroll = $('#mobile-scrolling').scrollTop();
-    if (scroll >= 600) {
+    if (scroll >= $("#story-mobile-begin").offset().top) {
         $("#header-bar-mobile").addClass("dark");
         $("#header-mobile").addClass("dark");
     }
-    if (scroll <= 600) {
+    if (scroll <= $("#story-mobile-begin").offset().top) {
         $("#header-bar-mobile").removeClass("dark");
         $("#header-mobile").removeClass("dark");
     }
 }); 
+
+ $("#scroll-story-mobile-begin").click(function() {
+    $('#mobile-scrolling').animate({
+        scrollTop: $("#story-mobile-begin").offset().top
+    }, 300);
+});
 
 // document.body.addEventListener("touchmove", function(event) {
 // 	event.preventDefault();
