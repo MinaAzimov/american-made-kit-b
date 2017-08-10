@@ -100,35 +100,35 @@ var data = {
 				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
 			},
 			{
-				label: 'dougliman',
+				label: 'caleblandryjones',
 				type: 'full',
-				name: 'Doug Liman',
-				role: 'Director',
+				name: 'Caleb Landry Jones',
+				role: 'Bubba',
+				text: "<p>Gary Spinelli is a writer based in Los Angeles. The script for American Made, originally titled \"Mena\" by Spinelli was taken by Universal Pictures at a $1 million bid at auction.</p><p> The original script was inspired by the true story of Barry Seal told in the book \"American made : who killed Barry Seal ? Pablo Escobar or George H.W. Bush.\" by Shaun Attwood.</p><p>In 2012, Spinelli wrote the crime/thriller Stash House. He is currently working as a screenwriter on the action, sci-fi tv-series, Impulse set to air in 2018.</p>",
+				desktopImage: 'caleblandryjones',
+				overlayImage: 'garyspinelli_overlay',
+				video: 'fake_video',
+				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
+			},
+			{
+				label: 'pabloescobar',
+				type: 'full',
+				name: 'Pablo Escobar',
+				role: 'Himself',
+				text: "<p>Gary Spinelli is a writer based in Los Angeles. The script for American Made, originally titled \"Mena\" by Spinelli was taken by Universal Pictures at a $1 million bid at auction.</p><p> The original script was inspired by the true story of Barry Seal told in the book \"American made : who killed Barry Seal ? Pablo Escobar or George H.W. Bush.\" by Shaun Attwood.</p><p>In 2012, Spinelli wrote the crime/thriller Stash House. He is currently working as a screenwriter on the action, sci-fi tv-series, Impulse set to air in 2018.</p>",
+				desktopImage: 'pabloescobar',
+				overlayImage: 'garyspinelli_overlay',
+				video: 'fake_video',
+				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
+			},
+			{
+				label: 'alejandroedda',
+				type: 'full',
+				name: 'Alejandro Edda',
+				role: 'Jorge Ochoa',
 				text: "<p>Doug Liman was born on July 24, 1965 in New York City, New York, USA. He is a producer and director, known for The Bourne Identity (2002), Edge of Tomorrow (2014) and The Bourne Ultimatum (2007).</p><p>Liman and Cruise often work together on films. On working with Tom, Liman commented: \"Tom innately understands that audiences come to the theatre not to watch a god but to see a good movie, and he will do everything in his power to make the film as great as possible. Nobody takes the trust of the audience more sacredly than him. When I'm working on a film, I think about how it will play with a tiny audience of friends whose opinions I respect, basically a 40-bloc radius from my apartment in Manhattan. Tom is thinking how it will play with the entire planet Earth.\"</p>",
 				desktopImage: 'dougliman',
 				overlayImage: 'dougliman_overlay',
-				video: 'fake_video',
-				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
-			},
-			{
-				label: 'garyspinelli',
-				type: 'full',
-				name: 'Gary Spinelli',
-				role: 'Writer',
-				text: "<p>Gary Spinelli is a writer based in Los Angeles. The script for American Made, originally titled \"Mena\" by Spinelli was taken by Universal Pictures at a $1 million bid at auction.</p><p> The original script was inspired by the true story of Barry Seal told in the book \"American made : who killed Barry Seal ? Pablo Escobar or George H.W. Bush.\" by Shaun Attwood.</p><p>In 2012, Spinelli wrote the crime/thriller Stash House. He is currently working as a screenwriter on the action, sci-fi tv-series, Impulse set to air in 2018.</p>",
-				desktopImage: 'garyspinelli',
-				overlayImage: 'garyspinelli_overlay',
-				video: 'fake_video',
-				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
-			},
-			{
-				label: 'garyspinelli',
-				type: 'full',
-				name: 'Gary Spinelli',
-				role: 'Writer',
-				text: "<p>Gary Spinelli is a writer based in Los Angeles. The script for American Made, originally titled \"Mena\" by Spinelli was taken by Universal Pictures at a $1 million bid at auction.</p><p> The original script was inspired by the true story of Barry Seal told in the book \"American made : who killed Barry Seal ? Pablo Escobar or George H.W. Bush.\" by Shaun Attwood.</p><p>In 2012, Spinelli wrote the crime/thriller Stash House. He is currently working as a screenwriter on the action, sci-fi tv-series, Impulse set to air in 2018.</p>",
-				desktopImage: 'garyspinelli',
-				overlayImage: 'garyspinelli_overlay',
 				video: 'fake_video',
 				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
 			}
