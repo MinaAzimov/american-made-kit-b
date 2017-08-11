@@ -75,7 +75,7 @@ var data = {
 				desktopImage: 'tomcruise',
 				overlayImage: 'tomcruise_overlay',
 				video: 'barry_video',
-				quote: 'Those days we had cash flooding in from every direction. Who would have ever thought that would be a problem?'
+				quote: 'Those days we had cash flooding in from every direction. I mean, we were running out of places to put it.'
 			},
 			{
 				label: 'domhallgleeson',
@@ -97,7 +97,7 @@ var data = {
 				desktopImage: 'sarahwright',
 				overlayImage: 'sarahwright_overlay',
 				video: 'lucy_video',
-				quote: 'You\'re an airline pilot, Barry. That\'s how you support this family. Is this all even legal?'
+				quote: 'Don\'t forget you\'re an airline pilot first, Barry. That\'s how you support this family. Is any of this all even legal?'
 			},
 			{
 				label: 'caleblandryjones',
@@ -119,7 +119,7 @@ var data = {
 				desktopImage: 'pabloescobar',
 				overlayImage: 'garyspinelli_overlay',
 				video: 'fake_video',
-				quote: 'Get it done, Barry.'
+				quote: 'Just, Get it done.'
 			},
 			{
 				label: 'alejandroedda',
