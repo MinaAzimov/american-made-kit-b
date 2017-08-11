@@ -1309,12 +1309,13 @@
           <script src="js/anime.min.js"></script>
           <script src="js/imagesloaded.pkgd.min.js"></script>
           <script src="js/main-anime.js"></script>
+          <script src="js/countdown.js"></script>
           <script src="js/vendor/plugins/debug.addIndicators.js"></script>
           <script src="js/vendor/plugins/animation.gsap.js"></script>
 
 
 
-          <!-- inject:js -->
+       
 
           <script src="js/trailer.min.js"></script>
 
@@ -1322,7 +1323,7 @@
 
           <script src="js/main.min.js"></script>
 
-          <!-- endinject -->
+
 
           <!-- <script src="js/kinetic.js"></script> -->
 
@@ -1333,36 +1334,6 @@
 
 
 
-          <script>
-
-            setInterval(countdown, 1000);
-
-            function pad(num, size) {
-              var s = "000" + num;
-              return s.substr(s.length-size);
-            }
-
-            function countdown() {
-              var grad = new Date('September 29, 2017 11:13:00');
-              var now = new Date();
-              var dur = moment.duration(grad.getTime() - now.getTime());
-
-              var days = pad(dur.days(), 2);
-              var hours = pad(dur.hours(), 2);
-              var minutes = pad(dur.minutes(), 2);
-              var seconds = pad(dur.seconds(), 2);
-              var milliseconds = pad(dur.milliseconds(), 3);
-
-              $('.days').find('h2').text(days);
-              $('.hours').find('h2').text(hours);
-              $('.minutes').find('h2').text(minutes);
-              $('.seconds').find('h2').text(seconds);
-            }
-
-            
-          </script>
-
-          <!-- endinject -->
 
 
         </body>
