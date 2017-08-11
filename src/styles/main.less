@@ -9134,11 +9134,16 @@ footer {
     .flex-display();
     .align-items(center);
     .justify-content(center);
-    background: fade(black, 50%);
+
     min-width: 40px;
     min-height: 40px;
     border: solid 2px @color-white;
     border-radius: 50%;
+}
+
+#footer-left li:hover{
+
+     background: fade(black, 50%);
 }
 
 .nav-darken #footer-left a {
@@ -9158,13 +9163,13 @@ footer {
 
 .footer-social {
     i {
-        font-size: 20px;
+        font-size: 19px;
         text-transform: uppercase;
         color: @color-white;
         transition: color .35s @easing;
     }
     &:hover i {
-        color: @color-red;
+       
     }
 }
 
