@@ -1,10 +1,40 @@
 @keyframes barryspin {
-    99% {
+    0% { 
         .transform(rotate(-75deg));
     }
-    100% {
+
+    70% { 
+        .transform(rotate(-75deg));
+    }
+
+    81% {
+        .transform(rotate(-75deg));
+    }
+    90% {
         .transform(rotate(-45deg));
     }
+
+     100% {
+        .transform(rotate(-75deg));
+    }
+}
+
+@keyframes barryspinhover {
+    0% { 
+
+        .transform(rotate(-75deg));
+    }
+
+    50% { 
+
+        .transform(rotate(-45deg));
+    }
+
+     100% { 
+        
+        .transform(rotate(-75deg));
+    }
+    
 }
 
 #map-expand {    
@@ -28,7 +58,7 @@
         font-size: @size;
         .transition(transform @duration cubic-bezier(0.205, 0.64, 0.37, 1.325));
         .transform(rotate(-75deg));
-        animation: barryspin @duration cubic-bezier(0.205, 0.64, 0.37, 1.325) infinite;
+         animation: barryspin 8s cubic-bezier(0.205, 0.64, 0.37, 1.325) infinite;
     }
     .map-inner {
         font-size: ((@size / 2) + 8);
@@ -38,7 +68,7 @@
 
     &:hover {
         .map-outer {
-            .transform(rotate(-45deg));
+          animation: barryspinhover 1s @easing forwards;
         }
     }
 }
