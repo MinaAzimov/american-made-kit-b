@@ -218,6 +218,50 @@
         }
     }
 
+    .cnc_quote_mobile {
+        max-width: 60vw;
+        margin: 0 auto;
+        .flex-display();
+        .flex-direction(column);
+
+        > div {
+            margin: 0 0 1vh;
+            .flex-display();
+            .flex-direction(row);
+            .justify-content(center);
+            .align-items(center);
+
+            .divider {
+                background: @color-white;
+                height: 1px;
+                width: 40px;
+            }
+
+            .btn_scroll {
+                .transition(transform @duration @easing);
+                pointer-events: none;
+                position: relative;
+                bottom: auto;
+                right: auto;
+                width: 40px;
+                height: 40px;
+
+                .btn_scroll_text {
+                    @size: 10px;
+                    font-size: @size;
+                    top: ~'calc(50% - (@size / 1.5))';
+                }
+            }
+        }
+
+        p {
+            margin: 0;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.2em;
+        }
+    }
+
     .cnc_overlay {
         z-index: 18;
         position: fixed;
@@ -467,12 +511,12 @@
             background: fade(@color-white, 75%);
             padding: 1.5vh 6vw 1vh 6vw;
             color: @color-green;
-            font-size: 16px;
+            font-size: 13px;
             margin: 0;
-            font-family: @font-primary;
-            font-weight: 400;
+            font-family: @font-secondary;
+            font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 0.15em;
+            letter-spacing: 0.015em;
             .transition(transform (@duration / 2) ((@duration / 2) + 0.09s) @easing);
             .transform(translateY(0));
 
@@ -619,6 +663,19 @@
                     .transform(translateY(0));
                 }
             } 
+        }
+
+        &.dark {
+           ~ .legal-toggle {
+                background-color: transparent;
+                background-image: url('img/nav_texture.png');
+                background-size: 3px;
+                color: @color-white;
+
+                &:after {
+                    border-color: @color-white;
+                }
+           } 
         }
     }
 }

@@ -29,6 +29,7 @@ var settings = {
 			{ id : "garyspinelli", src : "img/_castncrew/cnc_garyspinelli.jpg", crossOrigin : true },
 			{ id : "pabloescobar", src : "img/_castncrew/cnc_pabloescobar.jpg", crossOrigin : true },
 			{ id : "caleblandryjones", src : "img/_castncrew/cnc_caleblandryjones.jpg", crossOrigin : true },
+			{ id : "jorgeochoa", src : "img/_castncrew/cnc_jorgeochoa.jpg", crossOrigin : true },
 			{ id : "tomcruise_overlay", src : "img/_castncrew/overlay_tomcruise.jpg", crossOrigin : true },
 			{ id : "domhallgleeson_overlay", src : "img/_castncrew/overlay_domhallgleeson.jpg", crossOrigin : true },
 			{ id : "sarahwright_overlay", src : "img/_castncrew/overlay_sarahwright.jpg", crossOrigin : true },

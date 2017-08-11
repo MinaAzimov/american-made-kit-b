@@ -258,10 +258,12 @@ $('#upgradeclose').on('click', function () {
     if (scroll >= $("#story-mobile-begin").offset().top) {
         $("#header-bar-mobile").addClass("dark");
         $("#header-mobile").addClass("dark");
+        $("#toggleLegal").addClass("dark");
     }
     if (scroll <= $("#story-mobile-begin").offset().top) {
         $("#header-bar-mobile").removeClass("dark");
         $("#header-mobile").removeClass("dark");
+        $("#toggleLegal").removeClass("dark");
     }
 }); 
 

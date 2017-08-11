@@ -69,7 +69,7 @@
                 <ul>
                   <li><a href="#home-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Home</a></li>
                   <li><a href="#story-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Story</a></li>
-                  <li><a href="#cnc-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">CastNCrew</a></li>
+                  <li><a href="#cnc-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Characters</a></li>
                   <li><a href="#photos-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Photos</a></li>
                   <li><a href="#videos-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Videos</a></li>
                 </ul>
@@ -225,7 +225,7 @@
               </div>
             </div>
           </section>
-          <section class="section-m section-m--short" id="cnc-mobile">
+          <!-- <section class="section-m section-m--short" >
             <div id="splash_bg" class="cover">
               <img src="img/cnc_mobile_bg.jpg" class="cover"/>
               <img src="img/cnc_mobile_fg.png" class="cover"/>
@@ -233,8 +233,8 @@
             <div class="splash_text">
              <h2>Cast & Crew</h2>
            </div>
-         </section>
-         <section class="section-m section-m--medium" >
+         </section> -->
+         <section class="section-m section-m--medium" id="cnc-mobile">
           <div id="splash_bg" class="cover">
             <img src="img/_castncrew/cnc_mobile_tomcruise.jpg" class="cover"/>
           </div>
@@ -242,51 +242,146 @@
            <h2>Tom Cruise</h2>
            <h4>Is</h4>
            <h2>Barry Seal</h2>
-           <div class="btn_scroll" onclick="$('#cnc_overlay_tomcruise').addClass('cnc_overlay--open');"><div class="btn_scroll_outer"><div class="btn_scroll_middle"><div class="btn_scroll_inner"></div></div></div><h1 class="btn_scroll_text">Bio</h1></div>
+           <div class="cnc_quote_mobile">
+             <div>
+             <div class="divider"></div>
+             <div class="btn_scroll">
+               <div class="btn_scroll_outer">
+                 <div class="btn_scroll_middle">
+                   <div class="btn_scroll_inner"></div>
+                 </div>
+               </div>
+               <h1 class="btn_scroll_text"><i class="am-icon am-icon-quote"></i></h1>
+             </div>
+             <div class="divider"></div>
+           </div>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.</p>
          </div>
-       </section>
-       <section class="section-m section-m--medium" >
-        <div id="splash_bg" class="cover">
-          <img src="img/_castncrew/cnc_mobile_domhallgleeson.jpg" class="cover"/>
-        </div>
-        <div class="splash_text">
-         <h2>Domhnall Gleeson</h2>
-         <h4>Is</h4>
-         <h2>Monty Schafer</h2>
-         <div class="btn_scroll" onclick="$('#cnc_overlay_domhnallgleeson').addClass('cnc_overlay--open');"><div class="btn_scroll_outer"><div class="btn_scroll_middle"><div class="btn_scroll_inner"></div></div></div><h1 class="btn_scroll_text">Bio</h1></div>
        </div>
      </section>
      <section class="section-m section-m--medium" >
       <div id="splash_bg" class="cover">
-        <img src="img/_castncrew/cnc_mobile_sarawright.jpg" class="cover"/>
+        <img src="img/_castncrew/cnc_mobile_domhallgleeson.jpg" class="cover"/>
       </div>
       <div class="splash_text">
-       <h2>Sarah Wright</h2>
+       <h2>Domhnall Gleeson</h2>
        <h4>Is</h4>
-       <h2>Lucy Seal</h2>
-       <div class="btn_scroll" onclick="$('#cnc_overlay_sarahwright').addClass('cnc_overlay--open');"><div class="btn_scroll_outer"><div class="btn_scroll_middle"><div class="btn_scroll_inner"></div></div></div><h1 class="btn_scroll_text">Bio</h1></div>
+       <h2>Monty Schafer</h2>
+       <div class="cnc_quote_mobile">
+         <div>
+         <div class="divider"></div>
+         <div class="btn_scroll">
+           <div class="btn_scroll_outer">
+             <div class="btn_scroll_middle">
+               <div class="btn_scroll_inner"></div>
+             </div>
+           </div>
+           <h1 class="btn_scroll_text"><i class="am-icon am-icon-quote"></i></h1>
+         </div>
+         <div class="divider"></div>
+       </div>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.</p>
      </div>
-   </section>
-   <section class="section-m section-m--medium" >
-    <div id="splash_bg" class="cover">
-      <img src="img/_castncrew/cnc_mobile_dougliman.jpg" class="cover"/>
-    </div>
-    <div class="splash_text">
-     <h2>Doug Liman</h2>
-     <h4>Is</h4>
-     <h2>Director</h2>
-     <div class="btn_scroll" onclick="$('#cnc_overlay_dougliman').addClass('cnc_overlay--open');"><div class="btn_scroll_outer"><div class="btn_scroll_middle"><div class="btn_scroll_inner"></div></div></div><h1 class="btn_scroll_text">Bio</h1></div>
    </div>
  </section>
  <section class="section-m section-m--medium" >
   <div id="splash_bg" class="cover">
-    <img src="img/_castncrew/cnc_mobile_garyspinelli.jpg" class="cover"/>
+    <img src="img/_castncrew/cnc_mobile_sarahwright.jpg" class="cover"/>
   </div>
   <div class="splash_text">
-   <h2>Gary Spinelli</h2>
+   <h2>Sarah Wright</h2>
    <h4>Is</h4>
-   <h2>Writer</h2>
-   <div class="btn_scroll" onclick="$('#cnc_overlay_garyspinelli').addClass('cnc_overlay--open');"><div class="btn_scroll_outer"><div class="btn_scroll_middle"><div class="btn_scroll_inner"></div></div></div><h1 class="btn_scroll_text">Bio</h1></div>
+   <h2>Lucy Seal</h2>
+   <div class="cnc_quote_mobile">
+     <div>
+     <div class="divider"></div>
+     <div class="btn_scroll">
+       <div class="btn_scroll_outer">
+         <div class="btn_scroll_middle">
+           <div class="btn_scroll_inner"></div>
+         </div>
+       </div>
+       <h1 class="btn_scroll_text"><i class="am-icon am-icon-quote"></i></h1>
+     </div>
+     <div class="divider"></div>
+   </div>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.</p>
+ </div>
+</div>
+</section>
+<section class="section-m section-m--medium" >
+  <div id="splash_bg" class="cover">
+    <img src="img/_castncrew/cnc_mobile_caleblandryjones.jpg" class="cover"/>
+  </div>
+  <div class="splash_text">
+  <h2>Caleb Landry Jones</h2>
+   <h4>Is</h4>
+   <h2>Bubba</h2>
+   <div class="cnc_quote_mobile">
+     <div>
+     <div class="divider"></div>
+     <div class="btn_scroll">
+       <div class="btn_scroll_outer">
+         <div class="btn_scroll_middle">
+           <div class="btn_scroll_inner"></div>
+         </div>
+       </div>
+       <h1 class="btn_scroll_text"><i class="am-icon am-icon-quote"></i></h1>
+     </div>
+     <div class="divider"></div>
+   </div>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.</p>
+ </div>
+</div>
+</section>
+<section class="section-m section-m--medium" >
+  <div id="splash_bg" class="cover">
+    <img src="img/_castncrew/cnc_mobile_pabloescobar.jpg" class="cover"/>
+  </div>
+  <div class="splash_text">
+   <h2></h2>
+   <h4>Is</h4>
+   <h2>Pablo Escobar</h2>
+   <div class="cnc_quote_mobile">
+     <div>
+     <div class="divider"></div>
+     <div class="btn_scroll">
+       <div class="btn_scroll_outer">
+         <div class="btn_scroll_middle">
+           <div class="btn_scroll_inner"></div>
+         </div>
+       </div>
+       <h1 class="btn_scroll_text"><i class="am-icon am-icon-quote"></i></h1>
+     </div>
+     <div class="divider"></div>
+   </div>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.</p>
+ </div>
+ </div>
+</section>
+<section class="section-m section-m--medium" >
+  <div id="splash_bg" class="cover">
+    <img src="img/_castncrew/cnc_mobile_jorgeochoa.jpg" class="cover"/>
+  </div>
+  <div class="splash_text">
+   <h2>Alejandro Edda</h2>
+   <h4>Is</h4>
+   <h2>Jorge Ochoa</h2>
+   <div class="cnc_quote_mobile">
+     <div>
+     <div class="divider"></div>
+     <div class="btn_scroll">
+       <div class="btn_scroll_outer">
+         <div class="btn_scroll_middle">
+           <div class="btn_scroll_inner"></div>
+         </div>
+       </div>
+       <h1 class="btn_scroll_text"><i class="am-icon am-icon-quote"></i></h1>
+     </div>
+     <div class="divider"></div>
+   </div>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.</p>
+ </div>
  </div>
 </section>
 <section class="section-m" id="photos-mobile">
@@ -697,10 +792,10 @@
                 <ul class="nav navbar-nav navbar-right">
 
 
-                <div id="map-expand">
-                  <i class="map-outer am-icon am-icon-world-text"></i>
-                  <i class="map-inner am-icon am-icon-compass2"></i>
-                </div>
+                  <div id="map-expand">
+                    <i class="map-outer am-icon am-icon-world-text"></i>
+                    <i class="map-inner am-icon am-icon-compass"></i>
+                  </div>
                   <div id="image-wrapper">
                     <img src="img/airplane-01.png" id="plane-image">
                   </div>
@@ -757,7 +852,7 @@
 
                 </section>
 
-              
+
                 <div id="title_block" class="title">
                   <div id="key-art">
                     <h2 class="tom_cruise_full">
@@ -1093,7 +1188,7 @@
 
         <!-- Map overlay -->
         <article id="map-wrapper" class="map-page-wrapper"> 
-        <object  id="map-image" data=""   class=""  type="image/svg+xml"></object>
+          <object  id="map-image" data=""   class=""  type="image/svg+xml"></object>
 
           <div class="overlay overlay--top"></div>
           <div class="overlay overlay--bottom"></div>

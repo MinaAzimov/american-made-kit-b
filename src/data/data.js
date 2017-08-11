@@ -127,7 +127,7 @@ var data = {
 				name: 'Alejandro Edda',
 				role: 'Jorge Ochoa',
 				text: "<p>Doug Liman was born on July 24, 1965 in New York City, New York, USA. He is a producer and director, known for The Bourne Identity (2002), Edge of Tomorrow (2014) and The Bourne Ultimatum (2007).</p><p>Liman and Cruise often work together on films. On working with Tom, Liman commented: \"Tom innately understands that audiences come to the theatre not to watch a god but to see a good movie, and he will do everything in his power to make the film as great as possible. Nobody takes the trust of the audience more sacredly than him. When I'm working on a film, I think about how it will play with a tiny audience of friends whose opinions I respect, basically a 40-bloc radius from my apartment in Manhattan. Tom is thinking how it will play with the entire planet Earth.\"</p>",
-				desktopImage: 'dougliman',
+				desktopImage: 'jorgeochoa',
 				overlayImage: 'dougliman_overlay',
 				video: 'fake_video',
 				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
