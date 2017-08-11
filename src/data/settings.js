@@ -24,7 +24,7 @@ var settings = {
 			// Cast & Crew Section
 			{ id : "tomcruise", src : "img/_castncrew/cnc_tomcruise.jpg", crossOrigin : true },
 			{ id : "domhallgleeson", src : "img/_castncrew/cnc_domhallgleeson.jpg", crossOrigin : true },
-			{ id : "sarahwright", src : "img/_castncrew/cnc_sarahwright.jpg", crossOrigin : true },
+			{ id : "sarahwright", src : "img/_castncrew/cnc_sarahwright2.jpg", crossOrigin : true },
 			{ id : "dougliman", src : "img/_castncrew/cnc_dougliman.jpg", crossOrigin : true },
 			{ id : "garyspinelli", src : "img/_castncrew/cnc_garyspinelli.jpg", crossOrigin : true },
 			{ id : "pabloescobar", src : "img/_castncrew/cnc_pabloescobar.jpg", crossOrigin : true },

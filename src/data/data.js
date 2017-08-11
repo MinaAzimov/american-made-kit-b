@@ -108,7 +108,7 @@ var data = {
 				desktopImage: 'caleblandryjones',
 				overlayImage: 'garyspinelli_overlay',
 				video: 'fake_video',
-				quote: 'I can\'t lie to you, mister. I took money from the hangar.'
+				quote: 'I can\'t lie to you, mister. I took the money from the hangar.'
 			},
 			{
 				label: 'pabloescobar',
