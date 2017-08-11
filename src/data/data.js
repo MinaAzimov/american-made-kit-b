@@ -182,7 +182,7 @@ var data = {
 		foreground: 'img/partners_fg.png',
 		list:[
 			{
-				name: 'Trailer 1',
+				name: 'Trailer',
 				video: 'img/_videos/videos_bg2.mp4',
 				poster: 'img/_videos/videos_bg2.jpg',
 				show: true
