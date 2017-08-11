@@ -75,7 +75,7 @@ var data = {
 				desktopImage: 'tomcruise',
 				overlayImage: 'tomcruise_overlay',
 				video: 'barry_video',
-				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
+				quote: 'Those days we had cash flooding in from every direction. Who would have ever thought that would be a problem?'
 			},
 			{
 				label: 'domhallgleeson',
@@ -86,7 +86,7 @@ var data = {
 				desktopImage: 'domhallgleeson',
 				overlayImage: 'domhallgleeson_overlay',
 				video: 'sh_video',
-				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
+				quote: 'You were top of your class in the civil air patrol. You shouldn\'t be flying buses. Haven\'t you ever wanted more, Barry?'
 			},
 			{
 				label: 'sarahwright',
@@ -97,7 +97,7 @@ var data = {
 				desktopImage: 'sarahwright',
 				overlayImage: 'sarahwright_overlay',
 				video: 'lucy_video',
-				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
+				quote: 'You\'re an airline pilot, Barry. That\'s how you support this family. Is this all even legal?'
 			},
 			{
 				label: 'caleblandryjones',
@@ -108,18 +108,18 @@ var data = {
 				desktopImage: 'caleblandryjones',
 				overlayImage: 'garyspinelli_overlay',
 				video: 'fake_video',
-				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
+				quote: 'I can\'t lie to you, mister. I took money from the hangar.'
 			},
 			{
 				label: 'pabloescobar',
 				type: 'full',
-				name: 'Pablo Escobar',
-				role: 'Himself',
+				name: '',
+				role: 'Pablo Escobar',
 				text: "<p>Gary Spinelli is a writer based in Los Angeles. The script for American Made, originally titled \"Mena\" by Spinelli was taken by Universal Pictures at a $1 million bid at auction.</p><p> The original script was inspired by the true story of Barry Seal told in the book \"American made : who killed Barry Seal ? Pablo Escobar or George H.W. Bush.\" by Shaun Attwood.</p><p>In 2012, Spinelli wrote the crime/thriller Stash House. He is currently working as a screenwriter on the action, sci-fi tv-series, Impulse set to air in 2018.</p>",
 				desktopImage: 'pabloescobar',
 				overlayImage: 'garyspinelli_overlay',
 				video: 'fake_video',
-				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
+				quote: 'Get it done, Barry.'
 			},
 			{
 				label: 'alejandroedda',
@@ -130,7 +130,7 @@ var data = {
 				desktopImage: 'jorgeochoa',
 				overlayImage: 'dougliman_overlay',
 				video: 'fake_video',
-				quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et pellentesque lacus, at auctor est.'
+				quote: 'We want you to take off from here and fly directly to Miami. We\'ll pay you $2000 per kilo.'
 			}
 		]
 	},
