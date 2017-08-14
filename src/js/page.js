@@ -278,17 +278,17 @@ $('#upgradeclose').on('click', function () {
 $(window).on("scroll", function() {
 	behavior: 'smooth' 
     if ($(window).scrollTop() < detailsPos) {
+    		setTimeout(function() {
     	$details.removeClass('title-top');
          $details.addClass('title-bottom');
+     }, 400);
          
      }
     if ($(window).scrollTop() > detailsPos) {
     	 $details.removeClass('title-bottom');
         $details.addClass('title-top');
       
-    }
-
-    
+    } 
 });
 // document.body.addEventListener("touchmove", function(event) {
 // 	event.preventDefault();

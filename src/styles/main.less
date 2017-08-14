@@ -9134,7 +9134,7 @@ footer {
     .flex-display();
     .align-items(center);
     .justify-content(center);
-
+    background: fade(black, 20%);
     min-width: 40px;
     min-height: 40px;
     border: solid 2px @color-white;
@@ -9173,8 +9173,9 @@ footer {
     }
 }
 
-
 .nav-darken .footer-social {
+
+
  i {
     color: @color-white;
 }
@@ -9182,6 +9183,36 @@ footer {
     color: @color-red;
 }
 }
+
+.nav-darken #footer-left  {
+    
+    position: fixed;
+    top: auto;
+    bottom: 10px;
+    right: 0;
+    padding: 0;
+    .flex-display();
+    .flex-display(row);
+    // margin-top: 6px;
+    margin-right: 10px;
+    list-style: none
+}
+
+
+.nav-darken #footer-left li  {
+    
+  .flex-display();
+    .align-items(center);
+    .justify-content(center);
+    background: fade(black, 50%);
+    min-width: 40px;
+    min-height: 40px;
+    border: solid 2px @color-white;
+    border-radius: 50%;
+}
+
+
+
 
 #footer-right {
     opacity: 1;
@@ -9199,6 +9230,7 @@ footer {
     -ms-flex-align: end;
     align-items: flex-end
 }
+
 
 .nav-darken #footer-right {
     // margin-bottom: 5px;
@@ -9711,13 +9743,11 @@ footer {
 .title-top {
    position: fixed !important;
    top: 195vh !important;
-
 }
 
 .title-bottom {
    position: fixed !important;
    top: 48vh !important;
-
 }
 
 #title_block {
@@ -10743,7 +10773,7 @@ section #story7 {
     overflow: hidden;
     background-color: #000;
 
-    &#cnc_pabloescobar {
+    &#cnc_pabloescobar, &#cnc_alejandroedda, &#cnc_caleblandryjones {
         // .cnc_actor {
         //     ~ p {
         //         display: none;
@@ -11977,6 +12007,11 @@ section #story7 {
 
     }
 
+    .nav-darken #footer-left {
+        top: auto;
+        bottom: 10px;
+    }
+
     .title-top {
        position: fixed !important;
        top: 214vh !important;
@@ -11988,7 +12023,6 @@ section #story7 {
        top: 66vh !important;
 
    }
-
 
    #gallery_text {
     z-index: 0;
@@ -12103,6 +12137,10 @@ section #story7 {
 
 .story_text2 p {
     font-size: 60px!important
+}
+
+#s2_text h2 {
+    font-size: 48px !important;
 }
 
 #story1 h2 {

@@ -342,6 +342,28 @@
         // z-index: 2;
     }
 
+    &.gradient {
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+        &--left {
+            &:after {
+                background: radial-gradient(circle at 35% 50%, rgba(0, 0, 0, .3) 1%, rgba(0, 0, 0, 0));
+            }
+        }
+        &--right {
+            &:after {
+                background: radial-gradient(circle at 85% 50%, rgba(0, 0, 0, .3) 1%, rgba(0, 0, 0, 0));
+            }
+        }
+    }
+
     h1 {
         position: absolute;
         width: 88vw;
@@ -1112,21 +1134,24 @@
         .justify-content(flex-start);
     }
     &--right {
-        .align-items(flex-end);
-
+        .align-items(center);
+        max-width: 50%;
+        left: auto;
+        right: 6%;
         .cnc_quote_mobile {
-            .align-items(flex-end);   
+            .align-items(center);   
             p {
-                text-align: right;        
+                text-align: center;        
             }
         }
     }
     &--left {
-        .align-items(flex-start);
+        .align-items(center);
+        max-width: 50%;
         .cnc_quote_mobile {
-            .align-items(flex-start);   
+            .align-items(center);   
             p {
-                text-align: left;        
+                text-align: center;        
             }
         }
     }
