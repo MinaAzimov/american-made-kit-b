@@ -290,6 +290,20 @@ $(window).on("scroll", function() {
       
     } 
 });
+
+
+              if ($('#home_sec').css('top') >= '-500px') { 
+
+             ($('#nav-overlay').css('opacity', '0')); 
+
+        }
+
+        else {
+                 ($('#nav-overlay').css('opacity', '1')); 
+        }
+
+
+
 // document.body.addEventListener("touchmove", function(event) {
 // 	event.preventDefault();
 // 	event.stopPropagation();
