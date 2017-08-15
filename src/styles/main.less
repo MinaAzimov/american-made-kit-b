@@ -9752,7 +9752,8 @@ footer {
     .flex-display();
     .flex-direction(column);
     .align-items(flex-end);
-    .transform(translateY(~'calc((-249vh / 2) - 375px)'));
+    .justify-content(flex-end);
+    .transform(translateY(~'calc((-259vh / 2) - 375px + 40px)'));
     .transition(transform @duration @easing);
 
     &.title-top {
@@ -9760,7 +9761,7 @@ footer {
     }
 
     &.title-bottom {
-        .transform(translateY(~'calc((-249vh / 2) - 375px)'));
+        .transform(translateY(~'calc((-259vh / 2) - 375px + 40px)'));
     }
 
     h1, h2, h3, h4 {
@@ -11879,13 +11880,12 @@ section #story7 {
 
 @media only screen and (max-width: 1440px) {
 
-
     #title_block {
+        .transform(translateY(~'calc((-259vh / 2) - (375px / 2))'));
         &.title-bottom {
-            .transform(translateY(~'calc((-249vh / 2) - (375px / 2))'));
+            .transform(translateY(~'calc((-259vh / 2) - (375px / 2))'));
         }
     }
-
 
     #gallery-list {
         .gallery-image-grid-item {
