@@ -97,7 +97,7 @@ var data = {
 				desktopImage: 'sarahwright',
 				overlayImage: 'sarahwright_overlay',
 				video: 'lucy_video',
-				quote: 'Don\'t forget you\'re an airline pilot first, Barry. That\'s how you support this family. Is any of this all even legal?'
+				quote: 'Don\'t forget you\'re an airline pilot first, Barry. That\'s how you support this family. Is any of this even legal?'
 			},
 			{
 				label: 'caleblandryjones',

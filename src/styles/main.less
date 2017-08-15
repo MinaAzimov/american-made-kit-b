@@ -9144,7 +9144,7 @@ footer {
 
 #footer-left li:hover{
 
-     background: fade(black, 50%);
+   background: fade(black, 50%);
 }
 
 .nav-darken #footer-left a {
@@ -9170,14 +9170,14 @@ footer {
         transition: color .35s @easing;
     }
     &:hover i {
-       
+
     }
 }
 
 .nav-darken .footer-social {
 
 
- i {
+   i {
     color: @color-white;
 }
 &:hover i {
@@ -9186,7 +9186,7 @@ footer {
 }
 
 .nav-darken #footer-left  {
-    
+
     position: fixed;
     top: auto;
     bottom: 10px;
@@ -9201,15 +9201,15 @@ footer {
 
 
 .nav-darken #footer-left li  {
-    
+
   .flex-display();
-    .align-items(center);
-    .justify-content(center);
-    background: fade(black, 50%);
-    min-width: 40px;
-    min-height: 40px;
-    border: solid 2px @color-white;
-    border-radius: 50%;
+  .align-items(center);
+  .justify-content(center);
+  background: fade(black, 50%);
+  min-width: 40px;
+  min-height: 40px;
+  border: solid 2px @color-white;
+  border-radius: 50%;
 }
 
 
@@ -9353,13 +9353,13 @@ footer {
 #footer_logos {
     margin-top: 30px;
     p {
-       font-family: @font-primary;
-       color: @color-white;
-       text-transform: uppercase;
-       font-size: 24px;
-       font-weight: 300;
-       letter-spacing: 0.15em;
-   }
+     font-family: @font-primary;
+     color: @color-white;
+     text-transform: uppercase;
+     font-size: 24px;
+     font-weight: 300;
+     letter-spacing: 0.15em;
+ }
 }
 
 #footer_links {
@@ -9471,9 +9471,9 @@ footer {
 
 #footer_ratings {
     i {
-     font-size: 55px;
-     color: @color-white; 
- }
+       font-size: 55px;
+       color: @color-white; 
+   }
 }
 
 #footer_close {
@@ -9624,12 +9624,12 @@ footer {
 }
 
 #upgrade-safari {
-     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   -ms-flex-align: center;
+   align-items: center
 }
 
 .prompt-global .prompt-center img {
@@ -9741,30 +9741,27 @@ footer {
     top: -65px;
 }
 
-.title-top {
-   position: fixed !important;
-   top: 195vh !important;
-}
-
-.title-bottom {
-   position: fixed !important;
-   top: 48vh !important;
-}
-
 #title_block {
     text-align: right;
-    position: absolute;
+    position: fixed;
     right: 0;
-    top: 48vh;
+    bottom: 40px;
     margin-right: 20px;
     z-index: 2;
+    height: 375px;
     .flex-display();
     .flex-direction(column);
     .align-items(flex-end);
-    -moz-transition: top 0.7s ease-in-out;
-    -o-transition: top 0.7s ease-in-out;
-    -webkit-transition: top 0.7s ease-in-out;
-    transition: top 0.7s ease-in-out;
+    .transform(translateY(~'calc((-249vh / 2) - 375px)'));
+    .transition(transform @duration @easing);
+
+    &.title-top {
+        .transform(translateY(0px));
+    }
+
+    &.title-bottom {
+        .transform(translateY(~'calc((-249vh / 2) - 375px)'));
+    }
 
     h1, h2, h3, h4 {
         font-family: @font-primary;
@@ -10403,17 +10400,17 @@ section #story1 {
 
 @media (min-width : 1600px) { 
 
-  .title-top {
-   position: fixed !important;
-   top: 195vh !important;
+//   .title-top {
+//    position: fixed !important;
+//    top: 195vh !important;
 
-}
+// }
 
-.title-bottom {
-   position: fixed !important;
-   top: 48vh !important;
+// .title-bottom {
+//    position: fixed !important;
+//    top: 48vh !important;
 
-}
+// }
 
 #story1 .story_text1 {
     font-size: 96px;
@@ -10436,12 +10433,12 @@ section #story1 {
 
 #story1 .story_text2 {
 
-   font-size: 60px !important;
+ font-size: 60px !important;
 
 }
 
 #story1 #barry-text {
-   font-size: 60px !important;
+ font-size: 60px !important;
 }
 }
 
@@ -10503,6 +10500,7 @@ section #story1 {
 }
 
 #s1_fg {
+    // top: 1271px;
     bottom: -12.5%;
     z-index: 2;
 }
@@ -10614,7 +10612,7 @@ section #story6 {
 
 
 #s6_text {
-    
+
     top: 40vh;
     z-index: 2
 }
@@ -11872,36 +11870,31 @@ section #story7 {
 @media only screen and (min-width: 1440px) {
 
 
-#title_block h1 {
-    font-size: 120px;
-    margin-bottom: 6px;
-}
+    #title_block h1 {
+        font-size: 120px;
+        margin-bottom: 6px;
+    }
 
 }
 
 @media only screen and (max-width: 1440px) {
 
-  .title-top {
-   position: fixed !important;
-   top: 195vh !important;
 
-}
+    #title_block {
+        &.title-bottom {
+            .transform(translateY(~'calc((-249vh / 2) - (375px / 2))'));
+        }
+    }
 
-.title-bottom {
-   position: fixed !important;
-   top: 48vh !important;
 
-}
-#gallery-list {
-        // width: 73vw;
+    #gallery-list {
         .gallery-image-grid-item {
-            // width: ~'calc(18vw - 1vw)';
-            // height: ~'calc(18vw - 1vw)';
+
         }
     }
 
     .cnc_text_container .cnc_text {
-       .cnc_quote {
+     .cnc_quote {
         max-width: 60vw;
         > div {
             margin: 4vh 0 3.5vh;
@@ -12001,208 +11994,192 @@ section #story7 {
 
 @media only screen and (min-width: 1920px) {
 
-    #title_block {
-        top: 66vh;
-
-    }
 
     .nav-darken #footer-left {
         top: auto;
         bottom: 10px;
     }
 
-    .title-top {
-       position: fixed !important;
-       top: 214vh !important;
+    #gallery_text {
+        z-index: 0;
+    }
 
-   }
+    #gallery-list {
+        bottom: 10vh;
+        right: ~'calc(5vw - 4.8em)';
+        .gallery-image-grid-item {
+            .gallery-launch-btn {
+                width: 90x;
+                height: 90x;
+                left: ~'calc(50% - (90x / 2))';
+                top: ~'calc(50% - (90x / 2))';
 
-   .title-bottom {
-       position: fixed !important;
-       top: 66vh !important;
-
-   }
-
-   #gallery_text {
-    z-index: 0;
-}
-
-#gallery-list {
-    bottom: 10vh;
-    right: ~'calc(5vw - 4.8em)';
-    .gallery-image-grid-item {
-        .gallery-launch-btn {
-            width: 90x;
-            height: 90x;
-            left: ~'calc(50% - (90x / 2))';
-            top: ~'calc(50% - (90x / 2))';
-
-            i {
-                font-size: 49px;
-                line-height: 90x;
+                i {
+                    font-size: 49px;
+                    line-height: 90x;
+                }
             }
         }
     }
-}
 
-#map-expand {  
-    left: 78px;
-    top: -88px;
-    @size: 120px; 
+    #map-expand {  
+        left: 78px;
+        top: -88px;
+        @size: 120px; 
 
-    .map-outer {
-        font-size: @size;
-        .transition(transform @duration cubic-bezier(0.205, 0.64, 0.37, 1.325));
-        .transform(rotate(-75deg));
-    }
-    .map-inner {
-        font-size: (@size / 1.8);
-        margin-top: (@size / 4.3);
-        margin-left: ((@size / 4.3) + 1);
-    }
-}
-
-#videos-list {
-    bottom: 18vh;
-}
-
-.navbar-brand {
-    left: 70px;
-    top: 12px;
-    width: 168px;
-
-    > span {
-        margin-bottom: 20px;
-        margin-top: 15px;
-
-        i {
-            font-size: 90px;
+        .map-outer {
+            font-size: @size;
+            .transition(transform @duration cubic-bezier(0.205, 0.64, 0.37, 1.325));
+            .transform(rotate(-75deg));
+        }
+        .map-inner {
+            font-size: (@size / 1.8);
+            margin-top: (@size / 4.3);
+            margin-left: ((@size / 4.3) + 1);
         }
     }
 
-    p {
-        font-size: 32px;
+    #videos-list {
+        bottom: 18vh;
     }
-}
 
-#home_parallax h1 {
-    font-size: 93px;
-    z-index: 0;
-}
+    .navbar-brand {
+        left: 70px;
+        top: 12px;
+        width: 168px;
 
-#title_block {
-    #key-art {
-        width: 215px;
+        > span {
+            margin-bottom: 20px;
+            margin-top: 15px;
 
-        h1 {
-            font-size: 140px;
+            i {
+                font-size: 90px;
+            }
         }
-        .tom_cruise_full, #release_date {
-            font-size: 48px;
+
+        p {
+            font-size: 32px;
         }
     }
-}
 
-#title_block_top h1 {
-    font-size: 180px;
-}
+    #home_parallax h1 {
+        font-size: 93px;
+        z-index: 0;
+    }
 
-#tt {
-    max-height: 45vh
-}
+    #title_block {
+        #key-art {
+            width: 215px;
 
-#quote {
-    max-width: 26vw
-}
+            h1 {
+                font-size: 140px;
+            }
+            .tom_cruise_full, #release_date {
+                font-size: 48px;
+            }
+        }
+    }
 
-#home_jeff {
-    bottom: ~'calc(50vh - 75px)';
-    right: 0;
-    max-width: 25vw
-}
+    #title_block_top h1 {
+        font-size: 180px;
+    }
 
-#tout_video {
-    max-width: 315px;
-}
+    #tt {
+        max-height: 45vh
+    }
 
-#story1 h2 {
-    font-size: 55px
-}
+    #quote {
+        max-width: 26vw
+    }
 
-.story_text2 h1 {
-    font-size: 26px;
-    letter-spacing: 0.1em;
-}
+    #home_jeff {
+        bottom: ~'calc(50vh - 75px)';
+        right: 0;
+        max-width: 25vw
+    }
 
-.story_text2 p {
-    font-size: 60px!important
-}
+    #tout_video {
+        max-width: 315px;
+    }
 
-#s2_text h2 {
-    font-size: 48px !important;
-}
+    #story1 h2 {
+        font-size: 55px
+    }
 
-#story1 h2 {
-    font-size: 58px;
-    letter-spacing: .24em
-}
+    .story_text2 h1 {
+        font-size: 26px;
+        letter-spacing: 0.1em;
+    }
 
-#s4_text p {
-    font-size: 40px!important
-}
+    .story_text2 p {
+        font-size: 60px!important
+    }
 
-#story5 p {
-    font-size: 75px;
-    margin-bottom: 10px
-}
+    #s2_text h2 {
+        font-size: 48px !important;
+    }
 
-#s7_text {
-    bottom: 15%;
-    max-height: 60%;
-    left: 50% !important;
-    max-width: 50%;
-    text-align: center;
+    #story1 h2 {
+        font-size: 58px;
+        letter-spacing: .24em
+    }
 
-    .text-col {
+    #s4_text p {
+        font-size: 40px!important
+    }
+
+    #story5 p {
+        font-size: 75px;
+        margin-bottom: 10px
+    }
+
+    #s7_text {
+        bottom: 15%;
+        max-height: 60%;
+        left: 50% !important;
         max-width: 50%;
+        text-align: center;
+
+        .text-col {
+            max-width: 50%;
+        }
     }
-}
 
-#s7_text p {
-    font-size: 20px!important
-}
+    #s7_text p {
+        font-size: 20px!important
+    }
 
-#castncrew-header-text {
-    top: 46.5vh
-}
+    #castncrew-header-text {
+        top: 46.5vh
+    }
 
-.cnc_actor {
-    font-family: @font-primary;
-    font-size: 6em;
-    letter-spacing: .24em
-}
+    .cnc_actor {
+        font-family: @font-primary;
+        font-size: 6em;
+        letter-spacing: .24em
+    }
 
-.cnc_text {
-    top: 25%
-}
+    .cnc_text {
+        top: 25%
+    }
 
-.cnc_text1 {
-    top: 25%
-}
+    .cnc_text1 {
+        top: 25%
+    }
 
-#videos_text {
-    font-size: 128px;
-    letter-spacing: .32em;
-    top: 14vh
-}
+    #videos_text {
+        font-size: 128px;
+        letter-spacing: .32em;
+        top: 14vh
+    }
 
-#videos_fg {
-    top: 17vh
-}
+    #videos_fg {
+        top: 17vh
+    }
 
-#videos-list li {
-    max-height: none
-}
+    #videos-list li {
+        max-height: none
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -13035,8 +13012,8 @@ section #story7 {
     .cnc_text p {
         font-size: 2em;
         letter-spacing: .06em;
-        margin-top: 20px;
-        margin-bottom: 10px
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     .cnc_actor {
