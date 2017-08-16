@@ -51,8 +51,8 @@ var data = {
 		},
 		section6: {
 			type: 'parallax',
-			foregroundImage: 'img/_story/hangar.jpg',	
-			backgroundImage: 'img/_story/hangar.jpg'
+			foregroundImage: 'img/_story/hangar2.jpg',	
+			backgroundImage: 'img/_story/hangar2.jpg'
 		},
 		section7: {
 			type: 'image',
