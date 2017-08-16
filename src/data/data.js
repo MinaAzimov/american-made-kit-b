@@ -31,6 +31,7 @@ var data = {
 			cloud2: 'img/_story/s06-cloud6.png',
 			cloud3: 'img/_story/s06-cloud7.png',
 			foregroundImage: 'img/_story/s06-fg-plane.png',
+			foregroundVideo: 'img/_story/s06-fg-plane.webm',
 			backgroundImage: 'img/_story/s06-bg-plane-long.jpg'
 		},
 		section2: {

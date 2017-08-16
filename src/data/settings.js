@@ -10,6 +10,7 @@ var settings = {
 			// Story Section
 			{ id : "story1bg", src : data.story.section1.backgroundImage, crossOrigin : true },
 			{ id : "story1fg", src : data.story.section1.foregroundImage, crossOrigin : true },
+			{ id : "story1vid", src : data.story.section1.foregroundVideo, crossOrigin : true },
 			{ id : "story1cloud1", src : data.story.section1.cloud1, crossOrigin : true },
 			{ id : "story1cloud2", src : data.story.section1.cloud2, crossOrigin : true },
 			{ id : "story1cloud3", src : data.story.section1.cloud3, crossOrigin : true },
