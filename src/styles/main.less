@@ -10416,17 +10416,7 @@ section #story1 {
 
 @media (min-width : 1600px) { 
 
-//   .title-top {
-//    position: fixed !important;
-//    top: 195vh !important;
 
-// }
-
-// .title-bottom {
-//    position: fixed !important;
-//    top: 48vh !important;
-
-// }
 
 #story1 .story_text1 {
     font-size: 96px;
@@ -12046,6 +12036,13 @@ section #story7 {
 }
 
 @media only screen and (min-width: 1920px) {
+
+    #title_block {
+        .transform(translateY(~'calc((-259vh / 2) - (375px / 2) - 40px)'));
+        &.title-bottom {
+            .transform(translateY(~'calc((-259vh / 2) - (375px / 2) - 40px)'));
+        }
+    }
 
 
     .nav-darken #footer-left {
