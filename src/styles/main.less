@@ -11903,6 +11903,13 @@ section #story7 {
 
 @media only screen and (min-width: 1440px) {
 
+     #title_block {
+        .transform(translateY(~'calc((-259vh / 2) - (375px / 2) + 40px)'));
+        &.title-bottom {
+            .transform(translateY(~'calc((-259vh / 2) - (375px / 2) + 40px)'));
+        }
+    }
+
 
     #title_block h1 {
         font-size: 120px;
@@ -11927,9 +11934,9 @@ section #story7 {
 @media only screen and (max-width: 1440px) {
 
     #title_block {
-        .transform(translateY(~'calc((-259vh / 2) - (375px / 2))'));
+        .transform(translateY(~'calc((-259vh / 2) - (375px / 2) + 40px)'));
         &.title-bottom {
-            .transform(translateY(~'calc((-259vh / 2) - (375px / 2))'));
+            .transform(translateY(~'calc((-259vh / 2) - (375px / 2) + 40px)'));
         }
     }
 
