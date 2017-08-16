@@ -273,39 +273,10 @@ $("#scroll-story-mobile-begin").click(function() {
 	}, 300);
 });
 
-var $trigger = $('#s1_fg_video');
-var $details = $("#title_block");
-// window.triggerPos = $trigger.position().top;
-triggerPos = $trigger.position().top - 100;
-
-$(window).on("scroll", function() {
-	behavior: 'smooth';
-
-	function debounce(func, wait, immediate) {
-		var timeout;
-		return function() {
-			var context = this, args = arguments;
-			var later = function() {
-				timeout = null;
-				if (!immediate) func.apply(context, args);
-			};
-			var callNow = immediate && !timeout;
-			clearTimeout(timeout);
-			timeout = setTimeout(later, wait);
-			if (callNow) func.apply(context, args);
-		};
-	};
-
-	var myEfficientFn = debounce(function() {
-		if ($(window).scrollTop() == 0) {
-				$details.removeClass('title-top');
-				$details.addClass('title-bottom');
-		}
-		if ($(window).scrollTop() > triggerPos) {
-			$details.removeClass('title-bottom');
-			$details.addClass('title-top');
-		}
-	}, 1000); 
-
-	myEfficientFn();
-});
+ $(document).ready(function() {
+   $(window).resize(function() {
+    var bodyheight = $(document).height();
+ if(bodyheight < 10000) {
+ 	console.log("low");
+ }
+}); });
