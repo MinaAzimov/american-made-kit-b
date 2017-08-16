@@ -273,10 +273,18 @@ $("#scroll-story-mobile-begin").click(function() {
 	}, 300);
 });
 
- $(document).ready(function() {
-   $(window).resize(function() {
-    var bodyheight = $(document).height();
- if(bodyheight < 10000) {
- 	console.log("low");
- }
-}); });
+// $(document).ready(function() {
+ // $(window).resize(function() {
+    //var bodyheight = $(document).height();
+ //if(bodyheight < 8000) {
+ //	$('.navbar-brand').css('opacity', '0');
+ //	$('#plane-image').css('opacity', '0');
+ 	
+ //}
+
+// if(bodyheight > 8000) {
+ //	$('.navbar-brand').css('opacity', '1');
+ //	$('#plane-image').css('opacity', '1');
+
+//}
+//}); });
