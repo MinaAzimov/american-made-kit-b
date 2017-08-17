@@ -393,6 +393,7 @@
     left: 5%;
     position: fixed;
     z-index: 16;
+    width: 65px;
     transform-origin: top left;
     .transform(scale(1));
     .transition(transform (@duration / 2) @easing);
@@ -400,43 +401,48 @@
     .justify-content(space-between);
     .flex-direction(column);
 
-    #splash_tt {
-        font-size: 48px;
+    p {
+        .flex-display();
+        .justify-content(space-between);
         color: @color-white;
         text-shadow: @shadow;
     }
 
+    .splash-tt {
+        font-size: 16px;
+        margin-bottom: 3px;
+
+        ~ .splash-tt {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+    }
+
     #splash_release_date {
-        .flex-display();
-        .justify-content(space-between);
-        color: @color-white;
         text-align: center;
         font-size: 18px;
+        line-height: 18px;
         font-weight: 300;
         // z-index: 16
         font-family: @font-primary;
         text-transform: uppercase;
-        text-shadow: @shadow;
     }
 
     #splash_tom_cruise {
-        .flex-display();
-        .justify-content(space-between);
-        color: @color-white;
         text-align: center;
         font-size: 16px;
         // letter-spacing: 3px;
-        line-height: 13px;
+        line-height: 16px;
         font-weight: 300;
         font-family: @font-primary;
         text-transform: uppercase;
-        text-shadow: @shadow;
     }
 
     &.dark {
         top: 1.5%;
         left: 2.5%;
-        .transform(scale(0.75));
+        .transform(scale(0.85));
+        width: 62.5px;
 
         #splash_release_date {
             display: none;
@@ -1083,6 +1089,7 @@
             }
         }
     }
+
     .cnc_quote_mobile {
         max-width: 60vw;
         margin: 0 auto;

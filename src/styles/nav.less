@@ -761,19 +761,20 @@ span:last-of-type {
     font-size: 18px;
     line-height: 20px;
 
-
     > img {
         display: block;
         height: 50px;
     }
-
-    i {
-        text-transform: uppercase;
-        letter-spacing: -0.05em;
-        font-size: 72px;
-        color: @color-white;
-        text-shadow: @shadow;
-        line-height: 72px;
+    span {
+        i {
+            text-transform: uppercase;
+            font-size: 36px;
+            color: @color-white;
+            text-shadow: @shadow;
+        }
+        ~ span i {
+            font-size: 48px;
+        }
     }
 
 }
@@ -1239,13 +1240,14 @@ span:last-of-type {
     position: fixed;
     left: 45px;
     top: 0;
-    width: 140px;
+    width: 160px;
     .flex-display();
     .flex-direction(column);
     opacity: 0;
 
     p {
         font-size: 24px;
+        line-height: 24px;
         .flex-display();
         .justify-content(space-between);
         width: 100%;
@@ -1253,11 +1255,18 @@ span:last-of-type {
         font-family: @font-primary;
         color: @color-white;
         text-shadow: @shadow;
+
+        &:last-child {
+            margin-top: 9px;
+        }
     }
 
     > span {
-        margin-bottom: 7px;
-        margin-top: 2px;
+        margin-top: 3px;
+        .flex-display();
+        .justify-content(space-between);
+        // margin-bottom: 7px;
+        // margin-top: 2px;
     }
 }
 

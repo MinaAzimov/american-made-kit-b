@@ -9775,6 +9775,8 @@ footer {
     h1 {
         margin-bottom: 12px;
         font-size: 70px;
+        .flex-display();
+        .justify-content(space-between);
     }
 
     #key-art {
@@ -11880,8 +11882,12 @@ section #story7 {
 
 
     #title_block h1 {
-        font-size: 120px;
+        font-size: 40px;
         margin-bottom: 6px;
+
+        ~ h1 {
+            font-size: 70px;
+        }
     }
 
     
@@ -11949,9 +11955,15 @@ section #story7 {
     font-size: 75px
 }
 
-#title_block h1 {
-    font-size: 120px;
-    margin-bottom: 6px;
+#title_block {
+    h1 {
+        font-size: 48px;
+        margin-bottom: 6px;
+
+        ~ h1 {
+            font-size: 70px;
+        }
+    } 
 }
 
 #title_block_top {
@@ -12134,11 +12146,15 @@ section #story7 {
         width: 168px;
 
         > span {
-            margin-bottom: 20px;
-            margin-top: 15px;
+            margin-top: 3px;
 
             i {
-                font-size: 90px;
+                font-size: 40px;
+            }
+            ~ span {
+                i {
+                    font-size: 53px; 
+                }
             }
         }
 
@@ -12157,7 +12173,12 @@ section #story7 {
             width: 215px;
 
             h1 {
-                font-size: 140px;
+                margin-bottom: 10px;
+                font-size: 60px;
+
+                ~ h1 {
+                    font-size: 80px;
+                }
             }
             .tom_cruise_full, #release_date {
                 font-size: 48px;

@@ -94,7 +94,8 @@ gulp.task('iconfont', function(){
     .on('glyphs', function(glyphs, options) {
         // console.log(glyphs, options);
     })
-    .pipe(gulp.dest(path.build.iconfont));
+    .pipe(gulp.dest(path.build.iconfont))
+    .pipe(gulp.dest('src/fonts/american-made-icons/'));
 });
 
 gulp.task('fonts', function () {
