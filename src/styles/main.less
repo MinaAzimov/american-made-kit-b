@@ -10689,6 +10689,7 @@ section #story7 {
         position: relative;
         min-height: 1px;
         margin: 0;
+        transform-origin: left;
     }
 
     p {
@@ -12594,15 +12595,20 @@ section #story7 {
     #preloader {
         font-size: 3.5em;
 
-        #loader3 #backgroundimage {
-            top: ~'calc(50vh - 16px)';
-            left: -32px;
-            height: 32px;
-            font-size: 32px;
+        #loader3 {
+            #backgroundimage {
+                top: ~'calc(50vh + 16px)';
+                left: -32px;
+                height: 32px;
+                font-size: 32px;
+            }
+            #preloaderLine {
+                top: ~'calc(50vh + 32px)';
+            }    
         }
 
         #preloader-loading {
-            top: ~'calc(50vh + 32px)';
+            top: ~'calc(50vh + 60px)';
 
             .preloader-loading-text {
                 font-size: 26px;
@@ -12610,7 +12616,9 @@ section #story7 {
         }
 
         #preloader-content {
-            top: ~'calc(50vh - 80px)';
+            // top: ~'calc(50vh - 80px)';
+            bottom: ~'calc(50vh - 175px + 40px)';
+            height: 350px;
         }
 
 
@@ -12626,17 +12634,30 @@ section #story7 {
             opacity: 0;
         }
 
-        #preloader-indicator,#preloader-indicator-bg {
+        .preloader-tt {
+            width: 190px;
+
+            &:last-child, &:nth-last-child(2) {
+                margin-top: 3px;
+            }
+
+            .am-icon {
+                font-size: 72px;
+
+                &--sm {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        #preloader-indicator, #preloader-indicator-bg {
             margin-left: 0;
             width: 277px;
             overflow: hidden;
         }
 
-        #preloader-tt-1, #preloader-tt-2, #preloader-tt-3, #preloader-tt-4, #preloader-tt-5, #preloader-tt-6, 
-        #preloader-tt-7, #preloader-tt-8, #preloader-tt-9, #preloader-tt-10, #preloader-tt-11, #preloader-tt-12 {
-            max-height: 61px;
-            margin: 0 1px 0 1px;
-            font-size: 32px;
+        *[id^="preloader-tt-"], *[id*=" preloader-tt-"] {
+            font-size: 40px;
         }
     }
 

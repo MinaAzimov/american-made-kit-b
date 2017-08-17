@@ -44,22 +44,46 @@
     justify-content: center
 }
 
-#preloader-tt {
+.preloader-tt {
     overflow-y: hidden;
-    margin-right: 24px;
+    margin-top: 0px;
+    .flex-display();
+    .flex-direction(row);
+    .justify-content(space-between);
+    width: 210px;
+    color: darken(@color-blue-light, 10%);
 
-    &:last-child {
-        margin-right: 0;
+    &:last-child, &:nth-last-child(2) {
+        margin-top: 6px;
+    }
+
+    span {
+        text-transform: uppercase;
+        font-weight: 300;
+        line-height: 48px;
+        font-size: 48px;
+        font-family: @font-primary;
+
+        &.sm {
+            font-size: 40px;
+            line-height: 40px;   
+        }
+    }
+
+    .am-icon {
+        font-size: 80px;
+        line-height: 80px;
+        color: darken(@color-blue-light, 12.5%);
+
+        &--sm {
+            font-size: 48px;
+            line-height: 48px;
+        }
     }
 }
 
-#preloader-tt-1,#preloader-tt-2,#preloader-tt-3,#preloader-tt-4, #preloader-tt-5, #preloader-tt-6, #preloader-tt-7, #preloader-tt-8,
-#preloader-tt-9, #preloader-tt-10, #preloader-tt-11, #preloader-tt-12 {
+*[id^="preloader-tt-"], *[id*=" preloader-tt-"] {
     opacity: 0;
-    font-size: 60px;
-    color: darken(@color-blue-light, 10%);
-    margin: 0 6px 0 6px;
-    z-index: 10000000;
 }
 
 
@@ -79,9 +103,10 @@
 #preloader-content, #preloader-content-2 {
     position: fixed;
     .flex-display();
-    .flex-direction(row);
+    .flex-direction(column);
     .justify-content(center);
-    top: ~'calc(50vh - 100px)';
+    .align-items(center);
+    bottom: ~'calc(50vh)';
     left: 50vw;
     width: 100vw;
     margin-left: -50vw;
@@ -125,7 +150,7 @@
 #loader3 {
   #backgroundimage {
     position: fixed;
-    top: ~'calc(50vh - 30px)';
+    top: ~'calc(50vh + 0px)';
     left: -60px;
     height: 60px;
     font-size: 60px;
@@ -139,7 +164,7 @@
       position: fixed;
       opacity: 1; 
       left: -60px;   
-      top: 50vh;
+      top: ~'calc(50vh + 30px)';
       width: ~'calc(100vw + 60px)';
       .transform(scaleX(0));
       height: 1px;
@@ -199,7 +224,7 @@
     .flex-display();
     .align-items(center);
     .flex-direction(column);
-    top: ~'calc(50vh + 40px)';
+    top: ~'calc(50vh + 80px)';
     width: 50%;
     left: ~'calc(50% - 25%)';
 
