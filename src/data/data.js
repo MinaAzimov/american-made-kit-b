@@ -34,21 +34,11 @@ var data = {
 			foregroundVideo: 'img/_story/s06-fg-plane.webm',
 			backgroundImage: 'img/_story/s06-bg-plane-long.jpg'
 		},
-		section2: {
-			type: 'parallax',
-			desktopVideo: 'img/_story/columbia.mp4',
-			desktopImage: 'img/_story/columbia.jpg'
-		},
 		section3: {
 			type: 'video',
 			desktopVideo: 'img/_story/half-still.mp4',
 		},
 
-		section5: {
-			type: 'parallax',
-			foregroundImage: 'img/_story/s01-fg-crash.png',
-			backgroundImage: 'img/_story/s01-bg-crash.jpg'
-		},
 		section6: {
 			type: 'parallax',
 			foregroundImage: 'img/_story/hangar2.jpg',	
@@ -75,8 +65,6 @@ var data = {
 				text: "<p>Tom Cruise starred in some of the top grossing films of the 1980s including Top Gun (1986); The Color of Money (1986), Rain Man (1988) and Born on the Fourth of July (1989). By the 1990s he was one of the highest paid actors in the world earning an average 15 million dollars a picture in such blockbuster hits as Interview with the Vampire: The Vampire Chronicles (1994), Mission: Impossible (1996) and Jerry Maguire (1996) for which he received an Academy Award Nomination for best actor. A kind and thoughtful man well known for his compassion and generosity, Tom Cruise is one of the best liked members of the movie community.<p>",
 				desktopImage: 'tomcruise',
 				overlayImage: 'tomcruise_overlay',
-				video: 'barry_video',
-				quote: 'Those days we had cash flooding in from every direction. I mean, we were running out of places to put it.'
 			},
 			{
 				label: 'domhallgleeson',
@@ -86,8 +74,6 @@ var data = {
 				text: "<p>Domhnall (pronounced \"doh-nall\" with the \"m\" being silent) appeared in four films in 2015 and all four titles received nominations at the 88th Academy Awards. The films were: The Revenant (2015), Ex Machina (2014), Star Wars: The Force Awakens (2015) and Brooklyn (2015). The only other actor to achieve a similar record was Benedict Cumberbatch, who also appeared in four films that were Oscar nominated in 2013 - though he made a fifth movie that wasn't nominated.</p> <p>As of 2016, has appeared in three films that were nominated for the Best Picture Oscar: True Grit (2010), The Revenant (2015) and Brooklyn (2015).</p>",
 				desktopImage: 'domhallgleeson',
 				overlayImage: 'domhallgleeson_overlay',
-				video: 'sh_video',
-				quote: 'You were top of your class in the civil air patrol. You shouldn\'t be flying buses. Haven\'t you ever wanted more, Barry?'
 			},
 			{
 				label: 'sarahwright',
@@ -97,8 +83,6 @@ var data = {
 				text: "<p>This Kentucky native began her career, in her home state and abroad in Europe, singing with The Kentucky Ambassadors of Music. Sarah attended Seneca High School in Kentucky. Discovered by a modeling agent, Sarah moved to Chicago where her career took off.</p> <p> Currently, Sarah is currently starring in the TV comedy, Marry Me as \"Dennah\".</p>",
 				desktopImage: 'sarahwright',
 				overlayImage: 'sarahwright_overlay',
-				video: 'lucy_video',
-				quote: 'Don\'t forget you\'re an airline pilot first, Barry. That\'s how you support this family. Is any of this even legal?'
 			},
 			{
 				label: 'alejandroedda',
@@ -108,8 +92,7 @@ var data = {
 				text: "<p>Doug Liman was born on July 24, 1965 in New York City, New York, USA. He is a producer and director, known for The Bourne Identity (2002), Edge of Tomorrow (2014) and The Bourne Ultimatum (2007).</p><p>Liman and Cruise often work together on films. On working with Tom, Liman commented: \"Tom innately understands that audiences come to the theatre not to watch a god but to see a good movie, and he will do everything in his power to make the film as great as possible. Nobody takes the trust of the audience more sacredly than him. When I'm working on a film, I think about how it will play with a tiny audience of friends whose opinions I respect, basically a 40-bloc radius from my apartment in Manhattan. Tom is thinking how it will play with the entire planet Earth.\"</p>",
 				desktopImage: 'jorgeochoa',
 				overlayImage: 'dougliman_overlay',
-				video: 'fake_video',
-				quote: 'We want you to take off from here and fly directly to Miami. We\'ll pay you $2000 per kilo.'
+			
 			},
 			{
 				label: 'pabloescobar',
@@ -119,8 +102,6 @@ var data = {
 				text: "<p>Gary Spinelli is a writer based in Los Angeles. The script for American Made, originally titled \"Mena\" by Spinelli was taken by Universal Pictures at a $1 million bid at auction.</p><p> The original script was inspired by the true story of Barry Seal told in the book \"American made : who killed Barry Seal ? Pablo Escobar or George H.W. Bush.\" by Shaun Attwood.</p><p>In 2012, Spinelli wrote the crime/thriller Stash House. He is currently working as a screenwriter on the action, sci-fi tv-series, Impulse set to air in 2018.</p>",
 				desktopImage: 'pabloescobar',
 				overlayImage: 'garyspinelli_overlay',
-				video: 'fake_video',
-				quote: 'Just, Get it done.'
 			},
 		
 			
