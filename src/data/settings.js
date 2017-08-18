@@ -12,7 +12,7 @@ var settings = {
 			{ id : "story3vid", src : data.story.section3.desktopVideo, crossOrigin : true },
 			{ id : "story6bg", src : data.story.section6.backgroundImage, crossOrigin : true },
 			{ id : "story6fg", src : data.story.section6.foregroundImage, crossOrigin : true },
-			{ id : "story7bg", src : data.story.section7.backgroundImage, crossOrigin : true },
+			{ id : "story7bg", src : data.story.section7.desktopVideo, crossOrigin : true },
 			// Cast & Crew Section
 			{ id : "tomcruise", src : "img/_castncrew/cnc_tomcruise2.jpg", crossOrigin : true },
 			{ id : "domhallgleeson", src : "img/_castncrew/cnc_domhallgleeson.jpg", crossOrigin : true },

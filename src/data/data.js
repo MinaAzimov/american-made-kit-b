@@ -45,8 +45,8 @@ var data = {
 			backgroundImage: 'img/_story/hangar2.jpg'
 		},
 		section7: {
-			type: 'image',
-			backgroundImage: 'img/_story/s07-synopsis.jpg'
+			type: 'video',
+			desktopVideo: 'img/_story/columbia.mp4',
 		},
 	},
 	// Cast & Crew Section
