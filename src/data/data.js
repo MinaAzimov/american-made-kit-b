@@ -159,6 +159,12 @@ var data = {
 				video: 'img/_videos/videos_bg2.mp4',
 				poster: 'img/_videos/videos_bg2.jpg',
 				show: true
+			},
+			{
+				name: 'A Look Inside',
+				video: 'img/_videos/videos_bg4.mp4',
+				poster: 'img/_videos/videos_bg4.jpg',
+				show: true
 			}
 		]
 	},
