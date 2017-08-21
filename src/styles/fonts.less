@@ -1,5 +1,6 @@
 @font-primary: 'Compacta-BT', Helvetica, Arial, sans-serif;
 @font-secondary: 'Proxima-Nova', Helvetica, Arial, sans-serif;
+@font-secondary-condensed: 'Proxima-Nova-Condensed', Helvetica, Arial, sans-serif;
 
 @compactaBtPath: 'fonts/compacta-bt/Compacta-BT-';
 
@@ -65,6 +66,16 @@
 	font-style: normal;
 }
 
+@proximaNovaCondPath: 'fonts/proxima-nova-cond/proximanovacond-regular-webfont';
+
+@font-face {
+	font-family: 'Proxima-Nova-Condensed';
+	src: url('@{proximaNovaCondPath}.eot');
+	src: url('@{proximaNovaCondPath}.eot?#iefix') format('embedded-opentype'), url('@{proximaNovaCondPath}.woff') format('woff'), url('@{proximaNovaCondPath}.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
 
 // American Made Icons
 
@@ -92,6 +103,7 @@
 			content: @unicode;
 		}
 	}
+
 	.make-icon(a1, '\e001');
 	.make-icon(m1, '\e002');
 	.make-icon(e1, '\e003');
