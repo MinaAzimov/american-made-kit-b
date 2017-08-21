@@ -37,12 +37,21 @@ var settingsmobile = {
 	initialManifest : {
 		path : "",
 		manifest : [
-			{ id : "chrispine_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
-			{ id : "benfoster_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "tomcruise_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "domhallgleeson_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
 			{ id : "jeffbridges_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
-			{ id : "gilbirmingham_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
-			{ id : "davidmackenzie_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
-			{ id : "taylorsheridan_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "sarahwright_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "pabloescobar_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "jorgeochoa_mob", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "story1bg", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "story1fg", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "story1cloud1", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "story1cloud2", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "story1cloud3", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "story3vid", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "story6bg", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "story6fg", src : "img/_img_mobile/empty.js", crossOrigin : true },
+			{ id : "story7bg", src : data.story.section7.desktopVideo, crossOrigin : true },
 		]
 	},
 	mouseWheel : {
