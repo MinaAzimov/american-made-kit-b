@@ -123,7 +123,7 @@ $(".gallery-image-grid-item").click(function(e) {
 ),
 $(".gallery-button--close").click(function() {
     $("#gallery-wrapper").removeClass("page-wrapper--open"), $("body").css("overflow", "visible"), setTimeout(function() {
-        gallery.goTo(0)
+      
     }
     ,
     1200)
