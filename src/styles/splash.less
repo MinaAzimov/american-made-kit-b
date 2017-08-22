@@ -868,12 +868,20 @@
     h1 {
         font-family: @font-primary;
         font-weight: 300;
-        font-size: 48px;
-        letter-spacing: .24em;
-        margin-left: .24em;
+        font-size: 12vw;
+        letter-spacing: 0;
         line-height: 1.2em;
         text-align: center;
-        text-shadow: @shadow;
+        .flex-display();
+        .flex-direction(column);
+
+        span {
+            margin-left: .24em;
+
+            &:first-child {
+                margin-left: 0.12em;
+            }
+        }
     }
 
     h2 {
