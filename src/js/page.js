@@ -184,7 +184,7 @@ function() {
 ),
 $("#mobile-scrolling").scroll(function() {
     var e=$("#mobile-scrolling").scrollTop();
-    e<$("#story-mobile-begin").offset().top||($("#header-bar-mobile").addClass("dark"), $("#header-mobile").addClass("dark"), $("#toggleLegal").addClass("dark")), e>$("#story-mobile-begin").offset().top||($("#header-bar-mobile").removeClass("dark"), $("#header-mobile").removeClass("dark"), $("#toggleLegal").removeClass("dark"))
+    e<$("#story-mobile-begin").offset().top||($("#header-bar-mobile").addClass("dark"), $("#logo-mobile").addClass("dark"), $("#mobile-ctas").addClass("dark"), $("#toggleLegal").addClass("dark")), e>$("#story-mobile-begin").offset().top||($("#header-bar-mobile").removeClass("dark"), $("#logo-mobile").removeClass("dark"),  $("#mobile-ctas").removeClass("dark"), $("#toggleLegal").removeClass("dark"))
 }
 ),
 $("#scroll-story-mobile-begin").click(function() {
