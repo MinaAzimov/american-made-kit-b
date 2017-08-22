@@ -161,7 +161,7 @@ var data = {
 				show: true
 			},
 			{
-				name: 'A Look Inside',
+				name: 'The Real Barry Seal',
 				video: 'img/_videos/videos_bg4.mp4',
 				poster: 'img/_videos/videos_bg4.jpg',
 				show: true
