@@ -11209,11 +11209,13 @@ section #story7 {
     letter-spacing: .32em;
     text-transform: uppercase;
     top: 14vh;
+    padding-left: .32em;
+    text-shadow: @shadow;
     width: 100%;
     left: 0px !important;
     text-align: center;
     margin: 0;
-    z-index: 2
+    z-index: 2;
 }
 
 #tickets_text {
@@ -11253,16 +11255,17 @@ section #story7 {
     width: 75vw;
     // height: 60vh;
     z-index: 9;
+    margin-left: 1.28em;
     position: absolute;
     bottom: 15vh;
     left: 12.5vw;
 
     li {
         list-style: none;
-        width: ~'calc(37vw - 10px)';
+        width: ~'calc(37vw - 1vw)';
         height: 35vh;
         max-height: 250px;
-        margin: 0 10px 10px 0;
+        margin: 0 1vw 1vw 0;
         background-color: #000;
         cursor: pointer;
         position: relative;
@@ -11909,6 +11912,12 @@ section #story7 {
 
     }
 
+    .story_text2 {
+        &--right {
+            left: 40%;
+        }
+    }
+
     #title_block {
         bottom: 157vh;
     }
@@ -12317,7 +12326,7 @@ section #story7 {
 #videos_text {
     font-size: 128px;
     letter-spacing: .32em;
-    top: 14vh
+    top: 14vh;
 }
 
 #videos_fg {

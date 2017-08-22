@@ -1349,7 +1349,20 @@ span:last-of-type {
         background-size: contain;
         // .transform(scale(-1,1));
     }
-    
+
+    &:before {
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        height: 35vw;
+        width: 35vw;
+        top: 0;
+        right: -100vw;
+        left: auto;
+        opacity: 0.5;
+        z-index: -1;
+        background: radial-gradient(circle at 100% 0%, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0) 60%);
+    }    
 }
 
 
