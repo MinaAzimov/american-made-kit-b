@@ -9767,7 +9767,8 @@ footer {
 
     h1, h2, h3, h4 {
         font-family: @font-primary;
-        color: lighten(@color-white, 2%);
+        text-shadow: 2px 2px fade(@color-white, 60%), -2px 2px fade(@color-white, 60%), -2px -2px fade(@color-white, 60%), 2px -2px fade(@color-white, 60%);
+        color: lighten(@color-blue-brand, 2%);
         text-transform: uppercase;
         line-height: 1;
     }
@@ -9792,6 +9793,7 @@ footer {
             .justify-content(space-between);
             font-weight: 300;
             margin-bottom: 0;
+            margin-top: 0;
         }
         #release_date {
             text-transform: uppercase;
@@ -10672,7 +10674,7 @@ section #story7 {
         width: 100%;
         height: 100%;
         // .radial-gradient(fade(black, 100%), fade(black, 60%), 50% 75%, 1%);
-        background: radial-gradient(circle at 40% 45%, rgba(0, 0, 0, .2) 1%, rgba(0, 0, 0, 0));
+        background: radial-gradient(circle at 50% 10%, rgba(0, 0, 0, .30) 25%, rgba(0, 0, 0, 0));
     }
 }
 
