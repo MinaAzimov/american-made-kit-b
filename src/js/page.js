@@ -53,29 +53,29 @@ openPhotoSwipe=function() {
     },
     {
         mediumImage: {
-            src: "img/_gallery/gallery_6_sm.jpg", w: 848, h: 1e3
+            src: "img/_gallery/gallery_6_sm.jpg", w: 881, h: 1000
         }
         ,
         originalImage: {
-            src: "img/_gallery/gallery_6.jpg", w: 1264, h: 2e3
+            src: "img/_gallery/gallery_6.jpg", w: 1762, h: 2000
         }
     } ,
     {
         mediumImage: {
-            src: "img/_gallery/gallery_7_sm.jpg", w: 848, h: 1e3
+            src: "img/_gallery/gallery_7_sm.jpg", w: 1000, h: 667
         }
         ,
         originalImage: {
-            src: "img/_gallery/gallery_7.jpg", w: 1264, h: 2e3
+            src: "img/_gallery/gallery_7.jpg", w: 2000, h: 1333
         }
     },
     {
         mediumImage: {
-            src: "img/_gallery/gallery_8_sm.jpg", w: 848, h: 1e3
+            src: "img/_gallery/gallery_8_sm.jpg", w: 1000, h: 562
         }
         ,
         originalImage: {
-            src: "img/_gallery/gallery_8.jpg", w: 1264, h: 2e3
+            src: "img/_gallery/gallery_8.jpg", w: 2400, h: 1350
         }
     }
     ],
