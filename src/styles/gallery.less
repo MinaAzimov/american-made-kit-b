@@ -40,8 +40,7 @@
     top: 10vh;
     width: auto;
     left: auto;
-    text-shadow: @shadow;
-    right: ~'calc(54vw + .32em)';
+    right: ~'calc(53.5vw + .32em)';
     text-align: center;
     margin: 0;
     z-index: 1;
@@ -57,29 +56,33 @@
     -ms-flex-line-pack: end;
     align-content: flex-end;
     .justify-content(flex-end);
-    width: 70vw;
+    width: 85vw;
     height: 65vh;
     z-index: 9;
     position: absolute;
     bottom: 5vh;
     left: auto;
-    right: ~'calc(9.3vw + .96em)';
+    right: ~'calc(8.7vw + .96em)';
 
     .gallery-column {
         margin-left: 1vw;
         .flex-direction(row);
-        width: ~'calc(22.666666667vw - 1vw)';
+        width: ~'calc(17.295vw - 1vw)';
 
         &:first-child {
-            width: ~'calc(24.666666667vw - 1vw)';
+            width: ~'calc(18.18vw - 1vw)';
             margin-left: 0;
         }
         &:nth-child(2) {
-            width: ~'calc(19.666666667vw - 1vw)';
+            width: ~'calc(19.5vw - 1vw)';
         }
         &:nth-child(3) {
-            width: ~'calc(23.666666667vw - 1vw)';
+            width: ~'calc(19.044vw - 1vw)';
         }
+        &:nth-child(4) {
+            width: ~'calc(22.58vw - 1vw)';
+        }
+
     }
 
     li {
@@ -130,6 +133,18 @@
             background-image: url('img/_gallery/gallery_5_thumb-color.jpg');
         }
 
+         &#gallery-6:before {
+            background-image: url('img/_gallery/gallery_6_thumb-color.jpg');
+        }
+
+         &#gallery-7:before {
+            background-image: url('img/_gallery/gallery_7_thumb-color.jpg');
+        }
+
+         &#gallery-8:before {
+            background-image: url('img/_gallery/gallery_8_thumb-color.jpg');
+        }
+
         .gallery-item-border {
             @from-side: 1.25vw;
             border: 1.5px solid lighten(@color-white, 2%);
@@ -145,7 +160,7 @@
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             .transition(all (@duration / 1.25) @easing);
-            .transform(scale(1.3));
+            .transform(scale(1.4));
         }
 
         .gallery-launch-btn {

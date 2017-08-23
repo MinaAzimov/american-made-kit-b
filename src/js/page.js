@@ -50,6 +50,33 @@ openPhotoSwipe=function() {
         originalImage: {
             src: "img/_gallery/gallery_5.jpg", w: 1264, h: 2e3
         }
+    },
+    {
+        mediumImage: {
+            src: "img/_gallery/gallery_6_sm.jpg", w: 848, h: 1e3
+        }
+        ,
+        originalImage: {
+            src: "img/_gallery/gallery_6.jpg", w: 1264, h: 2e3
+        }
+    } ,
+    {
+        mediumImage: {
+            src: "img/_gallery/gallery_7_sm.jpg", w: 848, h: 1e3
+        }
+        ,
+        originalImage: {
+            src: "img/_gallery/gallery_7.jpg", w: 1264, h: 2e3
+        }
+    },
+    {
+        mediumImage: {
+            src: "img/_gallery/gallery_8_sm.jpg", w: 848, h: 1e3
+        }
+        ,
+        originalImage: {
+            src: "img/_gallery/gallery_8.jpg", w: 1264, h: 2e3
+        }
     }
     ],
     i= {
