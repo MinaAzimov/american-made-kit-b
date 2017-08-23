@@ -10307,7 +10307,7 @@ footer {
         letter-spacing: .15em;
         font-weight: normal;
         font-family: @font-tertiary;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     div {
@@ -10333,18 +10333,17 @@ footer {
 
     &--left {
         text-align: left;
-        width: 65%;
         left: 15%;
 
         div {
+            display: none;
             margin: 30px 0;
         }
     }
 
     &--right {
-        right: 5%;
+        right: 2.5%;
         left: auto;
-        width: 65%;
         text-align: right;
 
         div {
@@ -10354,7 +10353,7 @@ footer {
         }
 
         h2 {
-            margin-top: 30px;
+            margin-top: 10px;
         }
     }
 }
@@ -10424,7 +10423,7 @@ section #story1 {
 #story1 #barry-text {
 
     position: absolute;
-    top: 10vh;
+    // top: 0px;
 
     left: 0%;
     font-size: 40px;
@@ -10528,7 +10527,7 @@ section #story2 {
         right: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(circle at 40% 45%, rgba(0, 0, 0, .18) 1%, rgba(0, 0, 0, 0));
+        background: radial-gradient(circle at 75% 75%, rgba(0, 0, 0, .18) 1%, rgba(0, 0, 0, 0));
     }
 }
 
@@ -10617,7 +10616,17 @@ section #story6 {
     z-index: 6;
     height: 113vh;
     max-height: 119%;
-    background-size: cover
+    background-size: cover;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 25% 75%, rgba(0, 0, 0, .18) 1%, rgba(0, 0, 0, 0));
+    }
 }
 
 #story6 img {
@@ -10632,18 +10641,19 @@ section #story6 {
 
 
 #s6_text {
-    top: 60vh;
+    top: auto;
+    bottom: 18vh;
     z-index: 2;
 }
 
 
 
 #s6_text_top {
- margin-bottom: 30px;
+ margin-bottom: 5px;
 }
 
 #s6_text_bottom {
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 
@@ -11911,11 +11921,14 @@ section #story7 {
 
 @media only screen and (min-width: 1224px) {
 
+    #story1 #barry-text {
+        margin-top: 0px;
+    }
 
 
     .story_text2 {
         &--right {
-            right: 5%;
+            right: 2.5%;
         }
     }
 
@@ -12118,12 +12131,10 @@ section #story7 {
     }
 
     #story1 .story_text2 {
+        font-size: 60px !important;
+    }
 
-       font-size: 60px !important;
-
-   }
-
-   #story1 #barry-text {
+    #story1 #barry-text {
        font-size: 60px !important;
    }
 
@@ -12193,10 +12204,11 @@ section #story7 {
 
 .navbar-brand {
     left: 70px;
-    top: 12px;
-    width: 168px;
+    // top: 12px;
 
-    > span {
+    .box {
+    width: 170px;
+     > span {
         margin-top: 3px;
 
         i {
@@ -12212,6 +12224,7 @@ section #story7 {
     p {
         font-size: 32px;
     }
+}
 }
 
 #home_parallax h1 {
