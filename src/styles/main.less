@@ -10306,7 +10306,7 @@ footer {
         font-size: 24px;
         letter-spacing: .15em;
         font-weight: normal;
-        font-family: @font-secondary-condensed;
+        font-family: @font-tertiary;
         margin-bottom: 30px;
     }
 
@@ -10318,7 +10318,6 @@ footer {
     }
 
     p {
-        margin-top: 30px;
 
         &:not(:first-of-type) {
             margin-top: 12px;
@@ -10329,7 +10328,7 @@ footer {
         font-size: 40px;
         letter-spacing: .15em;
         font-weight: normal;
-        font-family: @font-secondary-condensed;
+        font-family: @font-tertiary;
     }
 
     &--left {
@@ -10343,11 +10342,13 @@ footer {
     }
 
     &--right {
-        left: 45%;
+        right: 5%;
+        left: auto;
         width: 65%;
-        text-align: left;
+        text-align: right;
 
         div {
+            display: none;
             transform-origin: left;
             margin: 0px 0;
         }
@@ -10406,7 +10407,7 @@ section #story1 {
     top: 45.5vh;
     left: 15%;
     font-size: 40px;
-    font-family: @font-secondary-condensed;
+    font-family: @font-tertiary;
     letter-spacing: .15em;
     margin-top: -154px;
     line-height: 1.2em;
@@ -10538,7 +10539,7 @@ section #story2 {
 }
 
 #s2_text {
-    bottom: 40vh;
+    bottom: 18vh;
 }
 
 #s2_text h1 {
@@ -10700,6 +10701,7 @@ section #story7 {
 
             div {
                 width: 80px;
+                margin: 0px;
             }
 
             &:not(:first-of-type) {
@@ -10719,7 +10721,7 @@ section #story7 {
     div {
         position: relative;
         min-height: 1px;
-        margin: 0 5px;
+        margin: 20px 0;
         transform-origin: left;
     }
 
@@ -10736,9 +10738,9 @@ section #story7 {
         font-family: @font-primary;
         text-align: left;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 0.15em;
-        font-weight: 600;
+        font-weight: 400;
         margin-bottom: 0;
         margin-top: 0;
         margin-right: 1%;
@@ -11912,7 +11914,7 @@ section #story7 {
 
     .story_text2 {
         &--right {
-            left: 40%;
+            right: 5%;
         }
     }
 
