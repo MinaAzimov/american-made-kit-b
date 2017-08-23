@@ -765,6 +765,7 @@ span:last-of-type {
             text-transform: uppercase;
             font-size: 32px;
             color: @color-blue-brand;
+            text-shadow: 1px 1px @color-white, -1px 1px @color-white, -1px -1px @color-white, 1px -1px @color-white;
             // text-shadow: @shadow;
         }
         ~ span i {
@@ -1238,27 +1239,28 @@ span:last-of-type {
     opacity: 0;
 
     .box {
-        background-color: fade(lighten(#fffeed, 2%), 80%);
+        // background-color: fade(lighten(#fffeed, 2%), 80%);
         width: 150px;
         padding: 15px;
         padding-top: 10px;
         .flex-display();
         .flex-direction(column);
 
-        &:before {
-            content: '';
-            border: solid 1px @color-blue-brand;
-            border-top: none;
-            width: ~'calc(100% - 10px)';
-            height: ~'calc(100% - 5px)';
-            position: absolute;
-            top: 0;
-            left: 5px;
-        }
+        // &:before {
+        //     content: '';
+        //     border: solid 1px @color-blue-brand;
+        //     border-top: none;
+        //     width: ~'calc(100% - 10px)';
+        //     height: ~'calc(100% - 5px)';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 5px;
+        // }
 
         p {
             font-size: 26px;
             line-height: 24px;
+            text-shadow: 1px 1px @color-white, -1px 1px @color-white, -1px -1px @color-white, 1px -1px @color-white;
             .flex-display();
             .justify-content(space-between);
             width: 100%;
