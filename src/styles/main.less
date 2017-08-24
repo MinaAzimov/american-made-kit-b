@@ -12692,30 +12692,35 @@ section #story7 {
     #preloader {
         font-size: 3.5em;
 
+        #preloader-container {
+        }
+
         #loader3 {
-            #backgroundimage {
-                top: ~'calc(50vh + 16px)';
-                left: -32px;
-                height: 32px;
-                font-size: 32px;
+            @size: 32px;
+            height: @size;
+            > div {
+                height: @size;
+
+                #backgroundimage {
+                    font-size: @size;
+                }  
+
+                #preloaderLine {
+                    top: (@size / 2);
+                }
             }
-            #preloaderLine {
-                top: ~'calc(50vh + 32px)';
-            }    
         }
 
         #preloader-loading {
-            top: ~'calc(50vh + 60px)';
-
+            margin-top: 24px;
             .preloader-loading-text {
-                font-size: 26px;
+                font-size: 32px;
             }
         }
 
         #preloader-content {
-            // top: ~'calc(50vh - 80px)';
-            bottom: ~'calc(50vh - 175px + 40px)';
-            height: 350px;
+            margin-bottom: 24px;
+            height: 205px;
         }
 
 
@@ -12732,17 +12737,17 @@ section #story7 {
         }
 
         .preloader-tt {
-            width: 190px;
+            width: 160px;
 
             &:last-child, &:nth-last-child(2) {
-                margin-top: 3px;
+                margin-top: 0px;
             }
 
             .am-icon {
-                font-size: 72px;
+                font-size: 60px;
 
                 &--sm {
-                    font-size: 48px;
+                    font-size: 40px;
                 }
             }
         }

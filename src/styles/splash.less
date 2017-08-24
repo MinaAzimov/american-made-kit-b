@@ -410,7 +410,7 @@
     left: 5%;
     position: fixed;
     z-index: 16;
-    width: 65px;
+    width: 75px;
     transform-origin: top left;
     .transform(scale(1));
     .transition(transform (@duration / 2) @easing);
@@ -421,17 +421,17 @@
     p {
         .flex-display();
         .justify-content(space-between);
-        color: @color-white;
-        text-shadow: @shadow;
+        color: @color-blue-brand;
+        text-shadow: 1px 1px @color-white, 1px -1px @color-white, -1px 1px @color-white, -1px -1px @color-white;
     }
 
     .splash-tt {
-        font-size: 16px;
-        margin-bottom: 3px;
+        font-size: 18px;
+        margin-bottom: 4px;
 
         ~ .splash-tt {
-            font-size: 24px;
-            margin-bottom: 4px;
+            font-size: 28px;
+            margin-bottom: 5px;
         }
     }
 
@@ -447,9 +447,9 @@
 
     #splash_tom_cruise {
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         // letter-spacing: 3px;
-        line-height: 16px;
+        line-height: 18px;
         font-weight: 300;
         font-family: @font-primary;
         text-transform: uppercase;
@@ -459,7 +459,17 @@
         top: 1.5%;
         left: 2.5%;
         .transform(scale(0.85));
-        width: 62.5px;
+        width: 67px;
+
+        .splash-tt {
+            font-size: 16px;
+            margin-bottom: 3px;
+
+            ~ .splash-tt {
+                font-size: 24px;
+                margin-bottom: 4px;
+            }
+        }
 
         #splash_release_date {
             display: none;
@@ -667,7 +677,7 @@
         }
 
         &.dark {
-         ~ .legal-toggle {
+           ~ .legal-toggle {
             background-color: transparent;
             background-image: url('img/nav_texture.png');
             background-size: 3px;
@@ -1210,13 +1220,14 @@
     position: fixed;
     right: ~'calc(10% + 24px)';
     z-index: 16;
-    top: 0px;
-    height: 55px;
+    top: 2.5%;
+    height: 34px;
     width: 50%;
 
     .btn_text_inner {
         .flex-display();
         .flex-direction(column);
+        height: 24px;
 
         &:not(:last-child) {
             margin-right: 24px;
@@ -1232,7 +1243,6 @@
             margin-top: 3px;
             width: 32px;
             height: 1px;
-            position: absolute;
             background: @color-red;
             transform-origin: left;
             .animation(line-pop (@duration * 10) @easing2 (@duration * 5) infinite);
@@ -1254,7 +1264,7 @@
 
     &.dark {
         span {
-            background: @color-white;
+            background: @color-red;
         }
     }
 }
