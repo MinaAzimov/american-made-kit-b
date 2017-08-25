@@ -1,0 +1,59 @@
+#tickets-cta {
+	position: fixed;
+	top: 200px;
+	right: 32px;
+	height: 120px;
+	z-index: 999;
+	width: 120px;
+	.flex-display();
+	.flex-direction(column);
+	.align-items(center);
+
+	.tickets-cta {
+		color: @color-white;
+		text-shadow: @shadow;
+		transform-origin: bottom center;
+
+		&--top {
+			font-size: 90px;
+			.animation(float1 4s ease-in-out infinite);
+		}
+		&--bottom {
+			transform-origin: top center;
+			font-size: 60px;
+			.animation(float2 4s ease-in-out infinite);
+
+			.circle-mask {
+				position: absolute;
+				top: 0;
+				overflow: hidden;
+				transform-origin: center center;
+				.transition(transform (@duration / 2) @easing);
+				.transform(scale(0,0));
+			}
+			.red {
+				color: @color-red;
+			}
+		}
+	}
+
+	&:hover {
+		.tickets-cta {
+			&--bottom {
+				.circle-mask {
+					.transform(scale(1,1));
+				}
+			}
+		}
+	}
+
+	.keyframes(float1;{
+	  0%,100% { transform:translateY(0); }
+	  50% {transform:translateY(-25px); }
+    });
+
+    .keyframes(float2;{
+	  0%,100% { transform:translateY(0) rotate(-4deg); }
+	  50% {transform:translateY(-25px) rotate(4deg); }
+    });   
+}
