@@ -10,6 +10,8 @@
 @import 'component';
 @import 'photoswipe';
 @import 'tickets-cta';
+@import 'safari';
+
 
 
 
@@ -10862,15 +10864,18 @@ section #story7 {
     .align-items(center);
 
     .cnc_text {
-        position: absolute;
+        position: relative;
+        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
         text-transform: uppercase;
         color: #fffeed;
         text-shadow: @shadow;
+         -webkit-flex-item-align: center;
         -ms-flex-item-align: center;
         align-self: center;
         width: 100%;
