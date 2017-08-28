@@ -21,7 +21,7 @@
     }
 
 
-  #mobile-scrolling {
+  #safari-scrolling {
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         width: 100%;
@@ -633,34 +633,40 @@
     }
 }
 
-.splash_text {
+.safari_text {
     position: absolute;
-    left: 6%;
+    left: 15%;
     bottom: 2.5%;
-    width: 88%;
+    width: 80%;
     height: 95%;
     .flex-display();
     .flex-direction(column);
     .justify-content(center);
     .align-items(center);
 
+    &--top {
+        .justify-content(flex-start);
+    }
     &--bottom {
+        .justify-content(flex-end);
+    }
+    &--right {
+        .align-items(flex-end);
+    }
+    &--left {
+        .align-items(flex-start);
+    }
+    &--center {
+        margin-left: -3.75%;
+    }
+    &--story-section {
         .justify-content(flex-start);
         .align-items(flex-start);
-        margin-bottom: 7.5vh;
+        .flex-direction(row);
 
         h3 {
             z-index: 2;
-            // &:before {
-            //     content: '';
-            //     position: absolute;
-            //     width: 110vw;
-            //     height: 100%;
-            //     z-index: -10;
-            //     left: -10%;
-            //     margin-top: -5%;
-            //     .gradient(fade(black,50%), fade(black,0%));
-            // }
+
         }
         .divider {
             z-index: 2;
@@ -668,13 +674,18 @@
         p {
             z-index: 2;
         }
-        .row {
+        .column {
             margin: 0;
             width: 100%;
             z-index: 2;
             position: relative;
             .flex-display();
-            .flex-direction(row);
+            .align-items(flex-start);
+            .flex-direction(column);
+
+            &:first-child {
+                margin-right: 10px;
+            }
 
             > div {
                 min-width: 30%;
@@ -702,7 +713,7 @@
     h1 {
         font-family: @font-primary;
         font-weight: 300;
-        font-size: 12vw;
+        font-size: 60px;
         letter-spacing: 0;
         line-height: 1.2em;
         text-align: center;
@@ -721,7 +732,7 @@
     h2 {
         font-family: @font-primary;
         font-weight: 300;
-        font-size: 28px;
+        font-size: 40px;
         line-height: 1.2em;
         margin: 15px 0;
         letter-spacing: .15em;
@@ -730,7 +741,7 @@
 
         &.condensed {
             font-family: @font-tertiary;
-            font-size: 24px;
+            font-size: 41px;
             letter-spacing: .1em;
             line-height: 1.275em;
         }
@@ -739,7 +750,7 @@
     h3 {
         font-family: @font-primary;
         font-weight: 300;
-        font-size: 24px;
+        font-size: 32px;
         letter-spacing: .15em;
         text-align: center;
         text-shadow: @shadow;
@@ -769,7 +780,7 @@
     p {
         font-family: @font-secondary;
         font-weight: normal;
-        font-size: 11px;
+        font-size: 16px;
         line-height: 1.3em;
         color: @color-white;
         margin-top: 5px;
@@ -891,7 +902,7 @@
 
 
 
-    #videos-list-mobile {
+    #videos-list-safari {
         position: relative;
         width: 100%;
         right: 0;
@@ -899,6 +910,8 @@
         bottom: auto;
         z-index: 2;
         min-height: auto;
+        .flex-display();
+        .flex-direction(row);
         .justify-content(center);
 
         li {
@@ -987,35 +1000,6 @@
     }
     &--top {
         .justify-content(flex-start);
-    }
-    &--right {
-        .align-items(center);
-        max-width: 50%;
-        left: auto;
-        right: 6%;
-        .cnc_quote_mobile {
-            .align-items(center);   
-            p {
-                text-align: center;        
-            }
-        }
-    }
-    &--left {
-        .align-items(center);
-        max-width: 50%;
-        left: 4%;
-        .cnc_quote_mobile {
-            .align-items(center);   
-            p {
-                text-align: center;        
-            }
-        }
-    }
-
-    &--left, &--right {
-        .cnc_quote_mobile {
-            margin: initial;
-        }
     }
 }
 
@@ -1128,7 +1112,7 @@
 }
 
 
-   #home-mobile {
+   #home-safari {
    height: 249vh;
     max-height: 249vh;
     background-color: #cbcbcb;

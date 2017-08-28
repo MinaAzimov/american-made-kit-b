@@ -2,7 +2,7 @@
 	position: fixed;
 	top: 200px;
 	right: 32px;
-	height: 120px;
+	height: 160px;
 	z-index: 999;
 	width: 120px;
 	.flex-display();
@@ -27,12 +27,22 @@
 				position: absolute;
 				top: 0;
 				overflow: hidden;
-				transform-origin: center center;
-				.transition(transform (@duration / 2) @easing);
+				border-radius: 50%;
+				width: 120px;
+				height: 120px;
+				transform-origin: 75% 25%;
+				opacity: 0;
+				.transition(all (@duration / 2) @easing);
 				.transform(scale(0,0));
 			}
 			.red {
-				color: @color-red;
+				color: fade(@color-red, 90%);
+			}
+
+			.white {
+				position: absolute;
+				top: 1px;
+				color: @color-white;
 			}
 		}
 	}
@@ -41,6 +51,9 @@
 		.tickets-cta {
 			&--bottom {
 				.circle-mask {
+					opacity: 1;
+					border-radius: 0px;
+					.transition(all (@duration / 2) @easing2);
 					.transform(scale(1,1));
 				}
 			}
