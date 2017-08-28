@@ -1,9 +1,90 @@
 #safari-page {
 
-
-#navbar-safari {
-    z-index: 15;  
+    #tout_trailer-safari {
+    position: relative;
+    background-color: #000;
+    cursor: pointer
 }
+
+#tout_trailer-safari .tout_border {
+    width: 100%;
+    height: 100%;
+    z-index: 3
+}
+
+   #tout_trailer-safari {
+        max-width: 250px;
+        overflow: hidden
+    }
+
+
+.navbar {
+    z-index: 16;
+}
+
+
+#trailer_overlay {
+    z-index: 999 !important;
+}
+
+#videos-list-safari {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    width: 75vw;
+    // height: 60vh;
+    z-index: 9;
+    margin-left: 1.28em;
+    position: absolute;
+    bottom: 15vh;
+    left: 12.5vw;
+
+    li {
+        list-style: none;
+        width: ~'calc(37vw - 1vw)';
+        height: 35vh;
+        max-height: 250px;
+        margin: 0 1vw 1vw 0;
+        background-color: #000;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+        &:first-child, :nth-child(3n+3) {
+            margin-left: 0;
+        }
+    }
+}
+
+
+
+
+       #videos-list-safari li div#videos-container {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: ~'calc(100% - 20px)';
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 1px solid hsla(160,9%,50%,.25)
+    }
+
+
+
+@media only screen and (min-width: 992px) {
+
+  #videos-list-safari li {
+        max-height: 250px
+    }
+
+}
+
+
 
 #s1_cloud1-safari {
     z-index: 0!important;
@@ -89,6 +170,15 @@
     line-height: 1.85em;
     margin-top: -280px;
     letter-spacing: 0.05em;
+}
+
+#videos-list-safari {
+    bottom: 18vh;
+}
+
+#videos-list-safari li {
+    max-height: none
+
 }
 
 
