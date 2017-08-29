@@ -1,4 +1,11 @@
 #safari-page {
+    display: none;
+    z-index: 15;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
 
     #tout_trailer-safari {
         position: relative;
@@ -1078,6 +1085,7 @@ h1 {
         ~ .legal-safari-toggle {
             @color-green: #748c84;
 
+            cursor: pointer;
             background: fade(@color-white, 75%);
             padding: 6px 26px;
             color: @color-green;
