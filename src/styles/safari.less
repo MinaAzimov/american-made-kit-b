@@ -241,6 +241,40 @@ span:last-of-type {
 
 @media only screen and (min-width: 1824px) {
 
+    #logo-safari {
+
+        @width: 160px;
+
+        top: 2.5%;
+        left: ~'calc(5% - (@{width} / 3))';
+        width: @width;
+        .transform(translateX(-20vw));
+
+
+        .splash-tt {
+            font-size: 40px;
+            margin-bottom: 5px;
+
+            ~ .splash-tt {
+                font-size: 60px;
+                margin-bottom: 6px;
+            }
+        }
+
+        #safari_release_date, #safari_tom_cruise {
+            @size: 32px;
+            font-size: @size;
+            line-height: @size;
+        }
+
+        &.dark {
+            .transform(translateX(0));
+        }
+    }
+    #header-bar-safari {
+        width: 20vw;
+    }
+
     .american-made-safari {
         font-size: 96px;
         line-height: 1.875em;
@@ -957,17 +991,17 @@ h1 {
     }
 }
 
-#logo-mobile {
-    @easing: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    // @shadow: rgba(0, 0, 0, 0.2) 1px 1px 0px, 1px 1px 20px rgba(0, 0, 0, .2);
+#logo-safari {
+
+    @width: 132px;
 
     top: 2.5%;
-    left: 5%;
+    left: ~'calc(5% - (@{width} / 4))';
     position: fixed;
     z-index: 16;
-    width: 75px;
+    width: @width;
     transform-origin: top left;
-    .transform(scale(1));
+    .transform(translateX(-25vw));
     .transition(transform (@duration / 2) @easing);
     .flex-display();
     .justify-content(space-between);
@@ -981,87 +1015,52 @@ h1 {
     }
 
     .splash-tt {
-        font-size: 18px;
-        margin-bottom: 4px;
+        font-size: 32px;
+        margin-bottom: 5px;
 
         ~ .splash-tt {
-            font-size: 28px;
-            margin-bottom: 5px;
+            font-size: 48px;
+            margin-bottom: 6px;
         }
     }
 
-    #splash_release_date {
+    #safari_release_date, #safari_tom_cruise {
+        @size: 28px;
+
         text-align: center;
-        font-size: 18px;
-        line-height: 18px;
+        font-size: @size;
+        line-height: @size;
         font-weight: 300;
         // z-index: 16
         font-family: @font-primary;
         text-transform: uppercase;
     }
 
-    #splash_tom_cruise {
-        text-align: center;
-        font-size: 18px;
-        // letter-spacing: 3px;
-        line-height: 18px;
-        font-weight: 300;
-        font-family: @font-primary;
-        text-transform: uppercase;
-    }
-
     &.dark {
-        top: 1.5%;
-        left: 2.5%;
-        .transform(scale(0.85));
-        width: 67px;
-
-        .splash-tt {
-            font-size: 16px;
-            margin-bottom: 3px;
-
-            ~ .splash-tt {
-                font-size: 24px;
-                margin-bottom: 4px;
-            }
-        }
-
-        #splash_release_date {
-            display: none;
-        }
-        #splash_tom_cruise {
-            display: none;
-        }
+        .transform(translateX(0));
     }
 }
 
-#header-bar-mobile {
-    @easing: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    @shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);
-
+#header-bar-safari {
     position: fixed;
-    width: 100vw;
-    height: 55px;
-    background-image: url('img/nav_texture.png');
-    background-size: 3px;
-    background-repeat: repeat;
-    // background-color: fade(#292221, 60%);
-    transform-origin: top center;
+    height: 100vh;
+    width: 25vw;
+    transform-origin: left center;
     z-index: 16;
     opacity: 0;
-    box-shadow: @shadow;
     .transition(all (@duration / 2) @easing);
-    .transform(scaleY(0));
+    .transform(scaleX(0));
+    .horizontal-gradient(fade(#000, 35%), fade(#000, 0%));
 
     &.dark {
         opacity: 1;
-        .transform(scaleY(1));
+        .transform(scaleX(1));
     }
 }
 
 #legal-safari {
     position: fixed;
-    bottom: 0px;
+    bottom: 10px;
     left: 10px;
     margin-right: -17.5px;
     z-index: 16;
@@ -1075,9 +1074,10 @@ h1 {
             @color-green: #748c84;
 
             background: fade(@color-white, 75%);
-            padding: 1.5vh 25px 1vh 25px;
+            padding: 6px 26px;
             color: @color-green;
             font-size: 13px;
+            height: 28px;
             margin: 0;
             font-family: @font-secondary;
             font-weight: bold;
@@ -1090,10 +1090,10 @@ h1 {
                 position: absolute;
                 content: '';
                 border: solid 1px fade(@color-green, 50%);
-                top: 5px;
-                left: 5px;
-                width: ~'calc(100% - 10px)';
-                height: ~'calc(100%)';
+                top: 2px;
+                left: 2px;
+                width: ~'calc(100% - 4px)';
+                height: ~'calc(100% - 4px)';
             }
 
             ~ .legal-overlay-safari {
@@ -1180,7 +1180,7 @@ h1 {
                     opacity: 1;
                     position: absolute;
                     border: solid 1px @color-white;
-                    box-shadow: 1px 1px 0 0 rgba(0, 0, 0, .15), inset 1px 1px 0 0 rgba(0, 0, 0, .15);
+                    box-shadow: none;
                     border-radius: 50%;
                     outline: none;
 
@@ -1197,7 +1197,14 @@ h1 {
                         top: 5%;
                         width: @size;
                         height: @size;
+                        .transition(all (@duration / 2) @easing2);
+                        .transform(scale(1));
 
+                        i {
+                            .transition(transform (@duration / 2) @easing2);
+                            .transform(rotate(90deg));
+                            transform-origin: center center;
+                        }
 
                         &:before {
                             background: fade(black, 25%);
@@ -1207,13 +1214,30 @@ h1 {
                             display: block;
                             left: 0;
                             top: 0;
-                            margin-left: ~'calc(5px / 2)';
-                            margin-top: ~'calc(5px / 2)';
+                            margin-left: 7.5%;
+                            margin-top: 7.5%;
                             border-radius: 50%;
                             opacity: 1;
+                            width: 85%;
+                            height: 85%;
+                            .transform(none);
+                            .transition(transform (@duration / 2) @easing2);
+                        }
 
-                            width: ~'calc(@{size} - 7.5px)';
-                            height: ~'calc(@{size} - 7.5px)';
+                        &:hover {
+                            .transform(scale(1.2));
+                            border-color: fade(@color-white, 30%);
+
+                            i {
+                                .transform(rotate(0deg));
+                                transition-delay: 0.09s;
+                            }
+
+                            &:before {
+                                .transform(scale(0.975));
+                                border-color: fade(@color-white, 50%);
+                                animation-delay: (0.09s * 2);
+                            }
                         }
                     }
                 }
@@ -1222,8 +1246,8 @@ h1 {
 
         &:checked {
             ~ .legal-safari-toggle {
-                .transition(transform (@duration / 2) 0s @easing);
-                .transform(translateY(6vh));
+                // .transition(transform (@duration / 2) 0s @easing);
+                // .transform(translateY(6vh));
 
                 ~ .legal-overlay-safari {
                     .transform(translateY(0));

@@ -228,6 +228,19 @@ $(window).scroll(function() {
 );
 
 
+$('#safari-scrolling').scroll(function() {    
+	var scroll = $('#safari-scrolling').scrollTop();
+	if (scroll >= $("#story-safari-begin").offset().top) {
+		$("#header-bar-safari").addClass("dark");
+		$("#logo-safari").addClass("dark");
+	}
+	if (scroll <= $("#story-safari-begin").offset().top) {
+		$("#header-bar-safari").removeClass("dark");
+		$("#logo-safari").removeClass("dark");
+	}
+}); 
+
+
 
 $('.navbar-default .navbar-nav').on('click', 'li', function(){
     $('.navbar-default .navbar-nav li').removeClass('active');
