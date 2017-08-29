@@ -226,3 +226,11 @@ $(window).scroll(function() {
     $("#title_block").css("opacity", 1-$(window).scrollTop()/750)
 }
 );
+
+
+
+$('.navbar-default .navbar-nav').on('click', 'li', function(){
+    $('.navbar-default .navbar-nav li').removeClass('active');
+    $(this).addClass('active');
+});
+
