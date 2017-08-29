@@ -231,11 +231,11 @@ $(window).scroll(function() {
 
 $('#safari-scrolling').scroll(function() {    
 	var scroll = $('#safari-scrolling').scrollTop();
-	if (scroll >= $("#story-safari-begin").offset().top) {
+	if (scroll >= $("#s1_cloud3-safari").offset().top) {
 		$("#header-bar-safari").addClass("dark");
 		$("#logo-safari").addClass("dark");
 	}
-	if (scroll <= $("#story-safari-begin").offset().top) {
+	if (scroll <= $("#s1_cloud3-safari").offset().top) {
 		$("#header-bar-safari").removeClass("dark");
 		$("#logo-safari").removeClass("dark");
 	}

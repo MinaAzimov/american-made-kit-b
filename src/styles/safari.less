@@ -6,22 +6,9 @@
         cursor: pointer
     }
 
-
     #main-navigation-bar a {
         color: @color-white;
     }
-
-   #safari-scrolling {
-        overflow-y: scroll;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        z-index: 15;
-    }
-
-
-
 
     #tout_trailer-safari .tout_border {
         width: 100%;
@@ -758,12 +745,17 @@ span:last-of-type {
         font-size: 21px;
     }
 
+
     &--story-section {
         .column {
             &:first-child {
                 margin-right: 30px;
             } 
         }
+    }
+
+    #header-bar-safari {
+        .horizontal-gradient(fade(#000, 35%), fade(#000, 0%)); 
     }
 
     .clock-container {
@@ -1061,13 +1053,13 @@ h1 {
     transform-origin: left center;
     z-index: 16;
     opacity: 0;
-    .transition(all (@duration / 2) @easing);
-    .transform(scaleX(0));
-    .horizontal-gradient(fade(#000, 35%), fade(#000, 0%));
+    .transition(opacity (@duration / 2) @easing);
+    // .transform(scaleX(0));
+    .horizontal-gradient(fade(#000, 25%), fade(#000, 0%));
 
     &.dark {
         opacity: 1;
-        .transform(scaleX(1));
+        // .transform(scaleX(1));
     }
 }
 
