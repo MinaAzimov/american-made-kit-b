@@ -245,6 +245,11 @@ $('#safari-scrolling').scroll(function() {
 
 
 
+$('#safari-page .navbar-nav').on('click', 'li', 'a', function(){
+
+    $('#safari-page .navbar-default .navbar-nav li').removeClass('active');
+    $(this).addClass('active');
+});
 
 var one = $("#home-safari").offset();
 var two = $("#story-safari").offset();
@@ -254,10 +259,10 @@ var five = $("#videos-safari").offset();
 var six = $("#tickets-safari").offset();
 
 
-    $("#safari-scrolling").scroll(function(){
+    $("#safari-scrolling").scroll(function(){ 
        
         var screenPosition = $("#safari-scrolling").scrollTop();
-        if (screenPosition < two.top) {
+        if (screenPosition < two.top-2) {
             $( ".home" ).addClass( "active");
             $(".story").removeClass("active");
             $(".cnc").removeClass("active");
@@ -265,7 +270,7 @@ var six = $("#tickets-safari").offset();
             $(".videos").removeClass("active");
             $(".tickets").removeClass("active");
         }
-        if (screenPosition > two.top) {
+        if (screenPosition > two.top-2) {
             $( ".story" ).addClass( "active");
             $(".home").removeClass("active");
             $(".cnc").removeClass("active");
@@ -273,7 +278,7 @@ var six = $("#tickets-safari").offset();
             $(".videos").removeClass("active");
             $(".tickets").removeClass("active");
         }
-        if (screenPosition > three.top) {
+        if (screenPosition > three.top-2) {
             $( ".cnc" ).addClass( "active");
             $(".story").removeClass("active");
             $(".home").removeClass("active");
@@ -281,7 +286,7 @@ var six = $("#tickets-safari").offset();
             $(".videos").removeClass("active");
             $(".tickets").removeClass("active");
         }
-          if (screenPosition > four.top) {
+          if (screenPosition > four.top-2) {
             $( ".photos" ).addClass( "active");
             $(".story").removeClass("active");
             $(".home").removeClass("active");
@@ -289,7 +294,7 @@ var six = $("#tickets-safari").offset();
             $(".videos").removeClass("active");
             $(".tickets").removeClass("active");
         }
-        if (screenPosition > five.top) {
+        if (screenPosition > five.top-2) {
             $( ".videos" ).addClass( "active");
             $(".story").removeClass("active");
             $(".home").removeClass("active");
@@ -298,7 +303,7 @@ var six = $("#tickets-safari").offset();
             $(".tickets").removeClass("active");
         }
 
-        if (screenPosition > six.top) {
+        if (screenPosition > six.top-2) {
             $( ".tickets" ).addClass( "active");
             $(".story").removeClass("active");
             $(".home").removeClass("active");
