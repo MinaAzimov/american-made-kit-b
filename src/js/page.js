@@ -229,18 +229,6 @@ $(window).scroll(function() {
 );
 
 
-var scrollPoint = $("#story-safari-begin").offset().top;
-$('#safari-scrolling').scroll(function() {    
-	var scroll = $('#safari-scrolling').scrollTop();
-	if (scroll >= scrollPoint) {
-		$("#header-bar-safari").addClass("dark");
-		$("#logo-safari").addClass("dark");
-	}
-	if (scroll <= scrollPoint) {
-		$("#header-bar-safari").removeClass("dark");
-		$("#logo-safari").removeClass("dark");
-	}
-}); 
 
 
 
