@@ -229,7 +229,7 @@ $(window).scroll(function() {
 );
 
 
-var scrollPoint = $("#story-safari-begin").offset().top;
+var scrollPoint = ($("#story-safari-begin").offset().top / 2);
 $('#safari-scrolling').scroll(function() {    
 	var scroll = $('#safari-scrolling').scrollTop();
 	if (scroll >= scrollPoint) {
@@ -242,8 +242,17 @@ $('#safari-scrolling').scroll(function() {
 	}
 }); 
 
+$("#story2-safari").vide('img/_story/half-still.mp4', {
+    posterType: "jpg",
+    autoplay: !0,
+    loop: !0
+});
 
-
+$("#story3-safari").vide('img/_story/columbia.mp4', {
+    posterType: "jpg",
+    autoplay: !0,
+    loop: !0
+});
 
 $('#safari-page .navbar-nav').on('click', 'li', 'a', function(){
 
@@ -252,7 +261,7 @@ $('#safari-page .navbar-nav').on('click', 'li', 'a', function(){
 });
 
 var one = $("#home-safari").offset();
-var two = $("#story-safari").offset();
+var two = $("#story1-safari").offset();
 var three = $("#cnc-safari").offset();
 var four = $("#photos-safari").offset();
 var five = $("#videos-safari").offset();
