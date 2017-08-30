@@ -18,7 +18,25 @@
     #tout_trailer-safari {
         position: relative;
         background-color: #000;
-        cursor: pointer
+        cursor: pointer;
+
+        #tout_trailer_arrow {
+            .transition(transform (@duration / 2) (@duration / 3) @easing);
+        }
+
+        #tout_trailer_btn_over {
+            .transition(transform (@duration / 2) @easing);
+        }
+
+        &:hover {
+            #tout_trailer_btn_over {
+                .transform(scale(1));
+                .transition(transform (@duration / 2) @easing2);
+            }
+            #tout_trailer_arrow {
+                .transform(translateX(34px));
+            }
+        }
     }
 
     #main-navigation-bar a {
