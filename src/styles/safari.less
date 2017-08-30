@@ -726,6 +726,8 @@ span:last-of-type {
 
 
 .safari_text {
+    height: 80%;
+    bottom: 10%;
     h1 {
         font-size: 100px;
         margin-bottom: 1em;
@@ -1441,9 +1443,9 @@ h1 {
 .safari_text {
     position: absolute;
     left: 15%;
-    bottom: 5%;
     width: 80%;
-    height: 90%;
+    bottom: 10%;
+    height: 82.5%;
     .flex-display();
     .flex-direction(column);
     .justify-content(center);
@@ -1498,6 +1500,11 @@ h1 {
             font-weight: 500;
             letter-spacing: .1em;
             line-height: 1.275em;
+        }
+        + h2 {
+            &.condensed {
+                margin: 0;
+            }
         }
     }
 
