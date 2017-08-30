@@ -20,6 +20,10 @@
         background-color: #000;
         cursor: pointer;
 
+        .tout_border {
+            .transition(border-width (@duration / 2) @easing);
+        }
+
         #tout_trailer_arrow {
             .transition(transform (@duration / 2) (@duration / 3) @easing);
         }
@@ -35,6 +39,10 @@
             }
             #tout_trailer_arrow {
                 .transform(translateX(34px));
+            }
+            .tout_border {
+                border-width: 4px;
+                .transition(border-width (@duration / 2) @easing2);
             }
         }
     }
