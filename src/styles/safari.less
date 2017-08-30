@@ -789,6 +789,11 @@ span:last-of-type {
         }
     }
 
+    &--longer {
+        height: 95%;
+        bottom: 2.5%
+    }
+
     #header-bar-safari {
         .horizontal-gradient(fade(#000, 35%), fade(#000, 0%)); 
     }
@@ -1115,6 +1120,7 @@ h1 {
     transform-origin: left center;
     z-index: 16;
     opacity: 0;
+    pointer-events: none;
     .transition(opacity (@duration / 2) @easing);
     // .transform(scaleX(0));
     .horizontal-gradient(fade(#000, 25%), fade(#000, 0%));
