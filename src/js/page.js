@@ -254,7 +254,7 @@ $("#story3-safari").vide('img/_story/columbia.mp4', {
     loop: !0
 });
 
-$('#safari-page .navbar-nav').on('click', 'li', 'a', function(){
+$('#safari-page .navbar-nav').on('click', 'li', function(){
 
     $('#safari-page .navbar-default .navbar-nav li').removeClass('active');
     $(this).addClass('active');
