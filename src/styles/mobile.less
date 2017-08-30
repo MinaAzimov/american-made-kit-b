@@ -694,7 +694,7 @@
 #social-mobile {
     position: fixed;
     bottom: 10px;
-    left: 7.5vw;
+    left: 10%;
     margin-left: -17.5px;
     z-index: 16;
 
@@ -752,7 +752,7 @@
             height: 35px;
             position: fixed;
             bottom: 10px;
-            left: ~'calc(7.5vw + (35px / 2))';
+            left: ~'calc(10% + (35px / 2))';
             .flex-display();
             .flex-direction(row);
                 // display: none;
@@ -782,12 +782,12 @@
                     opacity: 1;
                 }
                 ~ .options {
-                    margin-left: 1.2vw;
+                    margin-left: 1vw;
                     // display: block;
-                    width: ~'calc((35px + 12px) * 4)';
+                    width: ~'calc((35px + 2vw) * 4)';
                     .bubble {
                         .transform(scale(1.1));
-                        margin: 0 1.2vw;
+                        margin: 0 1vw;
 
                         @from : 1;
                         @to : 4;
