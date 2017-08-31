@@ -167,9 +167,9 @@ var data = {
 				show: true
 			},
 			{
-				name: 'The Look Inside',
-				video: 'img/_videos/videos_bg4.mp4',
-				poster: 'img/_videos/videos_bg4.jpg',
+				name: 'A Look Inside',
+				video: 'img/_videos/videos_bg3.mp4',
+				poster: 'img/_videos/videos_bg3.jpg',
 				show: true
 			}
 		]
