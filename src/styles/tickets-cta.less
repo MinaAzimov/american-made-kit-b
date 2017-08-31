@@ -72,7 +72,30 @@
 }
 
 #tickets-cta2 {
+	position: fixed;
 	.flex-display();
 	.flex-direction(column);
 	.align-items(center);
+	top: 200px;
+	right: 32px;
+	height: 160px;
+	z-index: 999;
+	width: 120px;
+
+	i {
+		font-size: 90px;
+		color: @color-white;
+	}
+
+	svg {
+		width: 100%;
+		height: 100%;
+		// position: fixed;
+		g {
+			stroke: @color-white;
+			stroke-width: 10; 
+			fill: none;
+			stroke-linecap: round;
+		}
+	}
 }
