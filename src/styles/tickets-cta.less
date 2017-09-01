@@ -73,29 +73,95 @@
 
 #tickets-cta2 {
 	position: fixed;
+	top: 200px;
+	right: 32px;
+	height: 180px;
+	z-index: 999;
+	width: 120px;
 	.flex-display();
 	.flex-direction(column);
 	.align-items(center);
-	top: 200px;
-	right: 32px;
-	height: 160px;
-	z-index: 999;
-	width: 120px;
+
+	> div {
+		.transform(scaleX(-1) rotate(-60deg));
+		.flex-display();
+		.flex-direction(column);
+		.align-items(center);
+	}
+
+	> span {
+		width: 100%;
+		.flex-display();
+		.flex-direction(row);
+		.align-items(center);
+		.justify-content(space-evenly);
+
+		> span {
+			color: @color-white;
+			text-transform: uppercase;
+			font-family: @font-primary;
+			font-weight: 300;
+			font-size: 40px;
+			text-shadow: @shadow;
+		}
+	}
+
 
 	i {
-		font-size: 90px;
+		font-size: 80px;
 		color: @color-white;
+		text-shadow: @shadow;
+	    .transition(transform (@duration) 0.09s  @easing);
 	}
 
 	svg {
+		@shadow: 1px 1px 0 rgba(0,0,0,.2);
 		width: 100%;
 		height: 100%;
-		// position: fixed;
+		margin-left: 35px;
+		transform-origin: top;
+		-webkit-filter: drop-shadow(@shadow);
+        filter: drop-shadow(@shadow);
+
 		g {
 			stroke: @color-white;
-			stroke-width: 10; 
+			stroke-width: 15; 
 			fill: none;
 			stroke-linecap: round;
+
+			path {
+			    stroke-dasharray: 65;
+			    stroke-dashoffset: 10;
+			    .transition(stroke-dashoffset (@duration) @easing);
+			}
+		}
+	}
+
+	&:hover {
+		svg g path {
+			stroke-dashoffset: 200;
+		}
+		i {
+			.transform(translate(-2.5px, 7.5px));
+		}
+		> span > span { 
+			.keyframes(updown;{
+			  0%,100% { transform:translateY(0); }
+			  50% {transform:translateY(-10px); }
+		    });  
+
+			.animation(updown (@duration / 2) @easing);
+
+			@from : 1;
+            @to : 11;
+
+            .loop(@index) when(@index =< @to) {
+                &:nth-child(@{index}) {
+                    animation-delay: (0.18s + (@index * 0.03s));
+                }
+                .loop(@index + 1);
+            }
+			.loop(@from);
 		}
 	}
 }
