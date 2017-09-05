@@ -161,17 +161,18 @@ var data = {
 				show: true
 			},
 			{
-				name: 'The Real Barry Seal',
-				video: 'img/_videos/videos_bg4.mp4',
-				poster: 'img/_videos/videos_bg4.jpg',
-				show: true
-			},
-			{
 				name: 'A Look Inside',
 				video: 'img/_videos/videos_bg3.mp4',
 				poster: 'img/_videos/videos_bg3.jpg',
 				show: true
+			},
+			{
+				name: 'The Real Barry Seal',
+				video: 'img/_videos/videos_bg4.mp4',
+				poster: 'img/_videos/videos_bg4.jpg',
+				show: true
 			}
+			
 		]
 	},
 	// Main Footer
