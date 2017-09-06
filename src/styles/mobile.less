@@ -402,6 +402,18 @@
     }
 }
 
+#story-mobile {
+    #splash_bg {
+        &.gradient {
+            &--top {
+                &:after {
+                    background: radial-gradient(circle at 50% 20%, rgba(0, 0, 0, .4) 1%, rgba(0, 0, 0, 0));
+                }
+            } 
+        }
+    }
+}
+
 #logo-mobile {
     @easing: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     // @shadow: rgba(0, 0, 0, 0.2) 1px 1px 0px, 1px 1px 20px rgba(0, 0, 0, .2);
