@@ -166,7 +166,7 @@ $("#footerClose").click(function() {
 ),
 $("#tickets").mouseenter(function() {
     $("#plane-image").css( {
-        transform: "rotate(-35deg)"
+        transform: "rotate(35deg)"
     }
     )
 }
@@ -180,7 +180,7 @@ $("#tickets").mouseleave(function() {
 ),
 $("#trailer").mouseenter(function() {
     $("#plane-image").css( {
-        transform: "rotate(35deg)"
+        transform: "rotate(-35deg)"
     }
     )
 }

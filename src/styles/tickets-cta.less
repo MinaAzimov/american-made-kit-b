@@ -1,8 +1,11 @@
 #tickets-cta1 {
 	position: fixed;
-	top: 200px;
-	right: 32px;
+	top: 36px;
+    right: 140px;
 	height: 160px;
+	cursor: pointer;
+	outline: none;
+	border: none;
 	z-index: 999;
 	width: 120px;
 	.flex-display();
@@ -13,14 +16,15 @@
 		color: @color-white;
 		text-shadow: @shadow;
 		transform-origin: bottom center;
+		@size: 60px;
 
 		&--top {
-			font-size: 90px;
+			font-size: @size;
 			.animation(float1 4s ease-in-out infinite);
 		}
 		&--bottom {
 			transform-origin: top center;
-			font-size: 60px;
+			font-size: (@size * (2 / 3));
 			.animation(float2 4s ease-in-out infinite);
 
 			.circle-mask {
@@ -42,6 +46,7 @@
 			.white {
 				position: absolute;
 				top: 1px;
+				left: 0px;
 				color: @color-white;
 			}
 		}
@@ -73,14 +78,19 @@
 
 #tickets-cta2 {
 	position: fixed;
-	top: 200px;
-	right: 32px;
-	height: 180px;
+	top: 0px;
+	right: 140px;
+	height: 122px;
 	z-index: 999;
-	width: 120px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	width: 110px;
 	.flex-display();
 	.flex-direction(column);
 	.align-items(center);
+
+	@size: 60px;
 
 	> div {
 		.transform(scaleX(-1) rotate(-60deg));
@@ -101,14 +111,13 @@
 			text-transform: uppercase;
 			font-family: @font-primary;
 			font-weight: 300;
-			font-size: 40px;
+			font-size: (@size / 2);
 			text-shadow: @shadow;
 		}
 	}
 
-
 	i {
-		font-size: 80px;
+		font-size: @size;
 		color: @color-white;
 		text-shadow: @shadow;
 	    .transition(transform (@duration) 0.09s  @easing);
@@ -125,7 +134,7 @@
 
 		g {
 			stroke: @color-white;
-			stroke-width: 15; 
+			stroke-width: 21; 
 			fill: none;
 			stroke-linecap: round;
 

@@ -1251,16 +1251,16 @@
     .btn_text_inner {
         .flex-display();
         .flex-direction(column);
+        .align-items(flex-end);
         height: 24px;
 
         &:not(:last-child) {
-            margin-right: 24px;
+            margin-right: 18px;
         }
 
         .keyframes(line-pop;{
             0%, 20%, 50%, 80%, 100% { .transform(scaleX(1)) }
             40% { .transform(scaleX(0.4)); }
-            60% { .transform(scaleX(0.6)); }
             });
 
         span {
@@ -1268,7 +1268,7 @@
             width: 32px;
             height: 1px;
             background: @color-red;
-            transform-origin: left;
+            transform-origin: right;
             .animation(line-pop (@duration * 10) @easing2 (@duration * 5) infinite);
         }
 
@@ -1279,10 +1279,18 @@
             width: 100%;
             font-family: @font-primary;
             letter-spacing: .15em;
+            margin-left: -.15em;
             font-weight: 400;
             text-transform: uppercase;
             text-decoration: none;
             white-space: nowrap;
+        }
+
+        &:last-child {
+            .align-items(flex-end);
+            span {
+                .animation(line-pop (@duration * 10) @easing2 (@duration * 10) infinite);
+            }
         }
     }
 
