@@ -217,7 +217,7 @@ $("#mobile-scrolling").scroll(function() {
 ),
 $("#scroll-story-mobile-begin").click(function() {
     $("#mobile-scrolling").animate( {
-        scrollTop: $("#story-mobile-begin").offset().top
+        scrollTop: (Math.abs($("#home-mobile").offset().top) + $("#story-mobile-begin").offset().top)
     }
     ,
     300)
@@ -228,6 +228,9 @@ $(window).scroll(function() {
 }
 );
 
+$("#logo-mobile").click(function() {
+	$(this).hasClass('dark') && $("#mobile-scrolling").animate({ scrollTop: 0 }, 300)
+});
 
 var scrollPoint = ($("#story-safari-begin").offset().top / 2);
 $('#safari-scrolling').scroll(function() {    

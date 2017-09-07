@@ -531,7 +531,9 @@
         ~ .legal-toggle {
             @color-green: #748c84;
 
-            background: fade(@color-white, 75%);
+            background-image: none;
+            background-size: 3px;
+            background-color: fade(@color-white, 75%);
             padding: 1.5vh 6vw 1vh 6vw;
             color: @color-green;
             font-size: 13px;
@@ -540,7 +542,8 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.015em;
-            .transition(transform (@duration / 2) ((@duration / 2) + 0.09s) @easing);
+            @transition: transform (@duration / 2) ((@duration / 2) + 0.09s) @easing, background (@duration) @easing2;
+            .transition(@transition);
             .transform(translateY(0));
 
             &:after {

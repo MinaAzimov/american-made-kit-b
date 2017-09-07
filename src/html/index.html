@@ -68,7 +68,7 @@
                 </div>
                 <ul>
                   <li><a href="#home-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Home</a></li>
-                  <li><a href="#story-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Story</a></li>
+                  <li><a href="#story-mobile" onclick="setTimeout(function(){ document.getElementById('mobile-scrolling').scrollTop -= 55; }, 0); document.getElementById('mobile-hamburger').checked = false;">Story</a></li>
                   <li><a href="#cnc-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Characters</a></li>
                   <li><a href="#photos-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Photos</a></li>
                   <li><a href="#videos-mobile" onclick="document.getElementById('mobile-hamburger').checked = false;">Videos</a></li>
