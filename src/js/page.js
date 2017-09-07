@@ -196,6 +196,10 @@ $("#map-expand").click(function() {
     $("#map-wrapper").addClass("map-page-wrapper--open"), $("body").css("overflow", "hidden"), $("#map-image").attr("data", "img/map-code-folder/map-code.svg")
 }
 ),
+$("#safari-page").delegate("#map-expand", "click", function() {
+    $("#map-wrapper").addClass("map-page-wrapper--open"), $("body").css("overflow", "hidden"), $("#map-image").attr("data", "img/map-code-folder/map-code.svg")
+}
+),
 $("#map-expand-mobile").click(function() {
     $("#map-wrapper").addClass("map-page-wrapper--open"), $("body").css("overflow", "hidden"), $("#map-image").attr("data", "img/map-code-folder/map-code.svg")
 }
