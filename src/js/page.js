@@ -236,6 +236,11 @@ $("#logo-mobile").click(function() {
 	$(this).hasClass('dark') && $("#mobile-scrolling").animate({ scrollTop: 0 }, 300)
 });
 
+setInterval(function(){ 
+	$('#tickets-cta3').toggleClass('animating');
+}, 3000);
+
+
 var scrollPoint = ($("#story-safari-begin").offset().top / 2);
 $('#safari-scrolling').scroll(function() {    
 	var scroll = $('#safari-scrolling').scrollTop();

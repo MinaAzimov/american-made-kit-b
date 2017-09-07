@@ -1,7 +1,7 @@
 #tickets-cta1 {
 	position: fixed;
 	top: 36px;
-    right: 140px;
+	right: 140px;
 	height: 160px;
 	cursor: pointer;
 	outline: none;
@@ -66,14 +66,14 @@
 	}
 
 	.keyframes(float1;{
-	  0%,100% { transform:translateY(0); }
-	  50% {transform:translateY(-25px); }
-    });
+		0%,100% { transform:translateY(0); }
+		50% {transform:translateY(-25px); }
+		});
 
-    .keyframes(float2;{
-	  0%,100% { transform:translateY(0) rotate(-4deg); }
-	  50% {transform:translateY(-25px) rotate(4deg); }
-    });   
+	.keyframes(float2;{
+		0%,100% { transform:translateY(0) rotate(-4deg); }
+		50% {transform:translateY(-25px) rotate(4deg); }
+		});   
 }
 
 #tickets-cta2 {
@@ -120,7 +120,7 @@
 		font-size: @size;
 		color: @color-white;
 		text-shadow: @shadow;
-	    .transition(transform (@duration) 0.09s  @easing);
+		.transition(transform (@duration) 0.09s  @easing);
 	}
 
 	svg {
@@ -130,7 +130,7 @@
 		margin-left: 35px;
 		transform-origin: top;
 		-webkit-filter: drop-shadow(@shadow);
-        filter: drop-shadow(@shadow);
+		filter: drop-shadow(@shadow);
 
 		g {
 			stroke: @color-white;
@@ -139,9 +139,9 @@
 			stroke-linecap: round;
 
 			path {
-			    stroke-dasharray: 65;
-			    stroke-dashoffset: 10;
-			    .transition(stroke-dashoffset (@duration) @easing);
+				stroke-dasharray: 65;
+				stroke-dashoffset: 10;
+				.transition(stroke-dashoffset (@duration) @easing);
 			}
 		}
 	}
@@ -155,22 +155,127 @@
 		}
 		> span > span { 
 			.keyframes(updown;{
-			  0%,100% { transform:translateY(0); }
-			  50% {transform:translateY(-10px); }
-		    });  
+				0%,100% { transform:translateY(0); }
+				50% {transform:translateY(-10px); }
+				});  
 
 			.animation(updown (@duration / 2) @easing);
 
 			@from : 1;
-            @to : 11;
+			@to : 11;
 
-            .loop(@index) when(@index =< @to) {
-                &:nth-child(@{index}) {
-                    animation-delay: (0.18s + (@index * 0.03s));
-                }
-                .loop(@index + 1);
-            }
+			.loop(@index) when(@index =< @to) {
+				&:nth-child(@{index}) {
+					animation-delay: (0.18s + (@index * 0.03s));
+				}
+				.loop(@index + 1);
+			}
 			.loop(@from);
+		}
+	}
+}
+
+#tickets-cta3 {
+	overflow: hidden;
+	position: fixed;
+	top: 180px;
+	left: 45px;
+	height: 40px;
+	z-index: 999;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	width: 120px;
+	.transform(scale(1.2));
+	.transition(transform (@duration) @easing2);
+	// .flex-display();
+	// .flex-direction(column);
+	// .align-items(center);
+	// .justify-content(center);
+
+	.tickets-cta-outer {
+		width: 100%;
+		height: 100%;
+		border: solid 1px @color-red;
+	}
+
+	.tickets-cta-text {
+		position: absolute;
+		top: 0;
+		width: 80%;
+		left: 10%;
+		height: 100%;
+		text-align: center;
+		color: @color-white;
+		text-transform: uppercase;
+		letter-spacing: 0px;
+		font-size: 21px;
+		line-height: 40px;
+		font-weight: 300;
+		text-shadow: @shadow;
+		font-family: @font-primary;
+		opacity: 1;
+		.flex-display();
+		.flex-direction(row);
+		.justify-content(space-evenly);
+		.transition(all (@duration / 2) @easing);
+		.transform(translate3d(0, 0, 0));
+
+		&:after {
+			letter-spacing: 0.15em;
+			content: attr(data-text);
+			position: absolute;
+			top: -100%;
+			right: 0;
+			left: 0;
+		}
+
+		span {
+		}
+	}
+
+	&.animating {
+		.tickets-cta-text {
+			span {
+				.keyframes(updown;{
+					0%,100% { .transform(translateY(0)); }
+					50% {.transform(translateY(-10px)); }
+					});  
+
+				.animation(updown (@duration / 2) @easing);
+
+				@from : 1;
+				@to : 11;
+
+				.loop(@index) when(@index =< @to) {
+					&:nth-child(@{index}) {
+						animation-delay: @index * 0.03s;
+					}
+					.loop(@index + 1);
+				}
+				.loop(@from);
+			}
+		}
+	}
+
+	&.active {
+		.transform(scale(1));
+		.tickets-cta-outer {
+			border-color: @color-white;
+			background-color: rgba(0,0,0,0.3);
+			// background-image: url(img/button-bg-red.svg);
+			// opacity: 0.95;
+		}
+	}
+
+	&:hover {
+		.tickets-cta-text {
+			opacity: 1;
+			.transform(translate3d(0, 100%, 0));
+
+			&:after {
+				// opacity: 1;
+			}
 		}
 	}
 }
