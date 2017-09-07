@@ -265,7 +265,28 @@
         
 
         $('#flight1').click(function(){
-        
+     
+        $('#flight1-box-around').css('stroke-opacity', '0');
+        $('#flight2-box-around').css('stroke-opacity', '1');
+        $('#flight3-box-around').css('stroke-opacity', '0');
+        $('#flight4-box-around').css('stroke-opacity', '0');
+        $('#flight5-box-around').css('stroke-opacity', '0');
+      
+        $('#hint1').css('display', 'block');
+  
+        $('#hint2').css('display', 'none');
+        $('#hint3').css('display', 'none');
+        $('#hint4').css('display', 'none');
+        $('#hint5').css('display', 'none');
+         $('#circle-powder-1').css('display', 'none');
+        $('#circle-powder-2').css('display', 'none');
+        $('#circle-soldier').css('display', 'none');
+        $('#circle-info').css('display', 'none');
+        $('#circle-gun').css('display', 'none');
+        $('#car').css('display', 'none');
+        $('#car-route').css('display', 'none');
+        $('#ship').css('display', 'none');
+        $('#ship-ship').css('display', 'none');
    
         $('#flight1-figure').css('transform', 'translateY(' + '-185' + 'px' + ')');
         $('#flight1-figure').css('transform', 'translateY(' + '-185' + 'px' + ')');
@@ -273,10 +294,17 @@
          $('#flight1-camera1').css('transform', 'translateY(' + '-185' + 'px' + ')');
          $('.st174').css('transform', 'translateY(' + '-90' + 'px' + ')');
          $('#flight1-box').css('fill', 'url(#flight1lg)');
+         $('#flight1-box').css('stroke', '#FF5252');
+         
+         $('#flight2-box').css('stroke', '#F2F0DA');
+            $('#flight3-box').css('stroke', '#F2F0DA');
+               $('#flight4-box').css('stroke', '#F2F0DA');
+                  $('#flight5-box').css('stroke', '#F2F0DA');
+
          $('#flight1-figure').css('fill', '#FF5252');
          $('#flight1-camera').css('fill', '#FF5252');
          $('#flight1-camera1').css('fill', '#FF5252');
-         $('#flight1-box').css('stroke', '#FF5252');
+         
          $('#flight1-text').css('fill', '#FF5252');
          $('.st174').css('fill', '#F2F0DA');
          $('.st172').css('fill', 'none');
@@ -291,6 +319,7 @@
         $('#flight2-box').css('stroke', '#F2F0DA');
         $('#flight2-figure').css('fill', '#F2F0DA');
         $('#flight2-info').css('fill', '#F2F0DA');
+
 
         $('#flight3-figure').css('transform', 'translateY(' + '0' + 'px' + ')');
          $('#flight3-figure').css('transform', 'translateY(' + '0' + 'px' + ')');
@@ -333,12 +362,35 @@
     $(function() {
     
         $('#flight2, #flight2-figure, #flight2-info').click(function(){
-        
+        $('#hint1').css('display', 'none');
+        $('#flight1-box-around').css('stroke-opacity', '0');
+        $('#flight2-box-around').css('stroke-opacity', '0');
+        $('#flight3-box-around').css('stroke-opacity', '1');
+        $('#flight4-box-around').css('stroke-opacity', '0');
+        $('#flight5-box-around').css('stroke-opacity', '0');
+        $('#hint2').css('display', 'block');
+   
+        $('#hint3').css('display', 'none');
+        $('#hint4').css('display', 'none');
+        $('#hint5').css('display', 'none');
+         $('#circle-powder-1').css('display', 'none');
+        $('#circle-powder-2').css('display', 'none');
+        $('#circle-soldier').css('display', 'none');
+        $('#circle-info').css('display', 'block');
+        $('#circle-gun').css('display', 'none');
+        $('#car').css('display', 'none');
+        $('#car-route').css('display', 'none');
+        $('#ship').css('display', 'none');
+        $('#ship-ship').css('display', 'none');
     
          $('#flight2-figure').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('#flight2-figure').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('#flight2-info').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('#flight2-box').css('stroke', '#ffc107');
+            $('#flight1-box').css('stroke', '#F2F0DA');
+            $('#flight3-box').css('stroke', '#F2F0DA');
+               $('#flight4-box').css('stroke', '#F2F0DA');
+                  $('#flight5-box').css('stroke', '#F2F0DA');
          $('#flight2-figure').css('fill', '#ffc107');
          $('#flight2-info').css('fill', '#ffc107');
          $('.st174').css('fill', '#F2F0DA');
@@ -404,12 +456,41 @@
 
   $(function() {
          $('#flight3, #flight3-figure, #flight3-drugs').click(function(){
+          $('#flight1-box-around').css('stroke-opacity', '0');
+        $('#hint1').css('display', 'none');
+        $('#hint2').css('display', 'none');
+           $('#flight2-box').css('stroke', '#F2F0DA');
+            $('#flight1-box').css('stroke', '#F2F0DA');
+               $('#flight4-box').css('stroke', '#F2F0DA');
+                  $('#flight5-box').css('stroke', '#F2F0DA');
+     
+        $('#hint3').css('display', 'block');
+            $('#flight1-box-around').css('stroke-opacity', '0');
+        $('#flight2-box-around').css('stroke-opacity', '0');
+        $('#flight3-box-around').css('stroke-opacity', '0');
+        $('#flight4-box-around').css('stroke-opacity', '1');
+        $('#flight5-box-around').css('stroke-opacity', '0');
        
+        $('#hint4').css('display', 'none');
+        $('#hint5').css('display', 'none');
+        $('#circle-powder-1').css('display', 'block');
+        $('#circle-powder-2').css('display', 'block');
+        $('#circle-soldier').css('display', 'none');
+        $('#circle-info').css('display', 'block');
+        $('#circle-gun').css('display', 'none');
+        $('#car').css('display', 'block');
+        $('#car-route').css('display', 'block');
+        $('#car-route').css('opacity', '1');
+
+        $('#car-route').css('opacity', '1');
+        $('#ship').css('display', 'none');
+        $('#ship-ship').css('display', 'none');
          $('#flight3-figure').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('#flight3-figure').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('#flight3-drugs').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('.st187').css('transform', 'translateY(' + '-90' + 'px' + ')');
          $('#flight3-figure').css('fill', '#0091ea');
+         $('#flight3-box').css('stroke', '#0091ea');
          $('.st188').css('fill', '#0091ea');
          $('#flight3-box').css('fill', 'url(#flight3lg)');
          $('.st187').css('fill', '#F2F0DA');
@@ -472,13 +553,41 @@
 
 
   $(function() {
-         $('#flight4, #flight4-figure, #flight4-gun').click(function(){
-         
+        $('#flight4, #flight4-figure, #flight4-gun').click(function(){
+        $('#hint1').css('display', 'none');
+        $('#hint2').css('display', 'none');
+        $('#hint3').css('display', 'none');
+        $('#flight1-box-around').css('stroke-opacity', '0');
+        $('#hint4').css('display', 'block');
+           $('#flight2-box').css('stroke', '#F2F0DA');
+            $('#flight3-box').css('stroke', '#F2F0DA');
+               $('#flight1-box').css('stroke', '#F2F0DA');
+                  $('#flight5-box').css('stroke', '#F2F0DA');
+
+          $('#flight1-box-around').css('stroke-opacity', '0');
+        $('#flight2-box-around').css('stroke-opacity', '0');
+        $('#flight3-box-around').css('stroke-opacity', '0');
+        $('#flight4-box-around').css('stroke-opacity', '0');
+        $('#flight5-box-around').css('stroke-opacity', '1');
+   
+        $('#hint5').css('display', 'none');
+        $('#car').css('display', 'none');
+        $('#car-route').css('display', 'none');
+        $('#ship').css('display', 'block');
+        $('#ship-ship').css('display', 'block');
+  
+    
+        $('#circle-powder-1').css('display', 'block');
+        $('#circle-powder-2').css('display', 'block');
+        $('#circle-soldier').css('display', 'block');
+        $('#circle-info').css('display', 'block');
+        $('#circle-gun').css('display', 'block');
          $('#flight4-figure').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('#flight4-figure').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('#flight4-gun').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('.st189').css('transform', 'translateY(' + '-90' + 'px' + ')');
          $('#flight4-figure').css('fill', '#ff6f00');
+         $('#flight4-box').css('stroke', '#ff6f00');
          $('.st190').css('fill', '#ff6f00');  
          $('#flight4-box').css('fill', 'url(#flight4lg)');
          $('.st187').css('fill', '#F2F0DA');
@@ -541,7 +650,34 @@
 
   $(function() {
          $('#flight5, #flight5-soldier, #flight5-figure').click(function(){
+             $('#hint1').css('display', 'none');
+             $('#hint2').css('display', 'none');
+             $('#hint3').css('display', 'none');
+             $('#hint4').css('display', 'none');
+
+              $('#flight1-box-around').css('stroke-opacity', '1');
+        $('#flight2-box-around').css('stroke-opacity', '0');
+        $('#flight3-box-around').css('stroke-opacity', '0');
+        $('#flight4-box-around').css('stroke-opacity', '0');
+        $('#flight5-box-around').css('stroke-opacity', '0');
+         
+        $('#hint5').css('display', 'block');
+    
+        $('#car').css('display', 'none');
+        $('#car-route').css('display', 'none');
+        $('#ship').css('display', 'none');
+        $('#ship-ship').css('display', 'none');
         
+        $('#circle-powder-1').css('display', 'block');
+        $('#circle-powder-2').css('display', 'block');
+        $('#circle-soldier').css('display', 'block');
+        $('#circle-info').css('display', 'block');
+        $('#circle-gun').css('display', 'block');
+           $('#flight2-box').css('stroke', '#F2F0DA');
+            $('#flight3-box').css('stroke', '#F2F0DA');
+               $('#flight4-box').css('stroke', '#F2F0DA');
+                  $('#flight1-box').css('stroke', '#F2F0DA');
+
          $('#flight5-figure').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('#flight5-figure').css('transform', 'translateY(' + '-183.5' + 'px' + ')');
          $('#flight5-soldier').css('transform', 'translateY(' + '-175.5' + 'px' + ')');
@@ -549,6 +685,7 @@
          $('#flight5-figure').css('fill', '#009688');
          $('.st191').css('fill', '#009688');  
          $('#flight5-box').css('fill', 'url(#flight5lg)');
+         $('#flight5-box').css('stroke', '#009688');
          $('.st187').css('fill', '#F2F0DA');
          $('.st172').css('fill', 'none');
          $('.st171').css('fill', 'none');
@@ -619,6 +756,7 @@
     ]]></script>
    <defs>
 <style type="text/css">
+
 
 #flight1-figure, #flight1-camera, #flight1-camera1, #flight1-text, .st174, .st172, .st172, .st186, .st187, .st188, .st190, .st189, #flight2-figure, #flight3-figure, #flight3-drugs, #flight2-box, #flight2-info, #flight4-figure, #flight5-figure, #flight5-soldier, #flight4-gun, .st191, .st192
 
@@ -3864,11 +4002,11 @@ transition: 2s;
   .st175{opacity:0.81;fill-rule:evenodd;clip-rule:evenodd;fill:#F2F0DA;}
   .st176{opacity:0.81;fill:#F2F0DA;enable-background:new    ;}
   .st177{opacity:0.81;fill-rule:evenodd;clip-rule:evenodd;fill:#F2F0DA;}
-  .st178{fill:none;stroke:#FFFEED;stroke-width:0.25;stroke-miterlimit:10;opacity:0.81;}
+  .st178{fill:none;stroke:#FFFEED;stroke-width:1.25;stroke-miterlimit:10;opacity:0.81;}
   .st179{fill:#F2F0DA;}
-  .st180{fill:none;stroke:#FFFEED;stroke-width:0.25;stroke-miterlimit:10;opacity:0.81;}
+  .st180{fill:none;stroke:#FFFEED;stroke-width:1.25;stroke-miterlimit:10;opacity:0.81;}
   .st181{opacity:0.15;fill:url(#SVGID_1_);}
-  .st182{fill:none;stroke:#F2F0DA;stroke-width:0.25;stroke-miterlimit:10;}
+  .st182{fill:none;stroke:#F2F0DA;stroke-width:1.25;stroke-miterlimit:10;}
   .st183{opacity:0.95;}
   .st184{fill:#2D456C;}
 
@@ -3880,7 +4018,7 @@ transition: 2s;
   .st191{fill:#F2F0DA;}
   .st192{fill:#F2F0DA;}
 
-   .st193{stroke:#FFFEED;stroke-width:0.25;stroke-miterlimit:10;opacity:0.81;}
+   .st193{stroke:#FFFEED;stroke-width:1.25;stroke-miterlimit:10;opacity:0.81;}
 
    .st194{opacity:0.15;fill:url(#SVGID_1_);}
   .st195{fill:#F2F0DA;}
@@ -7938,6 +8076,16 @@ transition: 2s;
   </g>
   <g>
 
+    <linearGradient id="largeGradient" x1="0.5" y1="1" x2="0.5" y2="0">
+          <stop offset="100%" stop-opacity="1" stop-color="#FF5252">
+          <animate attributeName="offset" values="0;1" repeatCount="1" dur="0.7s" begin="flight1.click + 0.1s"/>
+          </stop>
+          <stop offset="0%" stop-opacity="0" stop-color="#FF5252">
+          <animate attributeName="opacity" values="0;1" repeatCount="1" dur="0.7s" begin="flight1.click + 0.1s"  />
+          </stop>
+      </linearGradient>
+
+
       
       <linearGradient id="flight1lg" x1="0.5" y1="1" x2="0.5" y2="0">
           <stop offset="100%" stop-opacity="1" stop-color="#FF5252">
@@ -8032,23 +8180,84 @@ transition: 2s;
       </linearGradient>
 
 
-  
-   
 
-    <rect  id="flight1-box" x="" y="174.8" class="st193" width="174.3" height="240" fill="url(#largeGradient)"/>
+
+    <rect  id="flight1-box" x="" y="174.8" class="st193" width="174.3" height="240" fill="transparent"/>
+
+    <rect  id="flight1-box-around" x="" y="174.8" class="st193" width="174.3" height="240" fill="transparent" style="stroke:#FF5252;stroke-dasharray:950;stroke-dashoffset:1000;stroke-width:2;stroke-opacity:1">
+         <animate id="flight1-box-around"
+        xlink:href=""
+        begin="0s;flight5.click+0.1s"
+        end="flight1.click;flight2.click;flight3.click;flight4.click;flight5.click"
+        dur="5s"
+        attributeName="stroke-dashoffset"
+        to="0"
+        fill="freeze"
+        repeatCount="indefinite"
+     />
+    </rect>
+
 
     <rect  id="flight1" x="" y="174.8" fill="transparent" width="174.3" height="240" />
     <rect id="flight2-box" x="262.8" y="174.8" class="st178" width="174.3" height="240"/>
-   
+     <rect  id="flight2-box-around" x="262.8" y="174.8"  class="st193" width="174.3" height="240" fill="transparent" style="stroke:#ffc107;stroke-dasharray:950;stroke-dashoffset:1000;stroke-width:2;stroke-opacity:1">
+         <animate id="flight2-box-around"
+        xlink:href=""
+        begin="flight1.click+0.1s"
+        end="flight1.click;flight2.click;flight3.click;flight4.click;flight5.click"
+        dur="5s"
+        attributeName="stroke-dashoffset"
+        to="0"
+        fill="freeze"
+        repeatCount="indefinite"
+     />
+    </rect>
 
 
     <rect id="flight3-box"  x="525.5" y="174.8" class="st178" width="174.3" height="240"/>
+      <rect  id="flight3-box-around" x="525.5" y="174.8"  class="st193" width="174.3" height="240" fill="transparent" style="stroke:#274D6D;stroke-dasharray:950;stroke-dashoffset:1000;stroke-width:2;stroke-opacity:1">
+         <animate id="flight3-box-around"
+        xlink:href=""
+        begin="flight2.click+0.1s"
+        end="flight1.click;flight2.click;flight3.click;flight4.click;flight5.click"
+        dur="5s"
+        attributeName="stroke-dashoffset"
+        to="0"
+        fill="freeze"
+        repeatCount="indefinite"
+     />
+    </rect>
     
 
     <rect  id="flight4-box" x="788.2" y="174.8" class="st178" width="174.3" height="240"/>
+
+    <rect  id="flight4-box-around" x="788.2" y="174.8"  class="st193" width="174.3" height="240" fill="transparent" style="stroke:#ff6f00;stroke-dasharray:950;stroke-dashoffset:1000;stroke-width:2;stroke-opacity:1">
+         <animate id="flight4-box-around"
+        xlink:href=""
+        begin="flight3.click+0.1s"
+        end="flight1.click;flight2.click;flight3.click;flight4.click;flight5.click"
+        dur="5s"
+        attributeName="stroke-dashoffset"
+        to="0"
+        fill="freeze"
+        repeatCount="indefinite"
+     />
+    </rect>
   
 
     <rect id="flight5-box" x="1050.9" y="174.8" class="st178" width="174.3" height="240"/>
+    <rect  id="flight5-box-around" x="1050.9" y="174.8"  class="st193" width="174.3" height="240" fill="transparent" style="stroke:#009688;stroke-dasharray:950;stroke-dashoffset:1000;stroke-width:2;stroke-opacity:1">
+         <animate id="flight5-box-around"
+        xlink:href=""
+        begin="flight4.click+0.1s"
+        end="flight1.click;flight2.click;flight3.click;flight4.click;flight5.click"
+        dur="5s"
+        attributeName="stroke-dashoffset"
+        to="0"
+        fill="freeze"
+        repeatCount="indefinite"
+     />
+    </rect>
 
 
 
@@ -10208,6 +10417,7 @@ transition: 2s;
 	</g>
 </g>
 <g id="circle-info">
+
 	<circle id="info-circle" class="st25" cx="483.2" cy="299.7" r="0">
   <animate id="first7" attributeType="CSS" attributeName="fill" from="" to="#009688" dur="1.8s"  fill="freeze" begin="flight5.click"/>
   <animate id="first7" attributeType="CSS" attributeName="fill" from="" to="#ff6f00" dur="1.8s"  fill="freeze" begin="flight4.click"/>
@@ -10768,7 +10978,7 @@ transition: 2s;
 </g>
 
 <g>
-  <path  transform="translate(425.5, 70)"  style="stroke:none;fill:#D32F2F;opacity:0;" d="M21.7,48.9l0-3.1l-0.6,0l0-1.9l-2.7,0l0-1.6l0.9,0c0.1,0,0.2-0.1,0.2-0.2s-0.1-0.2-0.2-0.2l-0.9,0l0-0.5
+  <path  id="ship-ship" transform="translate(425.5, 70)"  style="stroke:none;fill:#D32F2F;opacity:0;" d="M21.7,48.9l0-3.1l-0.6,0l0-1.9l-2.7,0l0-1.6l0.9,0c0.1,0,0.2-0.1,0.2-0.2s-0.1-0.2-0.2-0.2l-0.9,0l0-0.5
     l-1.1,0l0,0.5l-1,0c-0.1,0-0.2,0.1-0.2,0.2s0.1,0.2,0.2,0.2l1,0l0,1.6l-2.7,0l0,1.9l-0.6,0l0,3.1l-2.2,0.5l3.2,6.5l6.3-0.1l2.7-6.6
     L21.7,48.9z M17.5,47.6l-2.9,0l0-1.1l2.9,0L17.5,47.6z M20.9,47.5l-2.9,0l0-1.1l2.9,0L20.9,47.5z">
 <animate  attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.000001s"  fill="freeze" begin="flight1.click+0.01s;;flight2.click+0.01s;;flight3.click+0.01s;;flight5.click+0.01s;" />
@@ -10807,7 +11017,7 @@ transition: 2s;
 
 
 <g>
-  <path  transform="translate(402.5, 20)"  style="stroke:none;fill:#D32F2F;opacity:0;" d="M23.4,11.3c-0.1,0-0.1,0-0.2,0c-0.3,0-0.5,0.1-0.7,0.3c-0.3-0.7-0.6-1.5-0.9-1.8c-0.4-0.6-1-0.7-1.4-0.8
+  <path  id="car" transform="translate(402.5, 20)"  style="stroke:none;fill:#D32F2F;opacity:0;" d="M23.4,11.3c-0.1,0-0.1,0-0.2,0c-0.3,0-0.5,0.1-0.7,0.3c-0.3-0.7-0.6-1.5-0.9-1.8c-0.4-0.6-1-0.7-1.4-0.8
         c-0.7-0.1-1.3-0.1-2-0.1l0,0c-0.7,0-1.3,0-2,0.1c-0.4,0.1-1,0.2-1.4,0.8c-0.2,0.3-0.6,1.1-0.9,1.8c-0.2-0.2-0.4-0.3-0.7-0.3
         c-0.1,0-0.1,0-0.2,0c-0.3,0-0.6,0.3-0.6,0.6c0,0.1,0,0.3,0,0.4c0,0.3,0.3,0.6,0.6,0.6h0.3h0c-0.3,1-0.5,2.1-0.5,3.2v1.7
         c0,0.3,0.3,0.6,0.6,0.6h0.8c0.3,0,0.6-0.3,0.6-0.6l0,0v-0.6c1.1,0.1,2.2,0.2,3.4,0.2c1.1,0,2.2-0.1,3.4-0.2l0,0v0.6
