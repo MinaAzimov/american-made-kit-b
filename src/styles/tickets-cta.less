@@ -285,17 +285,20 @@
 }
 
 #tickets-cta4 {
+	@base-rotation: 70deg;
+	@end-rotation: 45deg;
 
 	.keyframes(spin;{
-	    0% { .transform(rotate(-75deg)); }
-	    50% { .transform(rotate(-45deg)); }
-		100% { .transform(rotate(-75deg)); }
+	    0% { .transform(rotate(@base-rotation)); }
+	    50% { .transform(rotate(@end-rotation)); }
+		100% { .transform(rotate(@base-rotation)); }
 	});    
 
     top: 30px;
     right: 120px;
     height: 100px;
     width: 100px;
+	display: none;
     cursor: pointer;
     position: absolute;
     z-index: 999999 !important;
@@ -312,18 +315,27 @@
     .cta-outer {
         font-size: @size;
         .transition(transform @duration cubic-bezier(0.205, 0.64, 0.37, 1.325));
-        .transform(rotate(-75deg));
+        .transform(rotate(@base-rotation));
+    }
+
+    &.animating {
+    	.cta-outer {
+			.animation(spin (@duration * 2) cubic-bezier(0.205, 0.64, 0.37, 1.325));
+    	}
     }
 
     .cta-inner {
-        font-size: ((@size / 1.9));
+        font-size: ((@size / 2));
         margin-top: ((@size / 4));
-        margin-left: ((@size / 4) - 4);
+        margin-left: ((@size / 6));
     }
 
     &:hover {
         .cta-outer {
           animation: spin 1s cubic-bezier(0.205, 0.64, 0.37, 1.325) forwards;
         }
+    }
+    &.active {
+    	display: block;
     }
 }
