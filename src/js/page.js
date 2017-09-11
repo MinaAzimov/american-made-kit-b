@@ -237,11 +237,7 @@ $("#logo-mobile").click(function() {
 });
 
 setInterval(function(){ 
-	$('#tickets-cta3').toggleClass('animating');
-}, 3000);
-
-setInterval(function(){ 
-	$('#tickets-cta4').toggleClass('animating');
+	$('#tickets-cta3, #tickets-cta4, #tickets-cta5').toggleClass('animating');
 }, 3000);
 
 var scrollPoint = ($("#story-safari-begin").offset().top / 2);

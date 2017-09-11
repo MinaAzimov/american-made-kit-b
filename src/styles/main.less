@@ -12104,6 +12104,46 @@ section #story7 {
 }
 
 @media only screen and (min-width: 1824px) {
+    #tickets-cta5 {
+        position: fixed;
+        top: 32px;
+        right: 180px;
+        height: 122px;
+        width: 115px;
+
+        @size: 70px;
+
+        > span {
+            margin-top: 12px;
+            > span {
+                font-size: 30px;
+            }
+        }
+
+        i {
+            font-size: @size;
+        }
+    }
+
+    #tickets-cta4 {
+        top: 30px;
+        left: 100px;
+        height: 100px;
+        width: 100px;
+        
+        @size: 120px;
+
+        .cta-outer {
+            font-size: @size;
+        }
+
+        .cta-inner {
+            font-size: ((@size / 2));
+            margin-top: ((@size / 4));
+            margin-left: ((@size / 6));
+        }
+    }
+
 
     #tickets-cta3 {
         top: 210px;
@@ -12112,7 +12152,7 @@ section #story7 {
 
         .tickets-cta-text {
             &:after {
-                letter-spacing: 0.2em;
+                letter-spacing: 0.16em;
             }
         }
     }
@@ -12744,6 +12784,15 @@ section #story7 {
     #splash {
         display: block
     }
+
+    // #map-wrapper {
+    //     #map-image {
+    //         transform-origin: 35vh 65vw;
+    //         min-width: 115vh;
+    //         min-height: 115vw;
+    //         .transform(rotate(-90deg));
+    //     }
+    // }
 
     .gallery-button--left,
     .gallery-button--right {
