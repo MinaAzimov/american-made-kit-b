@@ -237,7 +237,7 @@ $("#logo-mobile").click(function() {
 });
 
 setInterval(function(){ 
-	$('#tickets-cta3, #tickets-cta4, #tickets-cta5').toggleClass('animating');
+	$('#tickets-cta3, #tickets-cta4, #tickets-cta-safari').toggleClass('animating');
 }, 3000);
 
 var scrollPoint = ($("#story-safari-begin").offset().top / 2);
@@ -246,10 +246,12 @@ $('#safari-scrolling').scroll(function() {
 	if (scroll >= scrollPoint) {
 		$("#header-bar-safari").addClass("dark");
 		$("#logo-safari").addClass("dark");
+		$("#tickets-cta-safari2").addClass("active");
 	}
 	if (scroll <= scrollPoint) {
 		$("#header-bar-safari").removeClass("dark");
 		$("#logo-safari").removeClass("dark");
+		$("#tickets-cta-safari2").removeClass("active");
 	}
 }); 
 

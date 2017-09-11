@@ -4048,7 +4048,7 @@ transition: 2s;
   .st257{clip-path:url(#SVGID_6_);}
   .st258{opacity:0.15;fill:url(#SVGID_9_);}
   .st259{opacity:0.15;fill:url(#SVGID_12_);}
-  .st260{fill:none;stroke:#F2F0DA;stroke-width:0.25;stroke-miterlimit:10;}
+  .st260{fill:none;stroke:#F2F0DA;stroke-width:0.8;stroke-miterlimit:10;}
   .st261{opacity:0.15;fill:url(#SVGID_15_);}
   .st262{opacity:0.15;fill:url(#SVGID_18_);}
   .st263{fill:#FFFEED;}
@@ -4090,6 +4090,7 @@ transition: 2s;
 .st297{letter-spacing:20;}
 .st298{fill:#2D456C;}
     .st299{enable-background:new    ;}
+        .st300{fill:none;stroke:#FFFEED;stroke-width:2;stroke-miterlimit:10;opacity:0.4;}
   
   
   #flight1, #flight2, #flight3, #flight4, #flight5, #flight2-figure, #flight3-figure, #flight4-figure,  #flight4-gun, #flight5-figure, #flight5-soldier, #flight2-info,  {
@@ -4186,7 +4187,8 @@ transition: 2s;
   </linearGradient>
   <polygon  transform="translate(-170,-304)" class="st167" points="1874.2,876.6 340.1,0 340.1,1135.8" />
   
-  <g transform="translate(25,60)">
+  
+  <g transform="translate(25,100)">
     <path class="st165" d="M61.3,695.7h-9.9V674H61c1.9,0,3.3,0.5,4.4,1.5c1.1,1,1.6,2.4,1.6,4c0,1.3-0.4,2.4-1.1,3.3
             c-0.7,0.9-1.6,1.5-2.7,1.7c1.1,0.2,2.1,0.8,3,1.8s1.3,2.2,1.3,3.5c0,1.8-0.6,3.2-1.7,4.2C64.7,695.2,63.2,695.7,61.3,695.7z
              M60.6,683.4c1.2,0,2.1-0.3,2.8-1c0.6-0.7,1-1.5,1-2.5c0-1-0.3-1.9-1-2.5s-1.6-1-2.7-1h-6.5v7H60.6z M60.7,693.3
@@ -4736,6 +4738,7 @@ transition: 2s;
     </g>
   </g>
   <g>
+      <line  transform="translate(20, 100)" class="st300" x1="161" y1="645.5" x2="284.4" y2="645.5"/>
     <defs>
       <circle id="SVGID_2_" cx="236.9" cy="322.4" r="227.5"/>
     </defs>
@@ -4746,7 +4749,7 @@ transition: 2s;
 
         <image style="overflow:visible;" width="1035" height="1035" xlink:href="01.gif"  transform="matrix(0.4578 0 0 0.4578 0 85.7573)">
       </image>
-
+      
     </g>
   </g>
 </g>
@@ -4766,7 +4769,7 @@ transition: 2s;
     <stop  offset="1" style="stop-color:#8A5C69"/>
   </linearGradient>
   <polygon transform="translate(10, 0)" class="st194" points="2169,767.3 467.6,36 467.6,686  "/>
-  <line class="st200" x1="180.9" y1="496.3" x2="180.9" y2="672.5"/>
+  <line class="st300" x1="180.9" y1="503.3" x2="180.9" y2="622.5"/>
   <g>
     <g>
       <path class="st195" d="M214.4,517.7h-9.9V496h9.7c1.9,0,3.3,0.5,4.4,1.5c1.1,1,1.6,2.4,1.6,4c0,1.3-0.4,2.4-1.1,3.3
@@ -6207,7 +6210,7 @@ transition: 2s;
             c0.1,0,0.1,0,0.2-0.1c0,0,0.1-0.1,0.1-0.1c0-0.1,0-0.1-0.1-0.1c-0.1,0-0.2,0.1-0.3,0.1c-0.1,0-0.2,0.1-0.3,0.1
             c-0.1,0-0.2,0.1-0.3,0.3c0,0.1-0.1,0.2,0,0.2C2.6,596.6,2.7,596.6,2.8,596.5z"/>
     </g>
-    <line class="st219" x1="192.6" y1="501.9" x2="192.6" y2="757"/>
+    <line class="st300" x1="192.6" y1="520" x2="192.6" y2="740"/>
     <g>
         <g>
             <path class="st215" d="M231.1,523.3h-9.9v-21.7h9.7c1.9,0,3.3,0.5,4.4,1.5c1.1,1,1.6,2.4,1.6,4c0,1.3-0.4,2.4-1.1,3.3
@@ -6713,6 +6716,7 @@ transition: 2s;
     <stop  offset="0.6259" style="stop-color:#8B5E6B;stop-opacity:0.6259"/>
     <stop  offset="1" style="stop-color:#8A5C69"/>
   </linearGradient>
+
   <polygon transform="translate(-103,-100)" class="st231" points="2565.6,982.4 602,118.3 602,768.3   "/>
   <g>
     <g>
@@ -7288,7 +7292,7 @@ transition: 2s;
       </image>
     </g>
   </g>
-  <line class="st240" x1="136" y1="500.2" x2="136" y2="676"/>
+  <line class="st300" x1="136" y1="500.2" x2="136" y2="634"/>
   <g>
     <path class="st232" d="M168.8,520.1h-9.9v-21.7h9.7c1.9,0,3.3,0.5,4.4,1.5c1.1,1,1.6,2.4,1.6,4c0,1.3-0.4,2.4-1.1,3.3
                 c-0.7,0.9-1.6,1.5-2.7,1.7c1.1,0.2,2.1,0.8,3,1.8s1.3,2.2,1.3,3.5c0,1.8-0.6,3.2-1.7,4.2C172.3,519.6,170.7,520.1,168.8,520.1z
@@ -7644,7 +7648,7 @@ transition: 2s;
       </image>
     </g>
   </g>
-  <line class="st260" x1="146" y1="498" x2="146" y2="631.6"/>
+  <line class="st300" x1="146" y1="508" x2="146" y2="641.6"/>
   <g>
     <g>
       <path class="st252" d="M178.8,525.1h-9.9v-21.7h9.7c1.9,0,3.3,0.5,4.4,1.5c1.1,1,1.6,2.4,1.6,4c0,1.3-0.4,2.4-1.1,3.3
@@ -7860,14 +7864,14 @@ transition: 2s;
 
   
   <path transform="translate(380,61)" id="house" class="st127" d="M7.9,3.9H6.7v3.4H5V5.1h-2v2.2H1.2V3.9H0L3.9,0L7.9,3.9z">
-      <animate  attributeType="CSS" attributeName="opacity" from="1" to="0" dur="1s"  fill="freeze" begin="flight3.click+11s" />
+      <animate  attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s"  fill="freeze" begin="flight3.click+11s" />
       <animate  attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.0000001s"  fill="freeze" begin="flight1.click;flight2.click;flight3.click;" />
 
 
   </path>
 
    <path transform="translate(371,9)" id="house-mena" class="st127" d="M7.9,3.9H6.7v3.4H5V5.1h-2v2.2H1.2V3.9H0L3.9,0L7.9,3.9z">
-      <animate  attributeType="CSS" attributeName="opacity" from="0" to="1" dur="1s"  fill="freeze" begin="flight3.click+11s" />
+      <animate  attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s"  fill="freeze" begin="flight3.click+13.2s" />
       <animate  attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.000000001s"  fill="freeze" begin="flight1.click;flight2.click;flight3.click;" />
 
 
@@ -9301,7 +9305,7 @@ transition: 2s;
 
  
    <g id="location6">
-    <ellipse  transform="translate(489, 103), scale(0.19)" class="st154" cx="62.9" cy="88.3" rx="13.5" ry="13.5"/>
+    <ellipse  transform="translate(492, 103), scale(0.19)" class="st154" cx="62.9" cy="88.3" rx="13.5" ry="13.5"/>
   </g>
 
 	 <g id="location5">
@@ -9355,7 +9359,7 @@ transition: 2s;
 </g>
 
 
-<g id="CIA-body" transform="translate(328, 11), scale(0.2)">
+<g id="CIA-body" transform="translate(330, 11), scale(0.2)">
 <path class="st298" d="M118.7,85.5H16.2C7.4,85.5,0,76.7,0,66.2v-47C0,8.6,7.3,0,16.2,0h103c8.8,0,16.2,8.8,16.2,19.3v47
         C134.9,77.5,127.8,85.5,118.7,85.5z M16.2,7.5c-4.8,0-8.7,5.3-8.7,11.8v47C7.5,73,12.1,78,16.2,78h102.5c5,0,8.9-5,9.3-12l0-46.8
         c0-6.7-4.6-11.8-8.8-11.8H16.2z"/>
@@ -9545,7 +9549,7 @@ transition: 2s;
         />
 </g>
 
-<g id="united" transform="translate(260,10)">
+<g id="united" transform="translate(260,5)">
   <g>
     <g>
       <path class="st48" d="M7.3,32v3.5H4.2v-4.7c0-0.3,0-0.5-0.1-0.6s-0.2-0.2-0.4-0.2c-0.2,0-0.3,0.1-0.4,0.2s-0.1,0.3-0.1,0.6v4.7
@@ -10530,7 +10534,7 @@ transition: 2s;
 
 
 
-<g transform="translate(444.5, 120)" id="ship">
+<g transform="translate(446.5, 121)" id="ship">
   <path id="route6" class="st125" fill="#fff" fill-opacity="0" style="stroke:#ff6f00;stroke-dasharray:950;stroke-dashoffset:950;stroke-width:0.3;stroke-opacity:0.8" d="M0.2,132.6c0,0-1.7-28.8,10.3-66.3C23,27,46.5,5.5,55.9,0.1">
     <animate id="ship"
         xlink:href="#route6"
@@ -10552,7 +10556,7 @@ transition: 2s;
 </g>
 
 <g>
-  <path  id="ship-ship" transform="translate(425.5, 70)"  style="stroke:none;fill:#D32F2F;opacity:0;" d="M21.7,48.9l0-3.1l-0.6,0l0-1.9l-2.7,0l0-1.6l0.9,0c0.1,0,0.2-0.1,0.2-0.2s-0.1-0.2-0.2-0.2l-0.9,0l0-0.5
+  <path  id="ship-ship" transform="translate(428.5, 70)"  style="stroke:none;fill:#D32F2F;opacity:0;" d="M21.7,48.9l0-3.1l-0.6,0l0-1.9l-2.7,0l0-1.6l0.9,0c0.1,0,0.2-0.1,0.2-0.2s-0.1-0.2-0.2-0.2l-0.9,0l0-0.5
     l-1.1,0l0,0.5l-1,0c-0.1,0-0.2,0.1-0.2,0.2s0.1,0.2,0.2,0.2l1,0l0,1.6l-2.7,0l0,1.9l-0.6,0l0,3.1l-2.2,0.5l3.2,6.5l6.3-0.1l2.7-6.6
     L21.7,48.9z M17.5,47.6l-2.9,0l0-1.1l2.9,0L17.5,47.6z M20.9,47.5l-2.9,0l0-1.1l2.9,0L20.9,47.5z">
 <animate  attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.000001s"  fill="freeze" begin="flight1.click+0.01s;;flight2.click+0.01s;;flight3.click+0.01s;;flight5.click+0.01s;" />
