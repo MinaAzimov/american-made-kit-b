@@ -201,7 +201,7 @@ $("#safari-page").delegate("#map-expand", "click", function() {
 }
 ),
 $("#map-expand-mobile").click(function() {
-    $("#map-wrapper").addClass("map-page-wrapper--open"), $("body").css("overflow", "hidden"), $("#map-image").attr("data", "img/map-code-folder/map-code.svg")
+    $("#map-wrapper").addClass("map-page-wrapper--open"), $("body").css("overflow", "hidden"), $("#map-image").attr("data", "img/map-code-folder-mobile/map-code.svg")
 }
 ),
 $(".map-button--close").click(function() {
@@ -268,7 +268,6 @@ $("#story3-safari").vide('img/_story/columbia.mp4', {
 });
 
 $('#safari-page .navbar-nav').on('click', 'li', function(){
-
     $('#safari-page .navbar-default .navbar-nav li').removeClass('active');
     $(this).addClass('active');
 });
