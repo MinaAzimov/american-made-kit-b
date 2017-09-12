@@ -222,6 +222,28 @@
     } 
 }
 
+#preloader-small-text {
+    .flex-display();
+    .align-items(flex-end);
+    .justify-content(center);
+    .flex-direction(column);
+    width: 100%;
+    min-height: 18px;
+    position: fixed;
+    right: 12px;
+    bottom: 6px;
+
+    .preloader-loading-text {
+        font-family: @font-primary;
+        text-transform: uppercase;
+        color: darken(@color-blue-light, 10%);
+        font-size: 14px;
+        opacity: 0;
+        font-weight: 300;
+        letter-spacing: 0.085em;
+    }
+}
+
 #preloader-loading {
     .flex-display();
     .align-items(center);
