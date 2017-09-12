@@ -7877,7 +7877,7 @@ transition: 2s;
 
   </path>
 
-  <g id="logo" transform="translate(580,15) scale(0.7)">
+  <g id="logo" transform="translate(565,15) scale(0.7)">
   <g>
     <path class="st141" d="M12.1,39.9l0.9,1l-4.7,4.3l-3-3.3L6.2,41l2.1,2.3l1-0.9l-2.1-2.3l0.9-0.8l2.1,2.3L12.1,39.9z"/>
     <path class="st141" d="M7.2,31.6l1.5,3.7l-5.9,2.4l-0.5-1.3l4.8-2l-1-2.5L7.2,31.6z"/>
