@@ -10315,14 +10315,7 @@ transition: 2s;
        <use xlink:href="#border"/>
     <use xlink:href="#mexico"/>
     
- <use xlink:href="#circle-gun"/>
- <use xlink:href="#circle-camera-1"/>
- <use xlink:href="#circle-camera-2"/>
- <use xlink:href="#circle-camera-3"/>
- <use xlink:href="#circle-powder-1"/>
-  <use xlink:href="#circle-powder-2"/>
-  <use xlink:href="#circle-soldier"/>
-   <use xlink:href="#circle-info"/>
+
 
 
 
