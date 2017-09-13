@@ -1,35 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
 @font-primary: 'Compacta-BT', Helvetica, Arial, sans-serif;
 @font-secondary: 'Proxima-Nova', Helvetica, Arial, sans-serif;
-@font-tertiary: 'Roboto Condensed', sans-serif;
+@font-tertiary: 'Roboto-Condensed', sans-serif;
 
 @compactaBtPath: 'fonts/compacta-bt/Compacta-BT-';
 
 @font-face {
 	font-family: 'Compacta-BT';
-	src: url('@{compactaBtPath}Light.ttf') format('truetype');
+	src: url('@{compactaBtPath}Light.woff') format('woff'), url('@{compactaBtPath}Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Compacta-BT';
-	src: url('@{compactaBtPath}Roman.ttf') format('truetype');
+	src: url('@{compactaBtPath}Roman.woff') format('woff'), url('@{compactaBtPath}Roman.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Compacta-BT';
-	src: url('@{compactaBtPath}Bold.ttf') format('truetype');
+	src: url('@{compactaBtPath}Bold.woff') format('woff'), url('@{compactaBtPath}Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Compacta-BT';
-	src: url('@{compactaBtPath}Black.ttf') format('truetype');
+	src: url('@{compactaBtPath}Black.woff') format('woff'), url('@{compactaBtPath}Black.ttf') format('truetype');
 	font-weight: 800;
 	font-style: normal;
 }
@@ -65,6 +63,24 @@
 	src: url('@{proximaNovaPath}Bold.eot');
 	src: url('@{proximaNovaPath}Bold.eot?#iefix') format('embedded-opentype'), url('@{proximaNovaPath}Bold.woff') format('woff'), url('@{proximaNovaPath}Bold.ttf') format('truetype');
 	font-weight: bold;
+	font-style: normal;
+}
+
+@robotoCondPath: 'fonts/roboto-condensed/Roboto-Condensed-';
+
+@font-face {
+	font-family: 'Roboto-Condensed';
+	src: url('@{robotoCondPath}Regular.eot');
+	src: url('@{robotoCondPath}Regular.eot?#iefix') format('embedded-opentype'), url('@{robotoCondPath}Regular.woff') format('woff'), url('@{robotoCondPath}Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Condensed';
+	src: url('@{robotoCondPath}Light.eot');
+	src: url('@{robotoCondPath}Light.eot?#iefix') format('embedded-opentype'), url('@{robotoCondPath}Light.woff') format('woff'), url('@{robotoCondPath}Light.ttf') format('truetype');
+	font-weight: 300;
 	font-style: normal;
 }
 

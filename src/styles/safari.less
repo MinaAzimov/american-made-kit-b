@@ -1099,6 +1099,7 @@ h1 {
     opacity: 1;
     .transform(translateY(0));
     .transition(all @duration @easing);
+    -webkit-transform-style: preserve-3d;
 
     .cta-outer, .cta-inner {
         position: absolute;
@@ -1115,7 +1116,9 @@ h1 {
 
     &.animating {
         .cta-outer {
+            overflow: visible;
             .animation(spin (@duration * 2) cubic-bezier(0.205, 0.64, 0.37, 1.325));
+            -webkit-transform-style: preserve-3d;
         }
     }
 
@@ -1875,9 +1878,11 @@ h1 {
             }
 
             &:before {
-                opacity: 0;
+                opacity: 1;
                 background-size: contain;
-                .transition(opacity (@duration / 2) @easing);
+                -webkit-filter:  sepia(0.4) saturate(1.6) contrast(1.1) brightness(0.9) hue-rotate(-10deg) grayscale(100%);
+                filter:  sepia(0.4) saturate(1.6) contrast(1.1) brightness(0.9) hue-rotate(-10deg) grayscale(100%);
+                // .transition(filter (@duration / 2) @easing);
             }
 
             &#gallery-1:before {
@@ -1967,7 +1972,8 @@ h1 {
                 }
 
                 &:before {
-                    opacity: 1;
+                    -webkit-filter: none;
+                    filter: none;
                 }
 
                 img {

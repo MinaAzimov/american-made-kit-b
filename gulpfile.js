@@ -109,14 +109,22 @@ gulp.task('fonts', function () {
 
 gulp.task('data', function () {
     gulp.src(path.src.data)
+        .pipe(minify({
+            ignoreFiles: ['']
+        }))
         .pipe(gulp.dest(path.build.data))
-        .pipe(reload({stream: true}));
 });
 
 gulp.task('js', function () {
     return gulp.src(path.src.js) 
         .pipe(rigger()) 
-        .pipe(minify({ignoreFiles: ['']}))
+        .pipe(minify({
+            ignoreFiles: [''], 
+            ext: {
+                src: '.js',
+                min: '.min.js'
+            }
+        }))
         .pipe(gulp.dest(path.build.js)); 
 });
 
@@ -126,6 +134,11 @@ gulp.task('js-watch', ['js'], function (done) {
 });
 
 gulp.task('image-watch', ['image'], function (done) {
+    browserSync.reload();
+    done();
+});
+
+gulp.task('data-watch', ['data'], function (done) {
     browserSync.reload();
     done();
 });
@@ -147,7 +160,7 @@ gulp.task('watch', function(){
     //     gulp.start('image-watch');
     // });
     watch([path.watch.data], function(event, cb) {
-        gulp.start('data');
+        gulp.start('data-watch');
     });
     watch([path.watch.fonts], function(event, cb) {
         gulp.start('fonts');

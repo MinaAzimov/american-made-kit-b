@@ -108,9 +108,11 @@
         }
 
         &:before {
-            opacity: 0;
+            opacity: 1;
             background-size: contain;
-            .transition(opacity (@duration / 2) @easing);
+            .transition(filter (@duration / 2) @easing);
+            -webkit-filter:  sepia(0.4) saturate(1.6) contrast(1.1) brightness(0.9) hue-rotate(-10deg) grayscale(100%);
+            filter:  sepia(0.4) saturate(1.6) contrast(1.1) brightness(0.9) hue-rotate(-10deg) grayscale(100%);
         }
 
         &#gallery-1:before {
@@ -200,7 +202,8 @@
             }
 
              &:before {
-                opacity: 1;
+                filter: none;
+                -webkit-filter: none;
             }
 
             img {
