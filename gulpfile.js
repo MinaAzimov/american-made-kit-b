@@ -13,7 +13,9 @@ var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     imagemin = require('gulp-imagemin'),
     iconfont = require('gulp-iconfont'),
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber'),
+    minify = require('gulp-minify'),
+    htmlmin = require('gulp-htmlmin');
 
 var path = {
     build: { 
@@ -59,6 +61,7 @@ gulp.task('html', function () {
     gulp.src(path.src.html) 
         .pipe(rigger()) 
         .pipe(clip())
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.build.html)); 
 });
 
@@ -113,8 +116,7 @@ gulp.task('data', function () {
 gulp.task('js', function () {
     return gulp.src(path.src.js) 
         .pipe(rigger()) 
-        .pipe(sourcemaps.init()) 
-        .pipe(sourcemaps.write()) 
+        .pipe(minify({ignoreFiles: ['']}))
         .pipe(gulp.dest(path.build.js)); 
 });
 
