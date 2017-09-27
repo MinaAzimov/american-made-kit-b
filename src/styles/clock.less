@@ -8,6 +8,8 @@
   .flex-direction(column);
 
   .clock {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
     .flex-display();
     .align-items(center);
 
@@ -21,12 +23,12 @@
       margin: 0 2vw;
       min-width: 5vw;
       height: 1px;
-      background-color: @color-red;
+      background-color: fade(@color-red, 25%);
     }
 
     h2, p {
       // color: lighten(@color-white, 2%);
-      color: #aaaaaa;
+      color: lighten(#aaaaaa, 27.5%);
       margin: 0;
     }
     h2 {
@@ -181,7 +183,7 @@
         }
         a {
             font-size: 32px;
-            margin-top: 85px;
+            margin-top: 80px;
         }
         > p {
             font-size: 32px;
@@ -195,16 +197,17 @@
 
             &:first-of-type {
               font-size: 60px;
-              margin-bottom: 32px;
+              margin-bottom: 28px;
             }
 
             &:nth-of-type(2) {
-              margin-bottom: 50px;
+              margin-bottom: -72px;
+              z-index: 999; 
             }
 
             &:last-of-type {
-              margin-top: 45px;
-              font-size: 30px;
+              // margin-top: 45px;
+              font-size: 40px;
             }
         }
     }

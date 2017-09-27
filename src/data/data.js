@@ -181,7 +181,7 @@ var data = {
 			'am-icon-universal-logo',
 			'am-icon-rating'
 		],
-		footerText: 'Watch the American Made trailer on the official movie site. Starring Tom Cruise. In theaters September 29, 2017.',
+		footerText: 'Watch the American Made trailer on the official movie site. Starring Tom Cruise. In theaters Friday.',
 		footerLinks: [
 			{
 				label: 'Terms of Use',

@@ -94,32 +94,32 @@ openPhotoSwipe=function() {
     }
     ;
     gallery=new PhotoSwipe(e,
-    PhotoSwipeUI_Default,
-    t,
-    i);
+        PhotoSwipeUI_Default,
+        t,
+        i);
     var n,
     r,
     s=!1,
     o=!0;
     gallery.listen("beforeResize",
-    function() {
-        n=gallery.viewportSize.x*window.devicePixelRatio, s&&1e3>n?(s=!1, r=!0): s||1e3>n||(s=!0, r=!0), r&&!o&&gallery.invalidateCurrItems(), o&&(o=!1), r=!1
-    }
-    ),
-    gallery.listen("afterChange",
-    function() {
-        $(".gallery-button--left, .gallery-button--right").removeClass("disabled"), 0==gallery.getCurrentIndex()&&$(".gallery-button--left").addClass("disabled"), gallery.getCurrentIndex()==gallery.options.getNumItemsFn()-1&&$(".gallery-button--right").addClass("disabled")
-    }
-    ),
-    gallery.listen("imageLoadComplete",
-    function() {
-        galleryLoaded||setTimeout(function() {
-            $(".gallery-button--close").addClass("open"), galleryLoaded=!0
+        function() {
+            n=gallery.viewportSize.x*window.devicePixelRatio, s&&1e3>n?(s=!1, r=!0): s||1e3>n||(s=!0, r=!0), r&&!o&&gallery.invalidateCurrItems(), o&&(o=!1), r=!1
         }
-        ,
-        300)
-    }
-    ),
+        ),
+    gallery.listen("afterChange",
+        function() {
+            $(".gallery-button--left, .gallery-button--right").removeClass("disabled"), 0==gallery.getCurrentIndex()&&$(".gallery-button--left").addClass("disabled"), gallery.getCurrentIndex()==gallery.options.getNumItemsFn()-1&&$(".gallery-button--right").addClass("disabled")
+        }
+        ),
+    gallery.listen("imageLoadComplete",
+        function() {
+            galleryLoaded||setTimeout(function() {
+                $(".gallery-button--close").addClass("open"), galleryLoaded=!0
+            }
+            ,
+            300)
+        }
+        ),
     $(".gallery-button--left").click(function() {
         $(this).hasClass("disabled")?event.stopPropagation(): gallery.prev()
     }
@@ -129,11 +129,11 @@ openPhotoSwipe=function() {
     }
     ),
     gallery.listen("gettingData",
-    function(e,
-    t) {
-        s?(t.src=t.originalImage.src, t.w=t.originalImage.w, t.h=t.originalImage.h): (t.src=t.mediumImage.src, t.w=t.mediumImage.w, t.h=t.mediumImage.h)
-    }
-    ),
+        function(e,
+            t) {
+            s?(t.src=t.originalImage.src, t.w=t.originalImage.w, t.h=t.originalImage.h): (t.src=t.mediumImage.src, t.w=t.mediumImage.w, t.h=t.mediumImage.h)
+        }
+        ),
     gallery.init()
 }
 ;
@@ -209,10 +209,10 @@ $(".map-button--close").click(function() {
 }
 ),
 $("#upgradeclose").on("click",
-function() {
-    $("#upgrade-safari").css("display", "none")
-}
-),
+    function() {
+        $("#upgrade-safari").css("display", "none")
+    }
+    ),
 $("#mobile-scrolling").scroll(function() {
     var e=$("#mobile-scrolling").scrollTop();
     e<$("#story-mobile-begin").offset().top||($("#header-bar-mobile").addClass("dark"), $("#logo-mobile").addClass("dark"), $("#mobile-ctas").addClass("dark"), $("#toggleLegal").addClass("dark")),
@@ -240,6 +240,24 @@ setInterval(function(){
 	$('#tickets-cta3, #tickets-cta4, #tickets-cta-safari, #tickets-cta-safari2').toggleClass('animating');
 }, 3000);
 
+$("#story3-safari").vide('img/_story/columbia.mp4', {
+    posterType: "jpg",
+    autoplay: !0,
+    loop: !0
+});
+
+$("#story2-safari").vide('img/_story/half-still.mp4', {
+    posterType: "jpg",
+    autoplay: !0,
+    loop: !0
+});
+
+setTimeout(function() {
+ $("#story3-safari video")[0].play();
+ $("#story2-safari video")[0].play();
+}, 300)
+
+
 var scrollPoint = ($("#story-safari-begin").offset().top / 2);
 $('#safari-scrolling').scroll(function() {    
 	var scroll = $('#safari-scrolling').scrollTop();
@@ -255,18 +273,6 @@ $('#safari-scrolling').scroll(function() {
 	}
 }); 
 
-$("#story2-safari").vide('img/_story/half-still.mp4', {
-    posterType: "jpg",
-    autoplay: !0,
-    loop: !0
-});
-
-$("#story3-safari").vide('img/_story/columbia.mp4', {
-    posterType: "jpg",
-    autoplay: !0,
-    loop: !0
-});
-
 $('#safari-page .navbar-nav').on('click', 'li', function(){
     $('#safari-page .navbar-default .navbar-nav li').removeClass('active');
     $(this).addClass('active');
@@ -280,59 +286,58 @@ var five = $("#videos-safari").offset();
 var six = $("#tickets-safari").offset();
 
 
-    $("#safari-scrolling").scroll(function(){ 
-       
-        var screenPosition = $("#safari-scrolling").scrollTop();
-        if (screenPosition < two.top-2) {
-            $( ".home" ).addClass( "active");
-            $(".story").removeClass("active");
-            $(".cnc").removeClass("active");
-            $(".photos").removeClass("active");
-            $(".videos").removeClass("active");
-            $(".tickets").removeClass("active");
-        }
-        if (screenPosition > two.top-2) {
-            $( ".story" ).addClass( "active");
-            $(".home").removeClass("active");
-            $(".cnc").removeClass("active");
-            $(".photos").removeClass("active");
-            $(".videos").removeClass("active");
-            $(".tickets").removeClass("active");
-        }
-        if (screenPosition > three.top-2) {
-            $( ".cnc" ).addClass( "active");
-            $(".story").removeClass("active");
-            $(".home").removeClass("active");
-            $(".photos").removeClass("active");
-            $(".videos").removeClass("active");
-            $(".tickets").removeClass("active");
-        }
-          if (screenPosition > four.top-2) {
-            $( ".photos" ).addClass( "active");
-            $(".story").removeClass("active");
-            $(".home").removeClass("active");
-            $(".cnc").removeClass("active");
-            $(".videos").removeClass("active");
-            $(".tickets").removeClass("active");
-        }
-        if (screenPosition > five.top-2) {
-            $( ".videos" ).addClass( "active");
-            $(".story").removeClass("active");
-            $(".home").removeClass("active");
-            $(".cnc").removeClass("active");
-            $(".photos").removeClass("active");
-            $(".tickets").removeClass("active");
-        }
+$("#safari-scrolling").scroll(function(){ 
+ 
+    var screenPosition = $("#safari-scrolling").scrollTop();
+    if (screenPosition < two.top-2) {
+        $( ".home" ).addClass( "active");
+        $(".story").removeClass("active");
+        $(".cnc").removeClass("active");
+        $(".photos").removeClass("active");
+        $(".videos").removeClass("active");
+        $(".tickets").removeClass("active");
+    }
+    if (screenPosition > two.top-2) {
+        $( ".story" ).addClass( "active");
+        $(".home").removeClass("active");
+        $(".cnc").removeClass("active");
+        $(".photos").removeClass("active");
+        $(".videos").removeClass("active");
+        $(".tickets").removeClass("active");
+    }
+    if (screenPosition > three.top-2) {
+        $( ".cnc" ).addClass( "active");
+        $(".story").removeClass("active");
+        $(".home").removeClass("active");
+        $(".photos").removeClass("active");
+        $(".videos").removeClass("active");
+        $(".tickets").removeClass("active");
+    }
+    if (screenPosition > four.top-2) {
+        $( ".photos" ).addClass( "active");
+        $(".story").removeClass("active");
+        $(".home").removeClass("active");
+        $(".cnc").removeClass("active");
+        $(".videos").removeClass("active");
+        $(".tickets").removeClass("active");
+    }
+    if (screenPosition > five.top-2) {
+        $( ".videos" ).addClass( "active");
+        $(".story").removeClass("active");
+        $(".home").removeClass("active");
+        $(".cnc").removeClass("active");
+        $(".photos").removeClass("active");
+        $(".tickets").removeClass("active");
+    }
 
-        if (screenPosition > six.top-2) {
-            $( ".tickets" ).addClass( "active");
-            $(".story").removeClass("active");
-            $(".home").removeClass("active");
-            $(".cnc").removeClass("active");
-            $(".photos").removeClass("active");
-            $(".videos").removeClass("active");
-        }
-    });
+    if (screenPosition > six.top-2) {
+        $( ".tickets" ).addClass( "active");
+        $(".story").removeClass("active");
+        $(".home").removeClass("active");
+        $(".cnc").removeClass("active");
+        $(".photos").removeClass("active");
+        $(".videos").removeClass("active");
+    }
+});
 
 
-  

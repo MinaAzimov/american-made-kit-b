@@ -455,6 +455,11 @@
         // z-index: 16
         font-family: @font-primary;
         text-transform: uppercase;
+        // .justify-content(flex-start);
+
+        // span {
+        //     margin-right: 4px;
+        // }
     }
 
     #splash_tom_cruise {
@@ -1061,11 +1066,16 @@
 
         > h2, h3 {
             margin: 24px 0;
+            margin-bottom: -32px;
         }
 
         > h2 {
             font-size: 36px;
             margin-bottom: 12px;
+        }
+
+        h3 {
+            font-size: 28px;
         }
 
         a {
@@ -1075,7 +1085,9 @@
 
         .clock {
             width: 100%;
+            // opacity: 0.8;
             h2 {
+                color: lighten(#aaa, 20%);
                 font-size: 40px;
                 letter-spacing: 0.1em;
                 font-weight: 300;

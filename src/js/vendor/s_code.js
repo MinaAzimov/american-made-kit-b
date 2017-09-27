@@ -32,7 +32,7 @@ function s_doPlugins(s) {
         
         //Context Data Variables
         s.contextData['nbc.page'] = document.title;
-        s.contextData['nbc.url] = unescape(unescape(window.location.href));
+        s.contextData['nbc.url'] = unescape(unescape(window.location.href));
 
 
         //Conversion Variables
